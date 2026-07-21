@@ -122,6 +122,14 @@ img {
   color: #ffffff;
 }
 
+.composer button:disabled,
+.composer button:disabled:hover {
+  cursor: wait;
+  border-color: var(--line);
+  background: var(--muted);
+  color: #ffffff;
+}
+
 .live-pill {
   display: inline-flex;
   align-items: center;
@@ -376,6 +384,36 @@ img {
   margin: 0;
   font-size: 15px;
   line-height: 1.65;
+  white-space: pre-line;
+}
+
+.typing-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  color: var(--muted);
+}
+
+.typing-bubble span {
+  font-size: 13px;
+}
+
+.typing-bubble i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rose);
+  opacity: 0.4;
+  animation: typing-dot 1s ease-in-out infinite;
+}
+
+.typing-bubble i:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.typing-bubble i:nth-child(4) {
+  animation-delay: 0.3s;
 }
 
 .starter-row {
@@ -489,5 +527,18 @@ img {
   .avatar {
     width: 34px;
     height: 34px;
+  }
+}
+
+@keyframes typing-dot {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.35;
+  }
+
+  50% {
+    transform: translateY(-3px);
+    opacity: 1;
   }
 }
