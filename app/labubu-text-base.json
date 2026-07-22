@@ -2398,5 +2398,1205 @@
       "en": "The core task is not to make the user buy immediately or decide whether their liking is genuine or trend-following. It is to simulate how media content gradually shapes attention, emotion, identity, and social judgment. Good replies should be specific, bilingual, natural, and keep bringing the user back to when Labubu started affecting them."
     },
     "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 201,
+    "question": {
+      "zh": "当小红书挂包图反复出现时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When repeated Xiaohongshu bag-charm photos, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "挂包图把 Labubu 放进真实穿搭和通勤场景里，用户看到的是一个可被别人看见的风格符号。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Bag-charm photos place Labubu inside real outfits and commutes, so the user sees a visible style signal. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 202,
+    "question": {
+      "zh": "当小红书挂包图反复出现时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When repeated Xiaohongshu bag-charm photos, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "挂包图把 Labubu 放进真实穿搭和通勤场景里，用户看到的是一个可被别人看见的风格符号。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Bag-charm photos place Labubu inside real outfits and commutes, so the user sees a visible style signal. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 203,
+    "question": {
+      "zh": "当小红书挂包图反复出现时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When repeated Xiaohongshu bag-charm photos, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "挂包图把 Labubu 放进真实穿搭和通勤场景里，用户看到的是一个可被别人看见的风格符号。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Bag-charm photos place Labubu inside real outfits and commutes, so the user sees a visible style signal. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 204,
+    "question": {
+      "zh": "当小红书挂包图反复出现时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When repeated Xiaohongshu bag-charm photos, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "挂包图把 Labubu 放进真实穿搭和通勤场景里，用户看到的是一个可被别人看见的风格符号。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Bag-charm photos place Labubu inside real outfits and commutes, so the user sees a visible style signal. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 205,
+    "question": {
+      "zh": "当小红书挂包图反复出现时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When repeated Xiaohongshu bag-charm photos, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "挂包图把 Labubu 放进真实穿搭和通勤场景里，用户看到的是一个可被别人看见的风格符号。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Bag-charm photos place Labubu inside real outfits and commutes, so the user sees a visible style signal. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 206,
+    "question": {
+      "zh": "当短视频开盒内容连续刷到时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When short unboxing videos keep appearing, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "开盒内容把购买变成悬念故事，用户会跟着期待盒子打开后的结果。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Unboxing content turns purchase into a suspense story, pulling the user into the reveal. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 207,
+    "question": {
+      "zh": "当短视频开盒内容连续刷到时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When short unboxing videos keep appearing, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "开盒内容把购买变成悬念故事，用户会跟着期待盒子打开后的结果。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Unboxing content turns purchase into a suspense story, pulling the user into the reveal. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 208,
+    "question": {
+      "zh": "当短视频开盒内容连续刷到时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When short unboxing videos keep appearing, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "开盒内容把购买变成悬念故事，用户会跟着期待盒子打开后的结果。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Unboxing content turns purchase into a suspense story, pulling the user into the reveal. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 209,
+    "question": {
+      "zh": "当短视频开盒内容连续刷到时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When short unboxing videos keep appearing, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "开盒内容把购买变成悬念故事，用户会跟着期待盒子打开后的结果。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Unboxing content turns purchase into a suspense story, pulling the user into the reveal. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 210,
+    "question": {
+      "zh": "当短视频开盒内容连续刷到时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When short unboxing videos keep appearing, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "开盒内容把购买变成悬念故事，用户会跟着期待盒子打开后的结果。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Unboxing content turns purchase into a suspense story, pulling the user into the reveal. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 211,
+    "question": {
+      "zh": "当朋友把 Labubu 挂在包上时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When a friend clips Labubu on a bag, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "朋友使用比广告更近，Labubu 会从网络热点变成身边人的真实物件。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A friend using Labubu feels closer than advertising, turning online buzz into a real object nearby. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 212,
+    "question": {
+      "zh": "当朋友把 Labubu 挂在包上时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When a friend clips Labubu on a bag, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "朋友使用比广告更近，Labubu 会从网络热点变成身边人的真实物件。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A friend using Labubu feels closer than advertising, turning online buzz into a real object nearby. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 213,
+    "question": {
+      "zh": "当朋友把 Labubu 挂在包上时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When a friend clips Labubu on a bag, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "朋友使用比广告更近，Labubu 会从网络热点变成身边人的真实物件。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A friend using Labubu feels closer than advertising, turning online buzz into a real object nearby. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 214,
+    "question": {
+      "zh": "当朋友把 Labubu 挂在包上时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When a friend clips Labubu on a bag, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "朋友使用比广告更近，Labubu 会从网络热点变成身边人的真实物件。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A friend using Labubu feels closer than advertising, turning online buzz into a real object nearby. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 215,
+    "question": {
+      "zh": "当朋友把 Labubu 挂在包上时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When a friend clips Labubu on a bag, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "朋友使用比广告更近，Labubu 会从网络热点变成身边人的真实物件。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A friend using Labubu feels closer than advertising, turning online buzz into a real object nearby. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 216,
+    "question": {
+      "zh": "当同事桌上摆着 Labubu时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When a coworker keeps Labubu on their desk, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "桌面场景让 Labubu 进入工作空间，提供一种小型情绪缓冲。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A desk scene brings Labubu into work life and makes it feel like a small emotional buffer. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 217,
+    "question": {
+      "zh": "当同事桌上摆着 Labubu时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When a coworker keeps Labubu on their desk, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "桌面场景让 Labubu 进入工作空间，提供一种小型情绪缓冲。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A desk scene brings Labubu into work life and makes it feel like a small emotional buffer. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 218,
+    "question": {
+      "zh": "当同事桌上摆着 Labubu时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When a coworker keeps Labubu on their desk, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "桌面场景让 Labubu 进入工作空间，提供一种小型情绪缓冲。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A desk scene brings Labubu into work life and makes it feel like a small emotional buffer. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 219,
+    "question": {
+      "zh": "当同事桌上摆着 Labubu时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When a coworker keeps Labubu on their desk, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "桌面场景让 Labubu 进入工作空间，提供一种小型情绪缓冲。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A desk scene brings Labubu into work life and makes it feel like a small emotional buffer. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 220,
+    "question": {
+      "zh": "当同事桌上摆着 Labubu时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When a coworker keeps Labubu on their desk, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "桌面场景让 Labubu 进入工作空间，提供一种小型情绪缓冲。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "A desk scene brings Labubu into work life and makes it feel like a small emotional buffer. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 221,
+    "question": {
+      "zh": "当校园里很多人挂 Labubu时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When many people on campus carry Labubu, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "同龄人场景会强化社交线索，让 Labubu 变成共同话题。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Peer scenes strengthen social cues and make Labubu feel like a shared topic. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 222,
+    "question": {
+      "zh": "当校园里很多人挂 Labubu时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When many people on campus carry Labubu, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "同龄人场景会强化社交线索，让 Labubu 变成共同话题。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Peer scenes strengthen social cues and make Labubu feel like a shared topic. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 223,
+    "question": {
+      "zh": "当校园里很多人挂 Labubu时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When many people on campus carry Labubu, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "同龄人场景会强化社交线索，让 Labubu 变成共同话题。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Peer scenes strengthen social cues and make Labubu feel like a shared topic. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 224,
+    "question": {
+      "zh": "当校园里很多人挂 Labubu时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When many people on campus carry Labubu, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "同龄人场景会强化社交线索，让 Labubu 变成共同话题。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Peer scenes strengthen social cues and make Labubu feel like a shared topic. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 225,
+    "question": {
+      "zh": "当校园里很多人挂 Labubu时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When many people on campus carry Labubu, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "同龄人场景会强化社交线索，让 Labubu 变成共同话题。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Peer scenes strengthen social cues and make Labubu feel like a shared topic. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 226,
+    "question": {
+      "zh": "当明星晒出 Labubu 同款时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When a celebrity posts a Labubu same-item, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "明星的生活方式意义会转移到 Labubu 上，让它看起来更有风格。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "The celebrity’s lifestyle meaning can transfer onto Labubu and make it look more stylish. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 227,
+    "question": {
+      "zh": "当明星晒出 Labubu 同款时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When a celebrity posts a Labubu same-item, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "明星的生活方式意义会转移到 Labubu 上，让它看起来更有风格。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "The celebrity’s lifestyle meaning can transfer onto Labubu and make it look more stylish. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 228,
+    "question": {
+      "zh": "当明星晒出 Labubu 同款时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When a celebrity posts a Labubu same-item, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "明星的生活方式意义会转移到 Labubu 上，让它看起来更有风格。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "The celebrity’s lifestyle meaning can transfer onto Labubu and make it look more stylish. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 229,
+    "question": {
+      "zh": "当明星晒出 Labubu 同款时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When a celebrity posts a Labubu same-item, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "明星的生活方式意义会转移到 Labubu 上，让它看起来更有风格。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "The celebrity’s lifestyle meaning can transfer onto Labubu and make it look more stylish. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 230,
+    "question": {
+      "zh": "当明星晒出 Labubu 同款时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When a celebrity posts a Labubu same-item, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "明星的生活方式意义会转移到 Labubu 上，让它看起来更有风格。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "The celebrity’s lifestyle meaning can transfer onto Labubu and make it look more stylish. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 231,
+    "question": {
+      "zh": "当普通博主真实使用 Labubu时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When an ordinary creator uses Labubu naturally, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "普通博主的日常感降低广告感，让推荐更像经验分享。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "An ordinary creator’s everyday tone lowers the ad feeling and makes the recommendation seem experiential. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 232,
+    "question": {
+      "zh": "当普通博主真实使用 Labubu时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When an ordinary creator uses Labubu naturally, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "普通博主的日常感降低广告感，让推荐更像经验分享。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "An ordinary creator’s everyday tone lowers the ad feeling and makes the recommendation seem experiential. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 233,
+    "question": {
+      "zh": "当普通博主真实使用 Labubu时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When an ordinary creator uses Labubu naturally, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "普通博主的日常感降低广告感，让推荐更像经验分享。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "An ordinary creator’s everyday tone lowers the ad feeling and makes the recommendation seem experiential. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 234,
+    "question": {
+      "zh": "当普通博主真实使用 Labubu时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When an ordinary creator uses Labubu naturally, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "普通博主的日常感降低广告感，让推荐更像经验分享。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "An ordinary creator’s everyday tone lowers the ad feeling and makes the recommendation seem experiential. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 235,
+    "question": {
+      "zh": "当普通博主真实使用 Labubu时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When an ordinary creator uses Labubu naturally, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "普通博主的日常感降低广告感，让推荐更像经验分享。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "An ordinary creator’s everyday tone lowers the ad feeling and makes the recommendation seem experiential. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 236,
+    "question": {
+      "zh": "当收藏者讲解系列和隐藏款时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When a collector explains series and hidden editions, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "专业解释会把模糊兴趣变成有体系的收藏知识。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Expert explanation turns vague interest into structured collecting knowledge. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 237,
+    "question": {
+      "zh": "当收藏者讲解系列和隐藏款时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When a collector explains series and hidden editions, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "专业解释会把模糊兴趣变成有体系的收藏知识。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Expert explanation turns vague interest into structured collecting knowledge. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 238,
+    "question": {
+      "zh": "当收藏者讲解系列和隐藏款时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When a collector explains series and hidden editions, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "专业解释会把模糊兴趣变成有体系的收藏知识。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Expert explanation turns vague interest into structured collecting knowledge. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 239,
+    "question": {
+      "zh": "当收藏者讲解系列和隐藏款时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When a collector explains series and hidden editions, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "专业解释会把模糊兴趣变成有体系的收藏知识。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Expert explanation turns vague interest into structured collecting knowledge. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 240,
+    "question": {
+      "zh": "当收藏者讲解系列和隐藏款时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When a collector explains series and hidden editions, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "专业解释会把模糊兴趣变成有体系的收藏知识。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Expert explanation turns vague interest into structured collecting knowledge. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 241,
+    "question": {
+      "zh": "当评论区一直讨论贵和抢不到时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When comment sections keep discussing price and sold-out drops, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "评论区把个人反应放大成群体气氛，价格和缺货会制造紧迫感。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comment sections amplify private reaction into group atmosphere, while price and sold-out drops create urgency. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 242,
+    "question": {
+      "zh": "当评论区一直讨论贵和抢不到时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When comment sections keep discussing price and sold-out drops, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "评论区把个人反应放大成群体气氛，价格和缺货会制造紧迫感。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comment sections amplify private reaction into group atmosphere, while price and sold-out drops create urgency. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 243,
+    "question": {
+      "zh": "当评论区一直讨论贵和抢不到时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When comment sections keep discussing price and sold-out drops, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "评论区把个人反应放大成群体气氛，价格和缺货会制造紧迫感。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comment sections amplify private reaction into group atmosphere, while price and sold-out drops create urgency. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 244,
+    "question": {
+      "zh": "当评论区一直讨论贵和抢不到时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When comment sections keep discussing price and sold-out drops, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "评论区把个人反应放大成群体气氛，价格和缺货会制造紧迫感。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comment sections amplify private reaction into group atmosphere, while price and sold-out drops create urgency. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 245,
+    "question": {
+      "zh": "当评论区一直讨论贵和抢不到时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When comment sections keep discussing price and sold-out drops, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "评论区把个人反应放大成群体气氛，价格和缺货会制造紧迫感。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comment sections amplify private reaction into group atmosphere, while price and sold-out drops create urgency. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 246,
+    "question": {
+      "zh": "当二级市场价格被频繁提起时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When resale prices are mentioned repeatedly, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二级市场会把价格变成社会信号，但它只能解释影响，不应该变成购买建议。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Resale markets turn price into a social signal, but it should explain influence rather than become purchase advice. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 247,
+    "question": {
+      "zh": "当二级市场价格被频繁提起时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When resale prices are mentioned repeatedly, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二级市场会把价格变成社会信号，但它只能解释影响，不应该变成购买建议。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Resale markets turn price into a social signal, but it should explain influence rather than become purchase advice. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 248,
+    "question": {
+      "zh": "当二级市场价格被频繁提起时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When resale prices are mentioned repeatedly, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二级市场会把价格变成社会信号，但它只能解释影响，不应该变成购买建议。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Resale markets turn price into a social signal, but it should explain influence rather than become purchase advice. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 249,
+    "question": {
+      "zh": "当二级市场价格被频繁提起时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When resale prices are mentioned repeatedly, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二级市场会把价格变成社会信号，但它只能解释影响，不应该变成购买建议。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Resale markets turn price into a social signal, but it should explain influence rather than become purchase advice. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 250,
+    "question": {
+      "zh": "当二级市场价格被频繁提起时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When resale prices are mentioned repeatedly, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二级市场会把价格变成社会信号，但它只能解释影响，不应该变成购买建议。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Resale markets turn price into a social signal, but it should explain influence rather than become purchase advice. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 251,
+    "question": {
+      "zh": "当真假鉴别内容越看越多时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When real-versus-fake checks keep appearing, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "真假鉴别让用户学会圈内暗号，旁观者会慢慢变成懂一点的人。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Authenticity checks teach community codes and turn an observer into someone who knows a little. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 252,
+    "question": {
+      "zh": "当真假鉴别内容越看越多时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When real-versus-fake checks keep appearing, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "真假鉴别让用户学会圈内暗号，旁观者会慢慢变成懂一点的人。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Authenticity checks teach community codes and turn an observer into someone who knows a little. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 253,
+    "question": {
+      "zh": "当真假鉴别内容越看越多时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When real-versus-fake checks keep appearing, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "真假鉴别让用户学会圈内暗号，旁观者会慢慢变成懂一点的人。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Authenticity checks teach community codes and turn an observer into someone who knows a little. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 254,
+    "question": {
+      "zh": "当真假鉴别内容越看越多时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When real-versus-fake checks keep appearing, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "真假鉴别让用户学会圈内暗号，旁观者会慢慢变成懂一点的人。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Authenticity checks teach community codes and turn an observer into someone who knows a little. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 255,
+    "question": {
+      "zh": "当真假鉴别内容越看越多时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When real-versus-fake checks keep appearing, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "真假鉴别让用户学会圈内暗号，旁观者会慢慢变成懂一点的人。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Authenticity checks teach community codes and turn an observer into someone who knows a little. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 256,
+    "question": {
+      "zh": "当隐藏款中奖视频爆了时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When a hidden-edition success video goes viral, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "中奖故事让低概率变得具体，用户更容易想象自己也可能遇到同一瞬间。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Success stories make low probability vivid, helping users imagine the same moment happening to them. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 257,
+    "question": {
+      "zh": "当隐藏款中奖视频爆了时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When a hidden-edition success video goes viral, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "中奖故事让低概率变得具体，用户更容易想象自己也可能遇到同一瞬间。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Success stories make low probability vivid, helping users imagine the same moment happening to them. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 258,
+    "question": {
+      "zh": "当隐藏款中奖视频爆了时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When a hidden-edition success video goes viral, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "中奖故事让低概率变得具体，用户更容易想象自己也可能遇到同一瞬间。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Success stories make low probability vivid, helping users imagine the same moment happening to them. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 259,
+    "question": {
+      "zh": "当隐藏款中奖视频爆了时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When a hidden-edition success video goes viral, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "中奖故事让低概率变得具体，用户更容易想象自己也可能遇到同一瞬间。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Success stories make low probability vivid, helping users imagine the same moment happening to them. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 260,
+    "question": {
+      "zh": "当隐藏款中奖视频爆了时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When a hidden-edition success video goes viral, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "中奖故事让低概率变得具体，用户更容易想象自己也可能遇到同一瞬间。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Success stories make low probability vivid, helping users imagine the same moment happening to them. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 261,
+    "question": {
+      "zh": "当没抽中但还开心的视频出现时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When videos show people enjoying Labubu even without a rare pull, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "没抽中也开心会降低风险感，让玩法本身显得有趣。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Enjoying a non-rare pull lowers perceived risk and makes the play pattern itself seem fun. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 262,
+    "question": {
+      "zh": "当没抽中但还开心的视频出现时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When videos show people enjoying Labubu even without a rare pull, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "没抽中也开心会降低风险感，让玩法本身显得有趣。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Enjoying a non-rare pull lowers perceived risk and makes the play pattern itself seem fun. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 263,
+    "question": {
+      "zh": "当没抽中但还开心的视频出现时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When videos show people enjoying Labubu even without a rare pull, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "没抽中也开心会降低风险感，让玩法本身显得有趣。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Enjoying a non-rare pull lowers perceived risk and makes the play pattern itself seem fun. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 264,
+    "question": {
+      "zh": "当没抽中但还开心的视频出现时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When videos show people enjoying Labubu even without a rare pull, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "没抽中也开心会降低风险感，让玩法本身显得有趣。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Enjoying a non-rare pull lowers perceived risk and makes the play pattern itself seem fun. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 265,
+    "question": {
+      "zh": "当没抽中但还开心的视频出现时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When videos show people enjoying Labubu even without a rare pull, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "没抽中也开心会降低风险感，让玩法本身显得有趣。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Enjoying a non-rare pull lowers perceived risk and makes the play pattern itself seem fun. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 266,
+    "question": {
+      "zh": "当线下展会照片刷屏时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When offline exhibition photos fill the feed, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "展会把 IP 世界具象化，让用户觉得自己也能进入这个文化场景。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Exhibitions make the IP world concrete and make the user feel they could enter that cultural scene. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 267,
+    "question": {
+      "zh": "当线下展会照片刷屏时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When offline exhibition photos fill the feed, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "展会把 IP 世界具象化，让用户觉得自己也能进入这个文化场景。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Exhibitions make the IP world concrete and make the user feel they could enter that cultural scene. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 268,
+    "question": {
+      "zh": "当线下展会照片刷屏时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When offline exhibition photos fill the feed, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "展会把 IP 世界具象化，让用户觉得自己也能进入这个文化场景。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Exhibitions make the IP world concrete and make the user feel they could enter that cultural scene. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 269,
+    "question": {
+      "zh": "当线下展会照片刷屏时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When offline exhibition photos fill the feed, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "展会把 IP 世界具象化，让用户觉得自己也能进入这个文化场景。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Exhibitions make the IP world concrete and make the user feel they could enter that cultural scene. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 270,
+    "question": {
+      "zh": "当线下展会照片刷屏时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When offline exhibition photos fill the feed, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "展会把 IP 世界具象化，让用户觉得自己也能进入这个文化场景。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Exhibitions make the IP world concrete and make the user feel they could enter that cultural scene. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 271,
+    "question": {
+      "zh": "当快闪店和排队视频出现时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When pop-up store and queue videos appear, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "排队把热度变成身体可见的证据，也把购买变成参与事件。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Queues make buzz physically visible and turn purchase into event participation. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 272,
+    "question": {
+      "zh": "当快闪店和排队视频出现时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When pop-up store and queue videos appear, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "排队把热度变成身体可见的证据，也把购买变成参与事件。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Queues make buzz physically visible and turn purchase into event participation. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 273,
+    "question": {
+      "zh": "当快闪店和排队视频出现时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When pop-up store and queue videos appear, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "排队把热度变成身体可见的证据，也把购买变成参与事件。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Queues make buzz physically visible and turn purchase into event participation. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 274,
+    "question": {
+      "zh": "当快闪店和排队视频出现时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When pop-up store and queue videos appear, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "排队把热度变成身体可见的证据，也把购买变成参与事件。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Queues make buzz physically visible and turn purchase into event participation. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 275,
+    "question": {
+      "zh": "当快闪店和排队视频出现时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When pop-up store and queue videos appear, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "排队把热度变成身体可见的证据，也把购买变成参与事件。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Queues make buzz physically visible and turn purchase into event participation. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 276,
+    "question": {
+      "zh": "当联名款重新进入视野时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When a collaboration brings Labubu back into view, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "联名会给 IP 加入新语境，让之前无感的人重新理解 Labubu。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Collaborations add a new context to the IP and can make previously uninterested users reinterpret Labubu. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 277,
+    "question": {
+      "zh": "当联名款重新进入视野时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When a collaboration brings Labubu back into view, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "联名会给 IP 加入新语境，让之前无感的人重新理解 Labubu。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Collaborations add a new context to the IP and can make previously uninterested users reinterpret Labubu. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 278,
+    "question": {
+      "zh": "当联名款重新进入视野时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When a collaboration brings Labubu back into view, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "联名会给 IP 加入新语境，让之前无感的人重新理解 Labubu。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Collaborations add a new context to the IP and can make previously uninterested users reinterpret Labubu. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 279,
+    "question": {
+      "zh": "当联名款重新进入视野时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When a collaboration brings Labubu back into view, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "联名会给 IP 加入新语境，让之前无感的人重新理解 Labubu。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Collaborations add a new context to the IP and can make previously uninterested users reinterpret Labubu. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 280,
+    "question": {
+      "zh": "当联名款重新进入视野时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When a collaboration brings Labubu back into view, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "联名会给 IP 加入新语境，让之前无感的人重新理解 Labubu。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Collaborations add a new context to the IP and can make previously uninterested users reinterpret Labubu. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 281,
+    "question": {
+      "zh": "当粉丝二创不断被转发时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When fan creations keep being reposted, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二创让 Labubu 的意义由社群继续扩展，而不只由品牌定义。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Fan creations let the community expand Labubu’s meaning rather than leaving it only to the brand. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 282,
+    "question": {
+      "zh": "当粉丝二创不断被转发时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When fan creations keep being reposted, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二创让 Labubu 的意义由社群继续扩展，而不只由品牌定义。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Fan creations let the community expand Labubu’s meaning rather than leaving it only to the brand. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 283,
+    "question": {
+      "zh": "当粉丝二创不断被转发时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When fan creations keep being reposted, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二创让 Labubu 的意义由社群继续扩展，而不只由品牌定义。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Fan creations let the community expand Labubu’s meaning rather than leaving it only to the brand. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 284,
+    "question": {
+      "zh": "当粉丝二创不断被转发时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When fan creations keep being reposted, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二创让 Labubu 的意义由社群继续扩展，而不只由品牌定义。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Fan creations let the community expand Labubu’s meaning rather than leaving it only to the brand. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 285,
+    "question": {
+      "zh": "当粉丝二创不断被转发时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When fan creations keep being reposted, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "二创让 Labubu 的意义由社群继续扩展，而不只由品牌定义。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Fan creations let the community expand Labubu’s meaning rather than leaving it only to the brand. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 286,
+    "question": {
+      "zh": "当梗图让用户开始认识 Labubu时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When memes introduce Labubu to the user, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "梗图降低进入门槛，用户不用懂全部系列也能参与讨论。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Memes lower the entry barrier, letting users join discussion before understanding every series. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 287,
+    "question": {
+      "zh": "当梗图让用户开始认识 Labubu时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When memes introduce Labubu to the user, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "梗图降低进入门槛，用户不用懂全部系列也能参与讨论。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Memes lower the entry barrier, letting users join discussion before understanding every series. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 288,
+    "question": {
+      "zh": "当梗图让用户开始认识 Labubu时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When memes introduce Labubu to the user, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "梗图降低进入门槛，用户不用懂全部系列也能参与讨论。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Memes lower the entry barrier, letting users join discussion before understanding every series. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 289,
+    "question": {
+      "zh": "当梗图让用户开始认识 Labubu时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When memes introduce Labubu to the user, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "梗图降低进入门槛，用户不用懂全部系列也能参与讨论。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Memes lower the entry barrier, letting users join discussion before understanding every series. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 290,
+    "question": {
+      "zh": "当梗图让用户开始认识 Labubu时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When memes introduce Labubu to the user, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "梗图降低进入门槛，用户不用懂全部系列也能参与讨论。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Memes lower the entry barrier, letting users join discussion before understanding every series. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 291,
+    "question": {
+      "zh": "当用户开始截图保存喜欢的款时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts saving screenshots of favorite editions, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "截图保存说明用户已经从被动刷到转向主动保留。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Saving screenshots shows the user has shifted from passive exposure to active keeping. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 292,
+    "question": {
+      "zh": "当用户开始截图保存喜欢的款时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts saving screenshots of favorite editions, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "截图保存说明用户已经从被动刷到转向主动保留。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Saving screenshots shows the user has shifted from passive exposure to active keeping. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 293,
+    "question": {
+      "zh": "当用户开始截图保存喜欢的款时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts saving screenshots of favorite editions, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "截图保存说明用户已经从被动刷到转向主动保留。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Saving screenshots shows the user has shifted from passive exposure to active keeping. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 294,
+    "question": {
+      "zh": "当用户开始截图保存喜欢的款时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts saving screenshots of favorite editions, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "截图保存说明用户已经从被动刷到转向主动保留。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Saving screenshots shows the user has shifted from passive exposure to active keeping. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 295,
+    "question": {
+      "zh": "当用户开始截图保存喜欢的款时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts saving screenshots of favorite editions, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "截图保存说明用户已经从被动刷到转向主动保留。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Saving screenshots shows the user has shifted from passive exposure to active keeping. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 296,
+    "question": {
+      "zh": "当用户开始比较不同配色时，Labubu chatbox 怎样用“重复曝光”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts comparing colorways, how can the Labubu chatbox use repeated exposure to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "比较配色说明兴趣变具体，用户开始把 Labubu 和自己的审美连接。 从重复曝光来看，它先制造熟悉感，让原本陌生的形象慢慢变成信息流里的常客。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comparing colorways makes interest concrete and connects Labubu with the user’s own taste. Through repeated exposure, It creates familiarity first, turning a once-strange image into a regular presence in the feed. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 297,
+    "question": {
+      "zh": "当用户开始比较不同配色时，Labubu chatbox 怎样用“社交身份”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts comparing colorways, how can the Labubu chatbox use social identity to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "比较配色说明兴趣变具体，用户开始把 Labubu 和自己的审美连接。 从社交身份来看，它让用户判断自己是否想加入某个话题、圈层或可见的审美信号。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comparing colorways makes interest concrete and connects Labubu with the user’s own taste. Through social identity, It makes the user judge whether they want to join a topic, group, or visible taste signal. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 298,
+    "question": {
+      "zh": "当用户开始比较不同配色时，Labubu chatbox 怎样用“情绪投射”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts comparing colorways, how can the Labubu chatbox use emotional projection to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "比较配色说明兴趣变具体，用户开始把 Labubu 和自己的审美连接。 从情绪投射来看，它让 Labubu 从商品变成可以承载疲惫、可爱、叛逆或陪伴感的小角色。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comparing colorways makes interest concrete and connects Labubu with the user’s own taste. Through emotional projection, It turns Labubu from a product into a small character that can carry tiredness, cuteness, rebellion, or companionship. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 299,
+    "question": {
+      "zh": "当用户开始比较不同配色时，Labubu chatbox 怎样用“稀缺和 FOMO”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts comparing colorways, how can the Labubu chatbox use scarcity and FOMO to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "比较配色说明兴趣变具体，用户开始把 Labubu 和自己的审美连接。 从稀缺和 FOMO来看，它把“喜不喜欢”的问题推快成“会不会来不及”。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comparing colorways makes interest concrete and connects Labubu with the user’s own taste. Through scarcity and FOMO, It speeds up the question from whether the user likes it to whether they might be too late. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
+  },
+  {
+    "id": 300,
+    "question": {
+      "zh": "当用户开始比较不同配色时，Labubu chatbox 怎样用“意义转移”解释用户被媒体内容逐步种草？",
+      "en": "When the user starts comparing colorways, how can the Labubu chatbox use meaning transfer to explain gradual media seeding?"
+    },
+    "answer": {
+      "zh": "比较配色说明兴趣变具体，用户开始把 Labubu 和自己的审美连接。 从意义转移来看，它让人物、场景或社群的风格意义转到 Labubu 身上。 回复时要先接住这个具体场景，再帮用户看清是哪一个触点在起作用，不要直接催买或给用户贴“跟风”的标签。",
+      "en": "Comparing colorways makes interest concrete and connects Labubu with the user’s own taste. Through meaning transfer, It lets the style meaning of a person, scene, or community move onto Labubu. The reply should first catch this concrete scene, then help the user see which touchpoint is working, without pushing a purchase or labeling them as trend-following."
+    },
+    "source_basis": "Expanded Labubu text base batch 201-300 using article notes, omni-channel Labubu PDF, celebrity influence PDF, and prior chatbox feedback"
   }
 ]
