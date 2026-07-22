@@ -71,13 +71,19 @@ function makeInitialMessages(lang: Lang): Message[] {
   }));
 }
 
+function hasRepeatedEnding(candidate: string, recentReplies: string[]) {
+  const ending = candidate.split("\n\n").at(-1)?.trim() ?? candidate;
+  if (ending.length < 14) return recentReplies.includes(candidate);
+  return recentReplies.some((reply) => reply === candidate || reply.includes(ending));
+}
+
 function pickLine(lines: string[], input: string, turnCount: number, avoid: string[] = []) {
   let total = turnCount;
   for (const char of input) total += char.charCodeAt(0);
   const start = total % lines.length;
   for (let offset = 0; offset < lines.length; offset += 1) {
     const candidate = lines[(start + offset) % lines.length];
-    if (!avoid.includes(candidate)) return candidate;
+    if (!hasRepeatedEnding(candidate, avoid)) return candidate;
   }
   return lines[start];
 }
