@@ -150,6 +150,18 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
     ]);
   }
 
+  if (has(["刷到", "推荐", "算法", "小红书", "抖音", "视频", "信息茧房", "一直看到", "attention", "algorithm", "tiktok", "instagram", "reels", "feed", "recommended", "for you"])) {
+    return choose(isZh ? [
+      `你说“${said}”，这个就很像平台在替 Labubu 刷存在感。你点开一次、停留一下，后面它就更常出现。\n\n它不是突然变成你的兴趣，是你的注意力被它占了好几次。`,
+      "反复刷到真的会改变感觉。第一次只是路过，第三次开始眼熟，第五次就像它已经在你的世界里待了一阵子了。",
+      "算法最会做的一件事，就是把“我只是看了一眼”慢慢变成“我好像一直都挺感兴趣”。Labubu 很适合这种循环，因为它有图、有开箱、有稀缺，还有一堆人在评论区尖叫。"
+    ] : [
+      `When you say "${said}", that sounds like the platform doing some of the work. You paused once, clicked once, and then it kept coming back.\n\nIt may not have become your taste overnight. It borrowed your attention a few times.`,
+      "Repeated exposure changes the feeling. First time, you scroll past. Third time, it looks familiar. Fifth time, it feels like it has been in your world for a while.",
+      "Algorithms are good at turning “I looked once” into “maybe I have always been interested.” Labubu fits that loop because it has visuals, unboxings, scarcity, and loud comment sections."
+    ]);
+  }
+
   if (value.includes("盲盒") || value.includes("开箱") || value.includes("隐藏") || value.includes("抽") || value.includes("blind") || value.includes("unbox") || value.includes("rare") || value.includes("secret")) {
     return choose(isZh ? [
       `你说“${said}”，这就很像被开箱内容带进去了。它不是普通购物，是一个小悬念：盒子还没开，大脑已经开始想“万一呢”。`,
@@ -159,6 +171,18 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
       `When you say "${said}", it sounds like the unboxing format got to you. It is a tiny suspense story. You are not only buying a Labubu; you are buying the maybe.`,
       "Blind boxes delay the answer. Before the box is even open, your brain is already whispering, what if it is the rare one?",
       `If "${said}" is the part that hooked you, you may want the reveal moment as much as the toy itself.`
+    ]);
+  }
+
+  if (has(["情绪价值", "陪伴", "安慰", "治愈", "ip", "角色", "挂包", "包上", "风格", "身份", "comfort", "emotional", "character", "identity", "style", "bag charm"])) {
+    return choose(isZh ? [
+      `你说“${said}”，这就不只是买一个玩偶了。它更像一个可以带出门的小情绪出口，挂在包上，别人也能看见。`,
+      "Labubu 这种 IP 最会把“我喜欢一个东西”变成“这有点像我”。它不是安静放在柜子里，而是跟穿搭、包、照片一起出现。",
+      "情绪价值这块很真实。很多人不是需要一个玩具，而是需要一个小小的、能被看见的可爱东西，证明自己还有一点玩心。"
+    ] : [
+      `When you say "${said}", it sounds bigger than buying a toy. It is more like carrying a tiny mood outside, clipped to a bag where people can see it.`,
+      "Labubu as an IP turns “I like this thing” into “this feels a bit like me.” It is not just sitting on a shelf; it appears with outfits, bags, and photos.",
+      "The emotional value is real. Sometimes people do not need a toy exactly. They want a small visible piece of playfulness in the middle of a very adult day."
     ]);
   }
 
