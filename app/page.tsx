@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import textBase from "./labubu-text-base.json";
 
 type Lang = "zh" | "en";
 type Message = {
@@ -9,6 +10,14 @@ type Message = {
   text: string;
   image?: string;
 };
+type TextBaseItem = {
+  id: number;
+  question: Record<Lang, string>;
+  answer: Record<Lang, string>;
+  source_basis?: string;
+};
+
+const labubuTextBase = textBase as TextBaseItem[];
 
 const copy = {
   zh: {
@@ -24,6 +33,9 @@ const copy = {
     panelTitle: "对话主题",
     profile: "当前画像",
     profileValue: "已经心动了，但还在嘴硬",
+    baseLabel: "研究底库",
+    baseValue: "200 条双语 Q&A",
+    baseHint: "已接入全渠道、盲盒、社群、名人影响和情绪投射等内容。",
     hint: "不用问得很标准。直接说“我朋友都有”“它有点丑萌”“贵是贵但我想买”“我怕抢不到”都行。",
     thinking: "我回一下",
     starters: ["我是不是被种草了？", "它好丑但我老想看", "我朋友都有一个", "我想买但真的贵"],
@@ -45,6 +57,9 @@ const copy = {
     panelTitle: "Conversation themes",
     profile: "Current profile",
     profileValue: "Tempted, pretending not to be",
+    baseLabel: "Text base",
+    baseValue: "200 bilingual Q&As",
+    baseHint: "Uses omni-channel, blind boxes, communities, celebrity influence, and emotional projection.",
     hint: "No perfect prompt needed. Try: “my friends all have one,” “it’s ugly-cute,” “it’s expensive but I still want it,” or “I’m scared it’ll sell out.”",
     thinking: "typing",
     starters: ["Am I being influenced?", "It’s ugly but I keep looking", "My friends all have one", "I want one but it’s pricey"],
@@ -61,6 +76,24 @@ const themes = [
   { name: "Pressure", zh: "分清喜欢，和怕晚一步。", en: "Separate liking from panic." },
   { name: "Choice", zh: "可以喜欢，也可以先不买。", en: "You can like it and still wait." },
 ];
+
+const signalTerms = [
+  "全渠道", "触点", "线下", "门店", "展会", "社群", "小红书", "微信", "晒图", "换款", "二级市场",
+  "盲盒", "开箱", "隐藏款", "抽", "限量", "售罄", "稀缺", "fomo",
+  "明星", "网红", "博主", "同款", "lisa", "名人", "可信", "匹配", "人设",
+  "情绪", "陪伴", "治愈", "投射", "身份", "风格", "挂包", "丑萌", "怪可爱", "顺眼",
+  "算法", "推荐", "反复", "刷到", "种草", "跟风", "朋友", "都有",
+  "omni", "channel", "touchpoint", "offline", "community", "posting", "trading", "resale",
+  "blind", "unbox", "hidden", "rare", "scarcity", "sold", "limited",
+  "celebrity", "influencer", "creator", "same", "credibility", "trust", "match", "parasocial",
+  "emotion", "comfort", "projection", "identity", "style", "bag", "ugly", "cute", "weird",
+  "algorithm", "feed", "repeated", "seeding", "trend", "friend", "everyone",
+];
+
+const stopWords = new Set([
+  "labubu", "the", "and", "you", "your", "that", "this", "with", "want", "like", "buy", "why",
+  "what", "how", "does", "did", "can", "one", "all", "have", "feel", "feels", "thing",
+]);
 
 function makeInitialMessages(lang: Lang): Message[] {
   return copy[lang].welcome.map((text, index) => ({
@@ -93,6 +126,65 @@ function getUserSnippet(input: string, lang: Lang) {
   const limit = lang === "zh" ? 18 : 58;
   if (cleaned.length <= limit) return cleaned;
   return `${cleaned.slice(0, limit)}...`;
+}
+
+function getInputSignals(input: string) {
+  const lower = input.toLowerCase();
+  const termSignals = signalTerms.filter((term) => lower.includes(term.toLowerCase()));
+  const wordSignals = lower
+    .match(/[a-z][a-z'-]{2,}/g)
+    ?.filter((word) => !stopWords.has(word) && word.length > 3)
+    .slice(0, 8) ?? [];
+  return Array.from(new Set([...termSignals, ...wordSignals]));
+}
+
+function findTextBaseMatch(input: string, lang: Lang, turnCount: number) {
+  const signals = getInputSignals(input);
+  if (signals.length === 0) return null;
+
+  const scored = labubuTextBase
+    .map((item) => {
+      const localText = `${item.question[lang]} ${item.answer[lang]}`.toLowerCase();
+      const allText = `${localText} ${item.question.zh} ${item.answer.zh} ${item.question.en} ${item.answer.en}`.toLowerCase();
+      let score = 0;
+      for (const signal of signals) {
+        const normalized = signal.toLowerCase();
+        if (localText.includes(normalized)) score += normalized.length > 4 ? 5 : 3;
+        else if (allText.includes(normalized)) score += normalized.length > 4 ? 3 : 1;
+      }
+      if (item.id >= 151) score += 1;
+      return { item, score };
+    })
+    .filter(({ score }) => score >= 4)
+    .sort((a, b) => b.score - a.score || a.item.id - b.item.id);
+
+  if (scored.length === 0) return null;
+  return scored[(turnCount + signals.join("").length) % Math.min(3, scored.length)].item;
+}
+
+function makeTextBaseReply(item: TextBaseItem, input: string, lang: Lang, turnCount: number, recentReplies: string[]) {
+  const isZh = lang === "zh";
+  const said = getUserSnippet(input, lang);
+  const bridge = pickLine(isZh ? [
+    `你这句“${said}”可以接到一个更具体的点。`,
+    `这不是一句空泛的“想买”，里面有个挺清楚的触点。`,
+    `我先不急着把它归成跟风，这里更像是一个被内容慢慢推近的过程。`,
+  ] : [
+    `"${said}" connects to a more specific pattern.`,
+    `This is not just a vague want. There is a clear touchpoint inside it.`,
+    `I would not flatten this into trend-following. It sounds more like content gradually pulling you closer.`,
+  ], input, turnCount, recentReplies);
+  const followUp = pickLine(isZh ? [
+    "你可以先抓一个最早的画面：是刷到、看到别人用，还是某个开盒瞬间让它开始留在脑子里？",
+    "如果把价格和抢购先放旁边，最让你停下来的那一下是什么？",
+    "这一步先不需要决定买不买，先看清楚它是从哪个场景进来的。",
+  ] : [
+    "Start with the earliest scene: did it come from repeated posts, seeing someone use it, or one unboxing moment?",
+    "If price and drops are set aside for a second, what actually made you pause?",
+    "No need to decide whether to buy yet. First notice which scene brought it in.",
+  ], `${input}-${item.id}`, turnCount, recentReplies);
+
+  return `${bridge}\n\n${item.answer[lang]}\n\n${followUp}`;
 }
 
 function createReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): string {
@@ -174,6 +266,11 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
     ]);
   }
 
+  const textBaseMatch = findTextBaseMatch(input, lang, turnCount);
+  if (textBaseMatch) {
+    return makeTextBaseReply(textBaseMatch, input, lang, turnCount, recentReplies);
+  }
+
   if (has(["情绪价值", "陪伴", "安慰", "治愈", "ip", "角色", "挂包", "包上", "风格", "身份", "comfort", "emotional", "character", "identity", "style", "bag charm"])) {
     return choose(isZh ? [
       `你说“${said}”，这就不只是买一个玩偶了。它更像一个可以带出门的小情绪出口，挂在包上，别人也能看见。`,
@@ -242,11 +339,11 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
 
   if (has(["被种草", "种草", "influenced", "influence"])) {
     return choose(isZh ? [
-      "我觉得是有点被种草了，但这不丢人。内容本来就是这样工作的：先让你看见，再让你记住，最后让你觉得“要不我也”。",
+      "是有点被种草了，但这不丢人。内容本来就是这样工作的：先让你看见，再让你记住，最后让你觉得“要不我也”。",
       "像是慢慢被推过去的。不是某一秒突然想买，是刷到几次、记住了、又看到别人有，然后它开始变得跟你有关。",
       "有种草的成分。但我不会直接说你只是跟风，因为你可能也是真的喜欢。更准确的问题是：你喜欢它多少，喜欢那个热闹又是多少？"
     ] : [
-      "I think yes, a little. But being influenced is not some personal failure. Content works by making you see something, remember it, then quietly think, maybe me too.",
+      "Yes, a little. But being influenced is not some personal failure. Content works by making you see something, remember it, then quietly think, maybe me too.",
       "It sounds gradual. You saw it, remembered it, saw other people with it, and then it started feeling weirdly relevant to you.",
       "There is influence here. I would not call it mindless trend-following, though, because you may genuinely like it. The useful question is how much is the toy, and how much is the buzz around it?"
     ]);
@@ -399,6 +496,12 @@ export default function Home() {
             <span>Interest signal</span>
             <strong>{latestScore}%</strong>
             <i><b style={{ width: `${latestScore}%` }} /></i>
+          </div>
+          <div className="score-card text-base-card">
+            <span>{t.baseLabel}</span>
+            <strong>{labubuTextBase.length}</strong>
+            <em>{t.baseValue}</em>
+            <small>{t.baseHint}</small>
           </div>
           <h2>{t.panelTitle}</h2>
           <div className="theme-list">

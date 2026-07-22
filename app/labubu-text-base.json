@@ -1,0 +1,2402 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "zh": "反复在社交媒体上刷到 Labubu，为什么会让它从路过的信息变成和自己有关的东西？",
+      "en": "Why can repeatedly seeing Labubu on social media make it feel personally relevant rather than just another passing post?"
+    },
+    "answer": {
+      "zh": "材料把重复曝光和注意力经济联系在一起。用户多次看到、停留或点击 Labubu 内容后，它会变得熟悉，熟悉感又容易被误认为个人兴趣。",
+      "en": "The source notes connect repeated exposure with the attention economy. When a user sees, pauses on, or clicks Labubu content several times, it becomes familiar, and that familiarity can start to feel like personal interest."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 2,
+    "question": {
+      "zh": "为什么平台算法会让人觉得自己好像一直都对 Labubu 感兴趣？",
+      "en": "Why can platform algorithms make someone feel as if they have always been interested in Labubu?"
+    },
+    "answer": {
+      "zh": "材料提到算法推荐和信息茧房会不断把相似内容推给潜在消费者。用户一次停留可能带来更多推送，久了以后，Labubu 会像本来就在自己的兴趣范围里。",
+      "en": "The source notes describe recommendation loops and information cocoons. A single pause or click can lead to more similar content, and over time Labubu may feel like it already belonged to the user's interests."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 3,
+    "question": {
+      "zh": "为什么朋友都有 Labubu 时，想买的感觉会变强？",
+      "en": "Why can the desire to buy Labubu become stronger when friends all have one?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 与社交货币和身份认同联系起来。当朋友都拥有或谈论它时，它不只是玩偶，也变成一个共享话题，用户可能不想被排除在话题之外。",
+      "en": "The source notes connect Labubu with social currency and identity recognition. When friends own or discuss it, the toy becomes a shared reference, and the user may not want to be left outside that conversation."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 4,
+    "question": {
+      "zh": "为什么 Labubu 挂在包上会比放在柜子里更容易种草别人？",
+      "en": "Why can a Labubu clipped to a bag influence others more than one kept on a shelf?"
+    },
+    "answer": {
+      "zh": "材料中关于可见身份和自我展示的观点说明，公开展示的物品会参与风格表达。Labubu 挂在包上时，它不是被收藏起来，而是和穿搭、照片、社交场景一起被看见。",
+      "en": "The source notes on visible identity and self-presentation suggest that displayed objects participate in style performance. When Labubu is clipped to a bag, it appears with outfits, photos, and social scenes rather than staying hidden as a collectible."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 5,
+    "question": {
+      "zh": "为什么盲盒开箱会让购买 Labubu 像一个小悬念？",
+      "en": "Why does blind-box unboxing turn buying Labubu into a small suspense ritual?"
+    },
+    "answer": {
+      "zh": "材料把盲盒消费描述为由随机性和延迟揭晓推动的过程。购买者买的不只是玩偶本身，也是在买‘万一抽到隐藏款’的可能性和打开盒子的瞬间反应。",
+      "en": "The source notes describe blind-box consumption as driven by randomness and delayed reveal. The buyer is not only paying for the toy, but also for the possibility of a rare pull and the emotional moment of opening the box."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 6,
+    "question": {
+      "zh": "为什么隐藏款和限量信息会让人更急着买 Labubu？",
+      "en": "Why can secret editions and limited releases make someone feel more urgent about buying Labubu?"
+    },
+    "answer": {
+      "zh": "材料把稀缺、唯一性和 FOMO 联系在一起。限量、隐藏款和售罄信息会把等待变成风险，让用户从‘我喜不喜欢’跳到‘我会不会错过’。",
+      "en": "The source notes connect scarcity, uniqueness, and FOMO. Limited releases, secret styles, and sold-out cues can turn waiting into risk, shifting the question from whether the user likes it to whether they might miss it."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 7,
+    "question": {
+      "zh": "为什么开箱视频里的尖叫和评论区反应会让 Labubu 更有吸引力？",
+      "en": "Why can excited unboxing reactions and comment sections make Labubu more appealing?"
+    },
+    "answer": {
+      "zh": "材料中的 crowd cues 指出，排队、开箱、评论和集体反应会让趋势像正在发生的事件。用户看到别人的兴奋时，也会更容易想加入这个时刻。",
+      "en": "The source notes on crowd cues suggest that lines, reveals, comments, and collective reactions make a trend feel like a live event. Seeing other people's excitement can make the user want to join that moment too."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 8,
+    "question": {
+      "zh": "为什么 Labubu 会从一个玩偶变成一种社交暗号？",
+      "en": "Why can Labubu become a social code rather than just a toy?"
+    },
+    "answer": {
+      "zh": "材料把社交媒体传播、身份认同和社交货币联系在一起。当朋友、博主和评论区都围绕 Labubu 互动时，它会变成‘懂的人都懂’的共享符号。",
+      "en": "The source notes connect social media circulation, identity recognition, and social currency. When friends, creators, and comment sections interact around Labubu, it becomes a shared symbol understood by people inside the trend."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 9,
+    "question": {
+      "zh": "为什么成年人也会被 Labubu 的可爱吸引？",
+      "en": "Why can adults be drawn to Labubu's cuteness?"
+    },
+    "answer": {
+      "zh": "材料提到 IP 情绪价值和情感共鸣。Labubu 的吸引力不只在玩具本身，也在于它提供一个可见的、轻松的情绪出口，让成年人保留一点玩心。",
+      "en": "The source notes mention IP emotional value and emotional resonance. Labubu's appeal is not only the toy itself; it can offer a visible, playful emotional outlet for adults."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 10,
+    "question": {
+      "zh": "为什么 Labubu 的‘丑萌’会越看越顺眼？",
+      "en": "Why can Labubu's ugly-cute look start to grow on someone?"
+    },
+    "answer": {
+      "zh": "材料中的注意力和重复曝光观点可以解释这种变化。第一次看到可能觉得怪，但反复刷到、看到别人搭配后，熟悉感会让它慢慢变得有性格。",
+      "en": "The source notes on attention and repeated exposure help explain the shift. A user may find it strange at first, but repeated views and seeing others style it can make the character feel familiar and full of personality."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 11,
+    "question": {
+      "zh": "从材料里的 身份表达 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of identity performance, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。身份表达 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Identity performance repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 12,
+    "question": {
+      "zh": "从材料里的 挂包风格 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of bag-charm styling, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。挂包风格 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Bag-charm styling repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 13,
+    "question": {
+      "zh": "从材料里的 情绪价值 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of emotional value, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。情绪价值 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Emotional value repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 14,
+    "question": {
+      "zh": "从材料里的 IP 共鸣 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of IP resonance, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。IP 共鸣 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Ip resonance repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 15,
+    "question": {
+      "zh": "从材料里的 粉丝社群 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of fan community, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。粉丝社群 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Fan community repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 16,
+    "question": {
+      "zh": "从材料里的 全渠道曝光 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of omni-channel exposure, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。全渠道曝光 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Omni-channel exposure repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 17,
+    "question": {
+      "zh": "从材料里的 快闪和排队 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of pop-ups and lines, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。快闪和排队 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Pop-ups and lines repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 18,
+    "question": {
+      "zh": "从材料里的 消费犹豫 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of consumer hesitation, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。消费犹豫 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Consumer hesitation repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 19,
+    "question": {
+      "zh": "从材料里的 真实喜欢 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of genuine taste, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。真实喜欢 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Genuine taste repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 20,
+    "question": {
+      "zh": "从材料里的 冲动购买 角度看，Labubu 为什么会让用户觉得自己是被一点点种草的？",
+      "en": "From the source material's idea of impulse buying, why can Labubu feel like a gradual seeding process rather than a sudden desire?"
+    },
+    "answer": {
+      "zh": "材料显示，Labubu 的吸引力往往不是一次性出现，而是在社交媒体、开箱、朋友讨论和可见展示中反复累积。冲动购买 让用户的注意、情绪或社交位置被不断触发，所以心动会像慢慢发生的一件事。",
+      "en": "The source notes show that Labubu's appeal often builds through repeated social media exposure, unboxing, friend-group discussion, and visible display. Impulse buying repeatedly activates attention, emotion, or social positioning, so desire feels gradual rather than sudden."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 21,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，注意力 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can attention turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 22,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，算法推荐 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can algorithmic recommendation turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 23,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，信息茧房 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can information cocoon turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 24,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，社交货币 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can social currency turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 25,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，朋友影响 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can peer influence turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 26,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，评论区热闹 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can comment-section excitement turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 27,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，盲盒悬念 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can blind-box suspense turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 28,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，隐藏款幻想 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can rare-pull fantasy turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 29,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，限量焦虑 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can scarcity anxiety turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 30,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，开箱仪式 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can unboxing ritual turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 31,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，身份表达 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can identity performance turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 32,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，挂包风格 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can bag-charm styling turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 33,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，情绪价值 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can emotional value turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 34,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，IP 共鸣 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can IP resonance turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 35,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，粉丝社群 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can fan community turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 36,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，全渠道曝光 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can omni-channel exposure turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 37,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，快闪和排队 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can pop-ups and lines turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 38,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，消费犹豫 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can consumer hesitation turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 39,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，真实喜欢 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can genuine taste turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 40,
+    "question": {
+      "zh": "当用户说自己只是‘随便看看’Labubu 时，冲动购买 怎样可能把这种随便看看变成持续关注？",
+      "en": "When a user says they were only casually looking at Labubu, how can impulse buying turn casual looking into continued attention?"
+    },
+    "answer": {
+      "zh": "材料强调，数字媒介会竞争并重复占用注意力。用户一次停留、一次点击或一次看完视频，都可能让 Labubu 内容继续出现，最后‘随便看看’会变成持续的熟悉感。",
+      "en": "The source notes emphasize that digital media competes for attention through repetition. A pause, click, or completed video can bring more Labubu content back, turning casual looking into ongoing familiarity."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 41,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，注意力 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can attention make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 42,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，算法推荐 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can algorithmic recommendation make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 43,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，信息茧房 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can information cocoon make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 44,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，社交货币 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can social currency make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 45,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，朋友影响 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can peer influence make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 46,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，评论区热闹 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can comment-section excitement make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 47,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，盲盒悬念 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can blind-box suspense make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 48,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，隐藏款幻想 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can rare-pull fantasy make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 49,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，限量焦虑 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can scarcity anxiety make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 50,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，开箱仪式 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can unboxing ritual make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 51,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，身份表达 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can identity performance make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 52,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，挂包风格 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can bag-charm styling make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 53,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，情绪价值 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can emotional value make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 54,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，IP 共鸣 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can IP resonance make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 55,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，粉丝社群 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can fan community make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 56,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，全渠道曝光 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can omni-channel exposure make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 57,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，快闪和排队 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can pop-ups and lines make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 58,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，消费犹豫 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can consumer hesitation make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 59,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，真实喜欢 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can genuine taste make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 60,
+    "question": {
+      "zh": "在 Labubu 的传播过程中，冲动购买 为什么会让购买欲看起来更像社交过程，而不是单纯个人选择？",
+      "en": "In Labubu's spread, why can impulse buying make desire look more social than purely individual?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 和社交货币、社群、可见身份联系在一起。用户看到别人排队、开箱、挂包或评论时，消费不再只是个人审美，而是进入一个正在被共同参与的话题。",
+      "en": "The source notes connect Labubu with social currency, community, and visible identity. When users see others lining up, unboxing, styling bag charms, or commenting, consumption becomes part of a shared topic rather than only personal taste."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 61,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，注意力 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can attention help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 62,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，算法推荐 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can algorithmic recommendation help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 63,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，信息茧房 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can information cocoon help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 64,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，社交货币 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can social currency help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 65,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，朋友影响 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can peer influence help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 66,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，评论区热闹 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can comment-section excitement help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 67,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，盲盒悬念 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can blind-box suspense help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 68,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，隐藏款幻想 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can rare-pull fantasy help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 69,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，限量焦虑 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can scarcity anxiety help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 70,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，开箱仪式 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can unboxing ritual help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 71,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，身份表达 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can identity performance help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 72,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，挂包风格 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can bag-charm styling help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 73,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，情绪价值 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can emotional value help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 74,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，IP 共鸣 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can IP resonance help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 75,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，粉丝社群 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can fan community help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 76,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，全渠道曝光 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can omni-channel exposure help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 77,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，快闪和排队 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can pop-ups and lines help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 78,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，消费犹豫 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can consumer hesitation help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 79,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，真实喜欢 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can genuine taste help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 80,
+    "question": {
+      "zh": "如果用户担心自己只是跟风，冲动购买 可以怎样帮助区分真实喜欢和被热度推着走？",
+      "en": "If a user worries they are only following the trend, how can impulse buying help separate genuine liking from hype pressure?"
+    },
+    "answer": {
+      "zh": "材料中的思路不是否定用户的喜欢，而是拆开喜欢的来源。可以看这份心动来自玩偶本身、开箱悬念、朋友都有、稀缺焦虑，还是平台反复推送；来源越清楚，越容易判断是不是冲动。",
+      "en": "The source-grounded approach does not dismiss the user's liking. It separates possible sources: the object itself, unboxing suspense, friends owning it, scarcity anxiety, or repeated platform recommendation; the clearer the source, the easier it is to judge impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 81,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 注意力 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to attention without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 82,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 算法推荐 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to algorithmic recommendation without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 83,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 信息茧房 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to information cocoon without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 84,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 社交货币 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to social currency without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 85,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 朋友影响 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to peer influence without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 86,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 评论区热闹 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to comment-section excitement without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 87,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 盲盒悬念 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to blind-box suspense without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 88,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 隐藏款幻想 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to rare-pull fantasy without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 89,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 限量焦虑 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to scarcity anxiety without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 90,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 开箱仪式 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to unboxing ritual without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 91,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 身份表达 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to identity performance without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 92,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 挂包风格 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to bag-charm styling without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 93,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 情绪价值 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to emotional value without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 94,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 IP 共鸣 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to IP resonance without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 95,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 粉丝社群 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to fan community without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 96,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 全渠道曝光 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to omni-channel exposure without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 97,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 快闪和排队 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to pop-ups and lines without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 98,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 消费犹豫 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to consumer hesitation without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 99,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 真实喜欢 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to genuine taste without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 100,
+    "question": {
+      "zh": "基于材料，chatbox 遇到和 冲动购买 有关的用户输入时，应该怎样回答才不像推销？",
+      "en": "Based on the source material, how should the chatbox answer user inputs related to impulse buying without sounding like a sales pitch?"
+    },
+    "answer": {
+      "zh": "回答应该像朋友一样顺着用户的话继续聊，而不是劝买。它可以指出 Labubu 如何占用注意、制造悬念、提供情绪价值或形成社交暗号，同时帮助用户分清喜欢、压力和冲动。",
+      "en": "The reply should follow the user's wording like a thoughtful friend, not push a purchase. It can point out how Labubu captures attention, creates suspense, offers emotional value, or becomes a social code while helping the user separate liking, pressure, and impulse."
+    },
+    "source_basis": "Labubu article notes and readable source summaries in .context/labubu_article_notes.md"
+  },
+  {
+    "id": 101,
+    "question": {
+      "zh": "全渠道营销为什么会让 Labubu 像在线上和线下同时围着用户出现？",
+      "en": "Why can omni-channel marketing make Labubu feel as if it surrounds the user both online and offline?"
+    },
+    "answer": {
+      "zh": "新增材料把 Pop Mart 的 Labubu 增长和全渠道整合联系起来。线上内容、线下门店、快闪活动、社群互动和电商触点共同出现，会让用户感觉 Labubu 不是只在一个平台流行，而是在多个生活场景里反复出现。",
+      "en": "The new source connects Pop Mart's Labubu growth with omni-channel integration. Online content, offline stores, pop-ups, community engagement, and e-commerce touchpoints work together, making Labubu feel present across multiple everyday contexts rather than only on one platform."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 102,
+    "question": {
+      "zh": "为什么 Z 世代对个性化、情绪连接和社群互动的偏好，会帮助 Labubu 被种草？",
+      "en": "Why can Gen Z preferences for personalization, emotional connection, and community interaction help Labubu spread?"
+    },
+    "answer": {
+      "zh": "新增 Labubu 论文指出，Z 世代消费习惯偏向个性化、情绪连接和社群互动。Labubu 既能被当作个人风格的一部分，也能进入朋友和粉丝社群的话题，所以更容易从商品变成情感和身份对象。",
+      "en": "The new Labubu paper states that Gen Z consumption tends toward personalization, emotional connection, and community interaction. Labubu can become part of personal style while also entering friend-group and fan-community conversations, so it shifts from product to emotional and identity object."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 103,
+    "question": {
+      "zh": "明星或博主带 Labubu 时，为什么影响不只是‘她买了所以我也买’？",
+      "en": "When a celebrity or creator wears Labubu, why is the influence more than simply 'she bought it, so I should buy it too'?"
+    },
+    "answer": {
+      "zh": "新增 celebrity influence 论文强调，明星影响包含象征意义、情感驱动和消费者与名人的关系。Labubu 被明星或博主搭配出来时，用户看到的不只是购买行为，而是这个物品如何进入一种可模仿的风格和生活想象。",
+      "en": "The celebrity influence paper emphasizes symbolic meaning, emotional drivers, and consumer-celebrity relationships. When Labubu is styled by a celebrity or creator, the user sees not only a purchase but also how the object can enter an imitable style and lifestyle imagination."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 104,
+    "question": {
+      "zh": "为什么 celebrity influence 里的 admiration 和 envy 可以解释 Labubu 被明星带火的过程？",
+      "en": "Why can admiration and envy in celebrity influence help explain how celebrities make Labubu more desirable?"
+    },
+    "answer": {
+      "zh": "新增论文把 admiration 和 envy 视为名人影响的重要情绪驱动。用户可能欣赏明星的风格，也可能想靠近她展示出的生活状态；Labubu 在这个过程中成为一种可购买、可展示的小型连接物。",
+      "en": "The celebrity influence paper treats admiration and envy as important emotional drivers. A user may admire a celebrity's style or want proximity to the lifestyle she displays; Labubu then becomes a small purchasable and visible object that helps create that connection."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 105,
+    "question": {
+      "zh": "为什么 Pop Mart 的 IP 稀缺和体验式营销会让 Labubu 不像普通玩具？",
+      "en": "Why do IP-based scarcity and experiential marketing make Labubu feel different from an ordinary toy?"
+    },
+    "answer": {
+      "zh": "新增 Labubu 论文把成功归因于 IP-based scarcity、experiential marketing 和 community engagement 的整合。Labubu 不只是摆在货架上的玩具，而是和限量、开箱、线下体验、社群讨论一起构成一个消费过程。",
+      "en": "The new Labubu paper attributes success to the integration of IP-based scarcity, experiential marketing, and community engagement. Labubu is not just a toy on a shelf; it is part of a process involving limited availability, unboxing, offline experiences, and community conversation."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 106,
+    "question": {
+      "zh": "为什么线下快闪和排队会加强线上已经形成的 Labubu 种草？",
+      "en": "Why can offline pop-ups and lines strengthen Labubu desire that already began online?"
+    },
+    "answer": {
+      "zh": "新增 Labubu 论文强调线上线下触点的整合。用户在线上已经被内容反复影响后，线下快闪、排队和门店体验会把这种注意力变成真实场景，增强‘这件事正在发生’的感觉。",
+      "en": "The new Labubu paper emphasizes integration between online and offline touchpoints. After a user has been repeatedly exposed online, pop-ups, lines, and store experiences turn attention into a physical scene and strengthen the sense that the trend is happening in real life."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 107,
+    "question": {
+      "zh": "为什么消费者看到明星和普通用户都在晒 Labubu 时，种草会更自然？",
+      "en": "Why does Labubu influence feel more natural when both celebrities and ordinary users show it online?"
+    },
+    "answer": {
+      "zh": "celebrity influence 论文说明名人提供象征和情感示范，而 Labubu 社媒材料强调普通用户、朋友和评论区的社交货币。当两者同时出现，Labubu 既有向上模仿的风格感，也有身边人都在参与的真实感。",
+      "en": "The celebrity influence paper explains that celebrities provide symbolic and emotional demonstration, while the Labubu social media notes emphasize ordinary users, friends, and comment-section social currency. Together, Labubu gains aspirational style and everyday participation."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 108,
+    "question": {
+      "zh": "为什么‘朋友都有’不一定只是盲目从众？",
+      "en": "Why is 'my friends all have one' not necessarily just blind conformity?"
+    },
+    "answer": {
+      "zh": "虽然 Jahoda PDF 在本地不可读，但现有 Labubu 材料足以说明这个问题：朋友都有会带来社交货币和身份认同压力。用户可能不是无脑跟风，而是在判断自己是否想加入这个共享话题，以及这个物品是否真的符合自己的风格。",
+      "en": "Even without usable text from the Jahoda PDF, the Labubu source notes support this distinction: friends owning Labubu creates social currency and identity pressure. The user may not be blindly following; they may be deciding whether to join the shared reference and whether the object fits their own style."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 109,
+    "question": {
+      "zh": "为什么全渠道曝光会让 Labubu 的热度看起来比单个平台趋势更强？",
+      "en": "Why can omni-channel exposure make Labubu's popularity feel stronger than a single-platform trend?"
+    },
+    "answer": {
+      "zh": "全渠道材料强调多个触点的统一体验。用户如果在小红书、TikTok、门店、快闪、朋友聊天和电商页面都遇到 Labubu，会更容易把它理解成一个广泛发生的文化现象，而不是某个平台上的短暂流行。",
+      "en": "The omni-channel source emphasizes a unified experience across multiple touchpoints. If users encounter Labubu on social media, in stores, at pop-ups, in friend conversations, and on e-commerce pages, they may read it as a broad cultural phenomenon rather than a short-lived trend on one platform."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 110,
+    "question": {
+      "zh": "为什么名人影响在社交媒体时代会比传统广告更贴近日常生活？",
+      "en": "Why can celebrity influence on social media feel closer to everyday life than traditional advertising?"
+    },
+    "answer": {
+      "zh": "新增 celebrity influence 论文指出，社交媒体增强了名人与消费者之间的互动效果。Labubu 出现在明星或博主的日常照片、vlog 或穿搭中时，看起来不像硬广告，更像一种生活方式里的自然选择。",
+      "en": "The celebrity influence paper notes that social media increases interactive effects between celebrities and consumers. When Labubu appears in a celebrity's or creator's daily photo, vlog, or outfit, it feels less like a formal ad and more like a natural lifestyle choice."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 111,
+    "question": {
+      "zh": "从新增材料里的全渠道触点来看，Labubu chatbox 应该怎样解释用户逐渐被种草的过程？",
+      "en": "Using the new source idea of omni-channel touchpoints, how should the Labubu chatbox explain the user's gradual seeding process?"
+    },
+    "answer": {
+      "zh": "材料支持把种草解释成多触点、情绪和社交共同作用的结果。线上内容、线下门店、快闪和社群互动会互相强化，所以回复不应该只说用户在跟风，而要帮助用户看到自己被哪一个触点或情绪推了一下。",
+      "en": "The material supports explaining seeding as the result of touchpoints, emotion, and social context working together. Because online content, offline stores, pop-ups, and community engagement reinforce one another, the reply should not reduce the user to trend-following; it should help identify which touchpoint or feeling nudged them."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 112,
+    "question": {
+      "zh": "从新增材料里的体验式消费来看，Labubu chatbox 应该怎样解释用户逐渐被种草的过程？",
+      "en": "Using the new source idea of experiential consumption, how should the Labubu chatbox explain the user's gradual seeding process?"
+    },
+    "answer": {
+      "zh": "材料支持把种草解释成多触点、情绪和社交共同作用的结果。用户参与的不只是购买，还有排队、拍照、开箱和分享，所以回复不应该只说用户在跟风，而要帮助用户看到自己被哪一个触点或情绪推了一下。",
+      "en": "The material supports explaining seeding as the result of touchpoints, emotion, and social context working together. Because the user participates not only in buying, but also lining up, photographing, unboxing, and sharing, the reply should not reduce the user to trend-following; it should help identify which touchpoint or feeling nudged them."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 113,
+    "question": {
+      "zh": "从新增材料里的名人作为 human brand来看，Labubu chatbox 应该怎样解释用户逐渐被种草的过程？",
+      "en": "Using the new source idea of celebrities as human brands, how should the Labubu chatbox explain the user's gradual seeding process?"
+    },
+    "answer": {
+      "zh": "材料支持把种草解释成多触点、情绪和社交共同作用的结果。明星自身带有象征意义，会把物品放进一种可模仿的风格里，所以回复不应该只说用户在跟风，而要帮助用户看到自己被哪一个触点或情绪推了一下。",
+      "en": "The material supports explaining seeding as the result of touchpoints, emotion, and social context working together. Because the celebrity carries symbolic meaning and places the object inside an imitable style, the reply should not reduce the user to trend-following; it should help identify which touchpoint or feeling nudged them."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 114,
+    "question": {
+      "zh": "从新增材料里的admiration来看，Labubu chatbox 应该怎样解释用户逐渐被种草的过程？",
+      "en": "Using the new source idea of admiration, how should the Labubu chatbox explain the user's gradual seeding process?"
+    },
+    "answer": {
+      "zh": "材料支持把种草解释成多触点、情绪和社交共同作用的结果。用户可能不是被命令购买，而是想靠近被展示出来的审美，所以回复不应该只说用户在跟风，而要帮助用户看到自己被哪一个触点或情绪推了一下。",
+      "en": "The material supports explaining seeding as the result of touchpoints, emotion, and social context working together. Because the user may not be ordered to buy, but may want proximity to the displayed taste, the reply should not reduce the user to trend-following; it should help identify which touchpoint or feeling nudged them."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 115,
+    "question": {
+      "zh": "从新增材料里的envy来看，Labubu chatbox 应该怎样解释用户逐渐被种草的过程？",
+      "en": "Using the new source idea of envy, how should the Labubu chatbox explain the user's gradual seeding process?"
+    },
+    "answer": {
+      "zh": "材料支持把种草解释成多触点、情绪和社交共同作用的结果。用户可能被一种想拥有相似生活状态的情绪推动，所以回复不应该只说用户在跟风，而要帮助用户看到自己被哪一个触点或情绪推了一下。",
+      "en": "The material supports explaining seeding as the result of touchpoints, emotion, and social context working together. Because the user may be moved by wanting a similar lifestyle state, the reply should not reduce the user to trend-following; it should help identify which touchpoint or feeling nudged them."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 116,
+    "question": {
+      "zh": "从新增材料里的IP-based scarcity来看，Labubu chatbox 应该怎样解释用户逐渐被种草的过程？",
+      "en": "Using the new source idea of IP-based scarcity, how should the Labubu chatbox explain the user's gradual seeding process?"
+    },
+    "answer": {
+      "zh": "材料支持把种草解释成多触点、情绪和社交共同作用的结果。稀缺让 Labubu 的角色价值和购买紧迫感绑在一起，所以回复不应该只说用户在跟风，而要帮助用户看到自己被哪一个触点或情绪推了一下。",
+      "en": "The material supports explaining seeding as the result of touchpoints, emotion, and social context working together. Because scarcity links the character's value with purchase urgency, the reply should not reduce the user to trend-following; it should help identify which touchpoint or feeling nudged them."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 117,
+    "question": {
+      "zh": "从新增材料里的community engagement来看，Labubu chatbox 应该怎样解释用户逐渐被种草的过程？",
+      "en": "Using the new source idea of community engagement, how should the Labubu chatbox explain the user's gradual seeding process?"
+    },
+    "answer": {
+      "zh": "材料支持把种草解释成多触点、情绪和社交共同作用的结果。粉丝和消费者一起讨论、晒图和交换经验，会让热度持续，所以回复不应该只说用户在跟风，而要帮助用户看到自己被哪一个触点或情绪推了一下。",
+      "en": "The material supports explaining seeding as the result of touchpoints, emotion, and social context working together. Because fans and consumers discussing, posting, and exchanging experiences keep the buzz alive, the reply should not reduce the user to trend-following; it should help identify which touchpoint or feeling nudged them."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 118,
+    "question": {
+      "zh": "从新增材料里的Gen Z personalization来看，Labubu chatbox 应该怎样解释用户逐渐被种草的过程？",
+      "en": "Using the new source idea of Gen Z personalization, how should the Labubu chatbox explain the user's gradual seeding process?"
+    },
+    "answer": {
+      "zh": "材料支持把种草解释成多触点、情绪和社交共同作用的结果。个性化偏好让用户更容易把 Labubu 看作自己的风格选择，所以回复不应该只说用户在跟风，而要帮助用户看到自己被哪一个触点或情绪推了一下。",
+      "en": "The material supports explaining seeding as the result of touchpoints, emotion, and social context working together. Because personalization makes it easier for users to treat Labubu as a style choice, the reply should not reduce the user to trend-following; it should help identify which touchpoint or feeling nudged them."
+    },
+    "source_basis": "Expanded Labubu article notes including attached omni-channel Labubu PDF and celebrity influence PDF"
+  },
+  {
+    "id": 119,
+    "question": {
+      "zh": "Labubu chatbox 开场时，怎样把“刷到很多次”接成自然对话？",
+      "en": "How should the Labubu chatbox naturally respond when the user says they have seen Labubu many times?"
+    },
+    "answer": {
+      "zh": "可以先承认用户的感受，再指出重复曝光的作用，比如“它像是先在你的信息流里混熟了”。这样不会急着问购买意愿，而是从媒体接触开始，符合逐步种草的逻辑。",
+      "en": "It can first acknowledge the user’s feeling, then name the role of repeated exposure, such as saying Labubu seems to have become familiar inside their feed. This avoids jumping to purchase intent and starts from media contact, matching gradual seeding."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 120,
+    "question": {
+      "zh": "线上内容和线下门店同时出现时，chatbox 应该怎样解释这种种草？",
+      "en": "How should the chatbox explain seeding when online content and offline stores appear together?"
+    },
+    "answer": {
+      "zh": "这不是单一平台的影响，而是全渠道触点在叠加。用户在线上看到开盒和挂包，线下又看到陈列或人群，Labubu 就会从内容热点变成现实里的可见物。",
+      "en": "This is not influence from one platform only; it is the stacking of omni-channel touchpoints. Users see unboxings and bag charms online, then displays or crowds offline, so Labubu shifts from content buzz into something visible in real life."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 121,
+    "question": {
+      "zh": "用户是主动搜索 Labubu 和被动刷到 Labubu，有什么区别？",
+      "en": "What is the difference between actively searching for Labubu and passively encountering it in the feed?"
+    },
+    "answer": {
+      "zh": "主动搜索说明兴趣已经比较明确，被动刷到更像种草早期。chatbox 可以区分这两种路径：一个是已经想了解，一个是被信息流反复轻轻推了一下。",
+      "en": "Active search shows clearer interest, while passive exposure is closer to early seeding. The chatbox can separate the two paths: one means the user already wants to know more, and the other means the feed has been gently nudging them."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 122,
+    "question": {
+      "zh": "用户说 Labubu “丑但可爱”时，chatbox 可以怎样接？",
+      "en": "How can the chatbox respond when a user says Labubu is “ugly but cute”?"
+    },
+    "answer": {
+      "zh": "可以回应它的矛盾感：“这个反应很像怪可爱的入口，先觉得不标准，后来开始记住它的表情。”这样把用户的话接住，也解释 ugly-yet-cute 为什么会留下记忆。",
+      "en": "It can respond to the tension: this reaction sounds like the doorway into strange cuteness, where the user first sees it as nonstandard and then starts remembering its expression. That validates the user’s words and explains why ugly-yet-cute sticks."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 123,
+    "question": {
+      "zh": "用户说“我不想买，只是一直看”时，chatbox 应该怎样理解？",
+      "en": "How should the chatbox interpret “I do not want to buy it; I just keep watching”?"
+    },
+    "answer": {
+      "zh": "这可能是内容种草先于商品种草。用户还没有购买意图，但已经在消费开盒、晒图、明星同款或社群讨论；chatbox 应该把这个阶段当成注意力被培养，而不是否定兴趣。",
+      "en": "This may mean content seeding comes before product seeding. The user has no purchase intent yet, but they are consuming unboxings, posts, celebrity same-items, or community discussion. The chatbox should treat this as attention being cultivated, not as absence of interest."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 124,
+    "question": {
+      "zh": "Labubu 缺货或售罄时，chatbox 怎样避免把 FOMO 说得太生硬？",
+      "en": "How can the chatbox explain sold-out Labubu moments without sounding too blunt about FOMO?"
+    },
+    "answer": {
+      "zh": "可以说“买不到本身也会让它更常被提起”，而不是直接说用户被饥饿营销控制。这样既解释稀缺感，也保留用户自己的判断空间。",
+      "en": "It can say that not being able to buy one makes it get mentioned more often, rather than telling the user they are controlled by scarcity marketing. This explains scarcity while leaving room for the user’s own judgment."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 125,
+    "question": {
+      "zh": "博主看起来真心喜欢 Labubu 时，为什么种草更自然？",
+      "en": "Why does Labubu seeding feel more natural when a creator seems genuinely into it?"
+    },
+    "answer": {
+      "zh": "source credibility 里可信度很重要。一个人如果展示收藏过程、真实犹豫和日常使用，用户会觉得推荐来自经验，而不是只来自商业合作。",
+      "en": "Trustworthiness matters in source credibility. If a creator shows their collecting process, real hesitation, and daily use, users read the recommendation as coming from experience rather than only from a paid partnership."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 126,
+    "question": {
+      "zh": "看到明星同款 Labubu 后，chatbox 可以问什么更自然？",
+      "en": "After a user sees a celebrity with Labubu, what can the chatbox ask naturally?"
+    },
+    "answer": {
+      "zh": "可以问具体触点，比如“是因为同款让它看起来更有风格，还是因为你本来就喜欢那个明星的生活感？”这比泛泛地问为什么喜欢更像真实聊天。",
+      "en": "It can ask about a specific touchpoint, such as whether the same-item made Labubu look more stylish or whether the user already liked that celebrity’s lifestyle. This feels more conversational than broadly asking why they like it."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 127,
+    "question": {
+      "zh": "admiration 在 Labubu 种草里可能怎样出现？",
+      "en": "How can admiration appear in Labubu seeding?"
+    },
+    "answer": {
+      "zh": "用户可能欣赏某个明星、博主或收藏者的审美，然后把这种欣赏转移到 Labubu 上。chatbox 不需要说用户在崇拜谁，只要指出“你可能先被那个人的风格带了一下”。",
+      "en": "A user may admire a celebrity, creator, or collector’s taste and then transfer part of that admiration onto Labubu. The chatbox does not need to say the user worships anyone; it can simply note that the person’s style may have nudged them first."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 128,
+    "question": {
+      "zh": "envy 在 Labubu 消费里不一定是负面的吗？",
+      "en": "Is envy in Labubu consumption always negative?"
+    },
+    "answer": {
+      "zh": "不一定。它可能表现为“我也想拥有那种生活画面”或“我也想拍出那种包挂图”。chatbox 可以把 envy 处理成向往，而不是羞辱用户。",
+      "en": "Not necessarily. It may appear as wanting the same life scene or wanting to take that kind of bag-charm photo. The chatbox can treat envy as aspiration rather than shaming the user."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 129,
+    "question": {
+      "zh": "Labubu 的 symbolic value 和实用价值有什么区别？",
+      "en": "What is the difference between Labubu’s symbolic value and practical value?"
+    },
+    "answer": {
+      "zh": "实用价值回答“它能做什么”，symbolic value 回答“它让我看起来像什么、属于哪里、表达什么”。Labubu 的吸引力很多时候在后者，比如风格、圈层和情绪表达。",
+      "en": "Practical value answers what it can do; symbolic value answers what it makes me look like, where I belong, and what I express. Labubu’s appeal often sits in the second part: style, group identity, and emotional expression."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 130,
+    "question": {
+      "zh": "用户觉得 Labubu 太贵时，chatbox 应该怎样回应才不推销？",
+      "en": "How should the chatbox respond when the user says Labubu is too expensive, without selling?"
+    },
+    "answer": {
+      "zh": "可以承认价格阻力，再拆开想要的来源：“贵是真的，但你可以先看清楚想要来自隐藏款、挂包场景，还是大家都在聊。”这样帮助判断，不催单。",
+      "en": "It can acknowledge the price resistance, then unpack where the desire comes from: hidden editions, bag-charm scenes, or everyone talking about it. That helps the user judge the feeling without pushing a purchase."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 131,
+    "question": {
+      "zh": "提到二级市场时，chatbox 应该保持什么边界？",
+      "en": "What boundary should the chatbox keep when mentioning the resale market?"
+    },
+    "answer": {
+      "zh": "可以解释二级市场会放大稀缺和社交信号，但不要鼓励炒价或投资化购买。重点应该放在用户如何被价格和求换信息影响，而不是给购买建议。",
+      "en": "It can explain that resale markets amplify scarcity and social signals, but it should not encourage price speculation or investment-style buying. The focus should be how prices and trade requests influence the user, not purchase advice."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 132,
+    "question": {
+      "zh": "用户加入 Labubu 社群后，为什么兴趣会变稳定？",
+      "en": "Why can interest become steadier after a user joins a Labubu community?"
+    },
+    "answer": {
+      "zh": "社群提供持续话题和反馈。用户发问、看晒图、参与换款，会不断得到回应；这种回应让兴趣不再只是个人冲动，而变成可持续的参与。",
+      "en": "Communities provide ongoing topics and feedback. When users ask questions, view posts, or join trades, they receive repeated responses. That turns interest from a private impulse into sustained participation."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 133,
+    "question": {
+      "zh": "线下展会里的 Labubu 为什么像身份符号？",
+      "en": "Why can Labubu at offline exhibitions act like an identity symbol?"
+    },
+    "answer": {
+      "zh": "展会把喜欢 Labubu 的人集中到同一空间。用户看到别人穿搭、拍照、交流和收藏，会更清楚地感到 Labubu 代表某种审美圈层，而不只是货架上的玩具。",
+      "en": "Exhibitions gather people who like Labubu into the same space. Seeing outfits, photos, conversations, and collections makes it clearer that Labubu represents a taste community rather than only a toy on a shelf."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 134,
+    "question": {
+      "zh": "粉丝二创怎样影响还没有买 Labubu 的人？",
+      "en": "How do fan creations affect people who have not bought Labubu yet?"
+    },
+    "answer": {
+      "zh": "二创让未购买者也能先参与内容。用户可以先看图、看改造、看梗图，再慢慢熟悉角色；这种低门槛参与会降低进入社群的心理距离。",
+      "en": "Fan creations let non-buyers participate through content first. Users can look at drawings, customizations, and memes before they know the product well. This low-barrier participation reduces the psychological distance to the community."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 135,
+    "question": {
+      "zh": "盲盒的 anticipation 为什么适合做 chatbox 的对话节点？",
+      "en": "Why is blind-box anticipation a useful dialogue node for the chatbox?"
+    },
+    "answer": {
+      "zh": "anticipation 是用户从“看看”转向“想象结果”的时刻。chatbox 可以抓住这个节点，问用户是不是开始在意隐藏款、抽中概率或别人拆出的结果。",
+      "en": "Anticipation is the moment when the user shifts from looking to imagining an outcome. The chatbox can use this node by asking whether the user has started caring about hidden editions, odds, or what others pulled."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 136,
+    "question": {
+      "zh": "换款行为为什么能加强 Labubu 的收藏感？",
+      "en": "Why can trading strengthen the collecting feeling around Labubu?"
+    },
+    "answer": {
+      "zh": "换款说明用户开始按系列、稀缺度和个人偏好组织物品。它不再是随机买一个，而是在构建自己的收藏逻辑，这会让投入感变深。",
+      "en": "Trading means users start organizing items by series, rarity, and personal preference. It is no longer randomly buying one figure; it becomes building a collection logic, which deepens investment."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 137,
+    "question": {
+      "zh": "personalization 在 Labubu chatbox 里应该怎样体现？",
+      "en": "How should personalization appear in the Labubu chatbox?"
+    },
+    "answer": {
+      "zh": "chatbox 可以把 Labubu 和用户自己的风格选择连接起来，比如包、书桌、穿搭、拍照习惯。这样不是泛泛说它可爱，而是让用户看到它可能怎样进入自己的生活。",
+      "en": "The chatbox can connect Labubu with the user’s own style choices, such as bags, desks, outfits, or photo habits. Instead of saying it is generally cute, it helps users see how Labubu might enter their own life."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 138,
+    "question": {
+      "zh": "为什么 Labubu 小挂件比大型摆件更容易进入日常传播？",
+      "en": "Why can small Labubu charms enter daily circulation more easily than large display pieces?"
+    },
+    "answer": {
+      "zh": "小挂件更容易被带出门，也更容易出现在照片边角、朋友聊天和穿搭内容里。它的传播不是只靠展示柜，而是靠日常移动场景。",
+      "en": "Small charms are easier to carry outside and show up in photo corners, friend conversations, and outfit content. Their spread depends less on display shelves and more on everyday mobile scenes."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 139,
+    "question": {
+      "zh": "用户说“我以前没兴趣，现在老刷到”时，chatbox 应该怎样回应？",
+      "en": "How should the chatbox respond when the user says they used to have no interest but now see Labubu constantly?"
+    },
+    "answer": {
+      "zh": "可以说兴趣可能不是突然出现，而是在算法和社交内容里被慢慢养出来的。重点不是否认用户以前的态度，而是指出现在的内容环境变了。",
+      "en": "It can say the interest may not have appeared suddenly; it may have been gradually grown by algorithms and social content. The point is not to deny the user’s earlier attitude, but to notice that their content environment has changed."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 140,
+    "question": {
+      "zh": "在 Labubu 推荐里，expertise 比 attractiveness 什么时候更重要？",
+      "en": "When is expertise more important than attractiveness in Labubu recommendations?"
+    },
+    "answer": {
+      "zh": "当用户认真考虑真伪、系列、价格或收藏价值时，懂行比好看更重要。一个懂潮玩的人解释细节，可能比一个只是摆拍的人更能影响决策。",
+      "en": "When users seriously consider authenticity, series, price, or collectible value, expertise matters more than appearance. Someone knowledgeable about designer toys may influence decisions more than someone only posing with the product."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 141,
+    "question": {
+      "zh": "如果推荐者和 Labubu 不匹配，用户为什么会出戏？",
+      "en": "Why can users feel disconnected when the recommender does not fit Labubu?"
+    },
+    "answer": {
+      "zh": "匹配度低会让用户怀疑推荐动机。用户可能觉得这个人平时不玩潮玩、不晒收藏，突然推荐 Labubu 很像广告，于是注意力从产品转向怀疑。",
+      "en": "Low fit can make users question the motive. If someone never engages with designer toys or collecting and suddenly promotes Labubu, it may feel like an ad, shifting attention from the product to suspicion."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 142,
+    "question": {
+      "zh": "文化语境会怎样改变 Labubu 的“可爱”定义？",
+      "en": "How can cultural context change the meaning of Labubu’s cuteness?"
+    },
+    "answer": {
+      "zh": "不同文化或圈层对可爱、怪、潮流和童趣的接受方式不一样。Labubu 的怪可爱在某些语境里是个性，在另一些语境里可能需要更多解释才能被接受。",
+      "en": "Different cultures or subcultures accept cuteness, strangeness, trendiness, and childlike play differently. Labubu’s strange cuteness may read as individuality in one context and need more explanation in another."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 143,
+    "question": {
+      "zh": "ideal self-image 怎样帮助解释用户想把 Labubu 挂在包上？",
+      "en": "How does ideal self-image help explain why users want to hang Labubu on a bag?"
+    },
+    "answer": {
+      "zh": "挂在包上是一种可见表达。用户可能不是只想拥有玩偶，而是想呈现一个更有趣、更松弛、更有审美标签的自己。",
+      "en": "Putting Labubu on a bag is a visible expression. The user may not only want to own the figure; they may want to present a self that feels more playful, relaxed, and aesthetically marked."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 144,
+    "question": {
+      "zh": "microcelebrity 的日常感为什么适合 Labubu？",
+      "en": "Why does the everyday quality of microcelebrity content fit Labubu?"
+    },
+    "answer": {
+      "zh": "Labubu 本来就常出现在开盒、挂包、桌面和聊天这些生活场景里。microcelebrity 的内容更贴近日常，所以用户更容易想象“我也可以这样用”。",
+      "en": "Labubu often appears in everyday scenes such as unboxing, bags, desks, and casual conversations. Microcelebrity content feels closer to daily life, so users can more easily imagine using Labubu in the same way."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 145,
+    "question": {
+      "zh": "双向 meaning transfer 对 Labubu 社群有什么启发？",
+      "en": "What does two-way meaning transfer suggest about the Labubu community?"
+    },
+    "answer": {
+      "zh": "用户不是被动接收品牌意义。晒图、二创、吐槽和换款都会反过来塑造 Labubu 的形象，所以 chatbox 可以把用户也当成意义生产者，而不是只当消费者。",
+      "en": "Users do not passively receive brand meaning. Posts, fan creations, jokes, and trades all reshape Labubu’s image, so the chatbox can treat users as meaning-makers rather than only consumers."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 146,
+    "question": {
+      "zh": "把明星看成 human brand 后，Labubu 同款为什么更有解释力？",
+      "en": "Why does seeing celebrities as human brands better explain Labubu same-items?"
+    },
+    "answer": {
+      "zh": "明星不仅是曝光渠道，也是带有生活方式和人格意义的 human brand。当他们使用 Labubu，这些意义可能和 Labubu 连接起来，让同款看起来不只是商品同步。",
+      "en": "Celebrities are not only exposure channels; they are human brands carrying lifestyle and personality meanings. When they use Labubu, those meanings can connect with it, making the same-item feel like more than product matching."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 147,
+    "question": {
+      "zh": "Labubu chatbox 为什么不应该催用户买？",
+      "en": "Why should the Labubu chatbox avoid pushing users to buy?"
+    },
+    "answer": {
+      "zh": "项目目标是模拟被媒体内容逐步种草的心理过程，不是商店导购。催买会破坏对话信任，也会让用户无法观察自己到底被哪个内容触点影响。",
+      "en": "The project’s goal is to simulate the psychological process of being gradually seeded by media content, not to act as a store assistant. Pushing a purchase would damage conversational trust and stop users from observing which content touchpoint affected them."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 148,
+    "question": {
+      "zh": "中英文双语界面里，回答应怎样保持同一个人格？",
+      "en": "How should bilingual replies keep the same persona in Chinese and English?"
+    },
+    "answer": {
+      "zh": "中文可以更口语、细腻，英文可以自然但不要像翻译腔。两种语言都要保持同一个朋友式观察者身份：不卖货、不审判、帮用户拆解被种草的过程。",
+      "en": "Chinese can be more colloquial and nuanced, while English should sound natural rather than translated. Both languages should keep the same friend-like observer role: no selling, no judging, and helping the user unpack the seeding process."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 149,
+    "question": {
+      "zh": "chatbox 怎样避免在结尾反复问同一句话？",
+      "en": "How can the chatbox avoid repeating the same ending question?"
+    },
+    "answer": {
+      "zh": "每次结尾都应该换一个具体观察点，比如画面、人物、价格、社群、开盒、挂包或隐藏款。问题可以短，但必须根据用户刚才的话推进，而不是循环同一个模板。",
+      "en": "Each ending should shift to a concrete observation point, such as image, person, price, community, unboxing, bag charm, or hidden edition. The question can be short, but it must move from what the user just said instead of looping the same template."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 150,
+    "question": {
+      "zh": "用户说“都有”时，chatbox 最好的下一步是什么？",
+      "en": "What is the best next step when the user says “both”?"
+    },
+    "answer": {
+      "zh": "最好的下一步是把“都有”拆成两条线：人让它进入视野，东西本身让它留下来。然后追问一个具体场景，比如是哪张图、哪个博主或哪次开盒让感觉开始变化。",
+      "en": "The best next step is to split “both” into two lines: people brought Labubu into view, and the object itself made it stay. Then ask about one concrete scene, such as which image, creator, or unboxing changed the feeling."
+    },
+    "source_basis": "Expanded Labubu text base using article notes, Labubu omni-channel PDF, and celebrity influence PDF"
+  },
+  {
+    "id": 151,
+    "question": {
+      "zh": "根据 Schmitt 的 SENSE 模块，Labubu 的外观和开盒体验为什么容易先抓住用户？",
+      "en": "According to Schmitt's SENSE module, why can Labubu's look and unboxing experience catch users first?"
+    },
+    "answer": {
+      "zh": "SENSE 模块强调视觉、触觉等感官刺激。Labubu 的 monster-cute 造型、鲜明配色和盲盒包装，会先让用户在刷图、开盒视频或线下展示里停一下；这种停顿不一定马上是喜欢，但会给后面的兴趣留下入口。",
+      "en": "The SENSE module focuses on visual and tactile stimulation. Labubu's monster-cute form, bright color design, and blind-box packaging can make users pause on photos, unboxing videos, or offline displays. That pause may not be full liking yet, but it creates an entry point for later interest."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 152,
+    "question": {
+      "zh": "根据 FEEL 模块，Labubu 的 ugly-yet-cute 为什么会让用户产生陪伴感？",
+      "en": "Using the FEEL module, why can Labubu's ugly-yet-cute look create a sense of companionship?"
+    },
+    "answer": {
+      "zh": "FEEL 模块关注情绪共鸣。材料提到 Labubu 的 ugly-yet-cute 形象会让年轻消费者投射自己的情绪，把它看成有点怪、有点可爱、也有点像自己的角色，所以它不只是商品，也可能变成一种陪伴感。",
+      "en": "The FEEL module centers on emotional resonance. The source notes that Labubu's ugly-yet-cute image lets young consumers project their feelings onto the character, seeing it as strange, cute, and somehow self-related. It can become more than a product; it can feel like companionship."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 153,
+    "question": {
+      "zh": "根据 THINK 模块，盲盒的不确定性怎样让用户从围观变成参与？",
+      "en": "How does blind-box uncertainty turn users from observers into participants under the THINK module?"
+    },
+    "answer": {
+      "zh": "THINK 模块强调好奇和认知参与。用户看到隐藏款、概率、拆盒结果和别人晒出的款式时，会开始猜“下一个会是什么”。这种猜测会把观看变成参与，让 Labubu 的内容更像一个持续更新的故事。",
+      "en": "The THINK module emphasizes curiosity and cognitive engagement. When users see hidden editions, odds, unboxing results, and other people's pulls, they start wondering what comes next. That guessing turns watching into participation and makes Labubu content feel like an ongoing story."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 154,
+    "question": {
+      "zh": "根据 ACT 模块，为什么“拆盒、晒图、交换”会影响购买行为？",
+      "en": "Why can “unboxing, posting, and trading” shape purchase behavior under the ACT module?"
+    },
+    "answer": {
+      "zh": "ACT 模块看的是生活方式和行为习惯。材料把 unboxing-sharing-trading 描述成收藏者的常见行为：先看别人拆，再自己买，再晒图或交换。用户不是只买一个玩具，而是在进入一种可重复的消费动作。",
+      "en": "The ACT module looks at lifestyles and behavioral patterns. The source describes unboxing-sharing-trading as a common collector routine: users watch others open boxes, buy their own, then post or trade. They are not only buying a toy; they are entering a repeatable consumption practice."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 155,
+    "question": {
+      "zh": "根据 RELATE 模块，Labubu 社群为什么会放大种草效果？",
+      "en": "Why can Labubu communities amplify seeding effects under the RELATE module?"
+    },
+    "answer": {
+      "zh": "RELATE 模块强调社交连接和共同身份。小红书、微信群、展会和线下活动让 Labubu 不只是个人兴趣，也变成可以被看见、被回应、被比较的身份符号；社群越活跃，用户越容易觉得自己也在这件事里。",
+      "en": "The RELATE module emphasizes social connection and shared identity. Xiaohongshu circles, WeChat groups, exhibitions, and offline events make Labubu more than a private interest; it becomes a visible identity signal that can be responded to and compared. The more active the community, the easier it is for users to feel included."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 156,
+    "question": {
+      "zh": "全渠道营销里，“无缝触点”对 Labubu 种草有什么作用？",
+      "en": "What role do seamless touchpoints play in Labubu seeding within omni-channel marketing?"
+    },
+    "answer": {
+      "zh": "无缝触点意味着用户在社交平台、门店、活动、二级市场和朋友聊天里接触到的是同一个 Labubu 热度。它不靠一次广告说服用户，而是让用户在不同场景里反复遇见同一套信号。",
+      "en": "Seamless touchpoints mean the user encounters the same Labubu momentum across social platforms, stores, events, resale markets, and friend conversations. It does not depend on one ad persuading the user; it works by letting the user meet the same signals across different contexts."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 157,
+    "question": {
+      "zh": "多渠道、跨渠道和全渠道的区别怎样帮助解释 Labubu 的传播？",
+      "en": "How does the difference between multi-channel, cross-channel, and omni-channel help explain Labubu's spread?"
+    },
+    "answer": {
+      "zh": "多渠道只是很多地方都能看到，跨渠道是这些渠道开始互相连接，全渠道则是用户在每个触点都得到连续体验。Labubu 的传播更接近全渠道：刷到、收藏、进店、看展、交易和晒图能连成一条路径。",
+      "en": "Multi-channel means users see it in many places, cross-channel means those places start connecting, and omni-channel means the experience stays continuous across touchpoints. Labubu's spread is closer to omni-channel: seeing, saving, visiting stores, attending shows, trading, and posting can form one connected path."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 158,
+    "question": {
+      "zh": "为什么 Labubu chatbox 不应该只问“你是不是跟风”？",
+      "en": "Why should the Labubu chatbox avoid simply asking whether the user is following a trend?"
+    },
+    "answer": {
+      "zh": "材料显示种草通常由感官吸引、情绪投射、社群互动、稀缺感和平台曝光共同推动。只问是不是跟风会把复杂过程压扁；更自然的问法是帮用户分辨是哪一个环节先让它留在脑子里。",
+      "en": "The material shows seeding often comes from sensory appeal, emotional projection, community interaction, scarcity, and platform exposure working together. Asking only whether the user is following a trend flattens the process. A more natural approach is to help the user identify which moment made Labubu stay in their mind first."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 159,
+    "question": {
+      "zh": "体验式营销中的“fantasies, feelings, fun”如何解释 Labubu 的吸引力？",
+      "en": "How do “fantasies, feelings, and fun” in experiential marketing explain Labubu's appeal?"
+    },
+    "answer": {
+      "zh": "这三个词说明用户买的不只是物件。Labubu 可以提供幻想感、情绪投射和拆盒乐趣：用户会想象隐藏款、把角色当成自己的小情绪，也会被开盒过程里的惊喜吸引。",
+      "en": "These three words show that users are not buying only an object. Labubu can offer fantasy, emotional projection, and unboxing fun: users imagine hidden editions, treat the character as a container for small feelings, and get pulled in by the surprise of opening."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 160,
+    "question": {
+      "zh": "为什么 Gen Z 更容易被 Labubu 这种沉浸式消费打动？",
+      "en": "Why can Gen Z be especially receptive to Labubu's immersive consumption style?"
+    },
+    "answer": {
+      "zh": "材料提到 Gen Z 重视沉浸体验和社交身份。Labubu 不只是摆件，它带着故事、盲盒、晒图、社群和线下活动，让用户可以用它表达审美、圈层和个人状态。",
+      "en": "The source notes that Gen Z values immersive experiences and social identity. Labubu is not only a display object; it comes with stories, blind boxes, posting rituals, communities, and offline events, letting users express taste, group belonging, and personal mood."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 161,
+    "question": {
+      "zh": "Labubu 的 IP 属性为什么比单个玩偶更重要？",
+      "en": "Why is Labubu's IP nature more important than any single doll?"
+    },
+    "answer": {
+      "zh": "IP 让 Labubu 有持续延展的空间：新系列、隐藏款、故事背景、联名和粉丝再创作都能继续增加意义。用户喜欢的不是一次性商品，而是一个可以不断加入新内容的角色世界。",
+      "en": "The IP gives Labubu room to keep expanding through new series, hidden editions, backstory, collaborations, and fan creations. Users are not attached only to a one-time product; they are entering a character world that keeps gaining new meanings."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 162,
+    "question": {
+      "zh": "为什么隐藏款会让 Labubu 的讨论保持热度？",
+      "en": "Why do hidden editions keep Labubu discussions active?"
+    },
+    "answer": {
+      "zh": "隐藏款制造了不确定性，也给社交分享提供话题。有人抽中、有人求换、有人晒战绩，这些内容会不断刷新社群里的注意力，让 Labubu 像一个还没结束的事件。",
+      "en": "Hidden editions create uncertainty and give people something to talk about. Some users pull one, some look to trade, and others post their results. These updates keep refreshing community attention and make Labubu feel like an event that is still unfolding."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 163,
+    "question": {
+      "zh": "为什么二级市场会反过来影响用户对 Labubu 的兴趣？",
+      "en": "Why can the resale market feed back into users' interest in Labubu?"
+    },
+    "answer": {
+      "zh": "材料提到收藏和交换会刺激二级市场活动。价格、求购和换款信息会让用户感觉某些款式更“有分量”，即使用户一开始只是看看，也可能因为市场反馈开始重新评价它。",
+      "en": "The source notes that collecting and trading stimulate secondary-market activity. Prices, buying requests, and trade posts can make some editions feel more significant. Even users who were only browsing may start reevaluating Labubu because of market signals."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 164,
+    "question": {
+      "zh": "线下展览和活动为什么会让 Labubu 显得更真实？",
+      "en": "Why do offline exhibitions and events make Labubu feel more real?"
+    },
+    "answer": {
+      "zh": "线下活动把屏幕里的热度变成看得见的人群、陈列和互动。用户不只是看到图片，而是看到别人真的为它排队、拍照和交流，这会让 Labubu 的存在感更强。",
+      "en": "Offline events turn online buzz into visible crowds, displays, and interactions. Users do not only see images; they see people actually lining up, taking photos, and talking about it. That makes Labubu's presence feel stronger."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 165,
+    "question": {
+      "zh": "为什么 Labubu 的“怪可爱”比单纯漂亮更容易形成记忆点？",
+      "en": "Why can Labubu's strange cuteness be more memorable than simple prettiness?"
+    },
+    "answer": {
+      "zh": "单纯漂亮可能很快被刷过去，但怪可爱带一点冲突感。用户会先觉得奇怪，再发现它有表情和性格，这种小小的矛盾更容易让形象留在脑子里。",
+      "en": "Simple prettiness can be easy to scroll past, while strange cuteness creates a small tension. Users may first find it odd, then notice expression and personality. That contradiction makes the image easier to remember."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 166,
+    "question": {
+      "zh": "从 source credibility 来看，为什么推荐 Labubu 的人是否可信很重要？",
+      "en": "From source credibility, why does the trustworthiness of the person recommending Labubu matter?"
+    },
+    "answer": {
+      "zh": "source credibility 强调推荐者的可信度、专业感和吸引力。用户不只看“谁说了”，也会判断这个人是不是诚实、懂这个领域、真的喜欢收藏；可信度越高，种草越不容易像硬广。",
+      "en": "Source credibility emphasizes trustworthiness, expertise, and attractiveness. Users do not only notice who said it; they judge whether the person seems honest, knowledgeable, and genuinely into collecting. Higher credibility makes seeding feel less like a hard sell."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 167,
+    "question": {
+      "zh": "为什么一个明星或博主频繁接太多推广，可能削弱 Labubu 的种草效果？",
+      "en": "Why can too many endorsements from the same celebrity or influencer weaken Labubu seeding?"
+    },
+    "answer": {
+      "zh": "材料指出多重代言可能降低推荐者的可信度。如果一个人什么都推，用户会怀疑动机；Labubu 的吸引力就可能从“ta真的喜欢”变成“又一个广告”。",
+      "en": "The source notes that multiple endorsements can reduce perceived credibility. If someone promotes everything, users may question the motive. Labubu can shift from “they genuinely like it” to “this is another ad.”"
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 168,
+    "question": {
+      "zh": "source attractiveness 为什么不只是长得好看？",
+      "en": "Why is source attractiveness not only about physical beauty?"
+    },
+    "answer": {
+      "zh": "材料说明吸引力也包括 likability，也就是这个人让不让人愿意靠近。对 Labubu 来说，一个有亲和力、表达自然、生活方式匹配的博主，可能比单纯漂亮的推广更能让人放下防备。",
+      "en": "The source explains that attractiveness also includes likability, meaning whether the person feels approachable. For Labubu, a warm, natural influencer whose lifestyle fits the product may be more persuasive than a promotion based only on appearance."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 169,
+    "question": {
+      "zh": "match-up 假说怎样解释“谁来晒 Labubu”会影响效果？",
+      "en": "How does the match-up hypothesis explain why the person showing Labubu affects the result?"
+    },
+    "answer": {
+      "zh": "match-up 关注推荐者形象和产品是否匹配。一个本来就喜欢潮玩、穿搭或收藏的人晒 Labubu，会比完全不相关的人更有说服力，因为用户能看出它和这个人的生活方式连得上。",
+      "en": "The match-up hypothesis focuses on whether the endorser's image fits the product. Someone already associated with designer toys, styling, or collecting can make Labubu feel more convincing than someone unrelated, because users can see how it fits that person's lifestyle."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 170,
+    "question": {
+      "zh": "为什么 celebrity-product fit 会影响用户是否被 Labubu 种草？",
+      "en": "Why does celebrity-product fit affect whether users are seeded by Labubu?"
+    },
+    "answer": {
+      "zh": "如果明星的气质、穿搭和社交形象与 Labubu 的怪可爱风格相合，用户更容易把 Labubu 读成一种风格选择。匹配度低时，用户可能只记得明星，不会把兴趣转到 Labubu 上。",
+      "en": "If a celebrity's style, fashion, and social image fit Labubu's strange-cute tone, users can read Labubu as a style choice. When the fit is weak, users may remember the celebrity but not transfer interest to Labubu."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 171,
+    "question": {
+      "zh": "meaning transfer 模型怎样解释明星晒 Labubu 后用户的心理变化？",
+      "en": "How does the meaning transfer model explain users' psychological shift after a celebrity posts Labubu?"
+    },
+    "answer": {
+      "zh": "meaning transfer 认为名人的文化和生活方式意义会转移到品牌或商品上。明星晒 Labubu 后，用户可能不是只看到玩偶，而是把明星的松弛、潮流、可爱或个性也一起联想到 Labubu。",
+      "en": "The meaning transfer model suggests that a celebrity's cultural and lifestyle meanings can move onto a brand or product. After a celebrity posts Labubu, users may not see only a doll; they may also connect it with the celebrity's ease, trendiness, cuteness, or individuality."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 172,
+    "question": {
+      "zh": "为什么 meaning transfer 不是单向的？",
+      "en": "Why is meaning transfer not only one-directional?"
+    },
+    "answer": {
+      "zh": "材料指出意义也可能在明星、品牌和消费者之间双向流动。用户晒图、改造、吐槽和二创也会改变 Labubu 的意义，让它不只是品牌设定出来的角色，而是被社群一起再定义。",
+      "en": "The source notes that meaning can move both ways among celebrities, brands, and consumers. User posts, customizations, jokes, and fan creations can also reshape Labubu's meaning, making it a character redefined by the community rather than only by the brand."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 173,
+    "question": {
+      "zh": "为什么人们会把 Labubu 和理想自我联系起来？",
+      "en": "Why can people connect Labubu with their ideal self-image?"
+    },
+    "answer": {
+      "zh": "名人影响研究提到消费者会被能代表理想自我形象的人吸引。Labubu 也可能承载类似功能：用户把它挂在包上或摆在桌上，不只是装饰，也是“我想呈现的那个自己”的一部分。",
+      "en": "Celebrity influence research notes that consumers are drawn to figures that represent an ideal self-image. Labubu can carry a similar function: when users place it on a bag or desk, it is not only decoration but part of the self they want to present."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 174,
+    "question": {
+      "zh": "parasocial friendship 为什么能解释用户被明星同款 Labubu 种草？",
+      "en": "How can parasocial friendship explain users being seeded by a celebrity's Labubu?"
+    },
+    "answer": {
+      "zh": "parasocial friendship 指用户和媒体人物之间形成类似朋友的单向亲近感。用户觉得自己熟悉某个明星或博主时，对方的 Labubu 就像朋友推荐的小东西，影响会更轻、更自然。",
+      "en": "Parasocial friendship means users develop a one-sided sense of closeness with a media figure. When they feel familiar with a celebrity or influencer, that person's Labubu can feel like a small recommendation from a friend, making the influence softer and more natural."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 175,
+    "question": {
+      "zh": "为什么“像朋友推荐”比“广告推荐”更容易让人接受 Labubu？",
+      "en": "Why is a friend-like recommendation easier to accept than an ad-like recommendation for Labubu?"
+    },
+    "answer": {
+      "zh": "朋友式推荐降低了防备感。用户会先接收对方的生活场景和真实语气，再顺带注意到 Labubu；这种路径比直接卖点更像自然发现，所以更容易形成种草。",
+      "en": "A friend-like recommendation lowers defensiveness. Users first receive the person's life context and natural tone, then notice Labubu along the way. This route feels more like discovery than a direct pitch, so it can seed interest more easily."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 176,
+    "question": {
+      "zh": "为什么 microcelebrity 对 Labubu 的影响可能不输传统明星？",
+      "en": "Why can microcelebrities influence Labubu interest as strongly as traditional celebrities?"
+    },
+    "answer": {
+      "zh": "材料提到社交媒体让普通人通过持续曝光成为 microcelebrity。对 Labubu 来说，小博主可能更像真实玩家：他们的开盒、换款、挂包和吐槽更接近日常，反而更容易让用户代入。",
+      "en": "The source notes that social media lets ordinary people become microcelebrities through repeated visibility. For Labubu, smaller creators may feel more like real players: their unboxings, trades, bag charms, and jokes are closer to daily life, making it easier for users to imagine themselves doing the same."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 177,
+    "question": {
+      "zh": "为什么用户会相信“普通人开盒视频”超过精修广告图？",
+      "en": "Why might users trust ordinary unboxing videos more than polished ad images?"
+    },
+    "answer": {
+      "zh": "普通人开盒视频带有不确定性和生活感。用户能看到真实反应、包装细节和抽中或没抽中的情绪，这些信息比精修图更像可验证的经验。",
+      "en": "Ordinary unboxing videos carry uncertainty and everyday texture. Users can see real reactions, packaging details, and the emotion of pulling or missing a desired figure. Those cues feel more like verifiable experience than a polished image."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 178,
+    "question": {
+      "zh": "为什么“可信但不完美”的博主更适合 Labubu chatbox 的语气参考？",
+      "en": "Why is a credible but imperfect creator a better tone reference for the Labubu chatbox?"
+    },
+    "answer": {
+      "zh": "Labubu chatbox 要模拟被媒体内容慢慢种草的过程，语气需要像真实观察，而不是完美销售话术。可信但不完美的表达能承认犹豫、冲动和矛盾，这比一直下结论更 human。",
+      "en": "The Labubu chatbox is meant to simulate gradual seeding through media content, so its tone should feel like real observation rather than perfect sales copy. A credible but imperfect voice can admit hesitation, impulse, and contradiction, which feels more human than constant conclusions."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 179,
+    "question": {
+      "zh": "为什么用户会说“我也不知道是不是喜欢，但它一直出现”？",
+      "en": "Why might a user say, “I don't know if I like it, but it keeps showing up”?"
+    },
+    "answer": {
+      "zh": "这句话很适合描述种草早期：算法重复曝光制造熟悉感，社交内容制造存在感，盲盒和晒图制造好奇。用户还没形成明确态度，但 Labubu 已经开始占据注意力。",
+      "en": "That sentence fits the early stage of seeding: algorithmic repetition creates familiarity, social posts create presence, and blind boxes plus posting rituals create curiosity. The user has not formed a clear attitude yet, but Labubu has already taken up attention."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 180,
+    "question": {
+      "zh": "为什么 chatbox 回答“都有”时需要拆开不同影响，而不是重复同一句结尾？",
+      "en": "Why should the chatbox unpack different influences when the user says “both,” instead of repeating the same ending?"
+    },
+    "answer": {
+      "zh": "“都有”说明用户同时被人、物和场景影响。更好的回复应该把影响拆成几层：谁带动了注意、哪个画面留下来、哪种情绪开始变顺眼，而不是反复问同一句“是人还是东西本身”。",
+      "en": "“Both” means the user is being shaped by people, the object, and the scene at the same time. A better reply separates the layers: who pulled their attention, which image stayed, and what feeling made Labubu start looking right, instead of repeating the same question about whether it was people or the object itself."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 181,
+    "question": {
+      "zh": "为什么 Labubu chatbox 要避免把用户直接分类成“真喜欢”或“跟风”？",
+      "en": "Why should the Labubu chatbox avoid sorting users directly into “genuine liking” or “trend-following”?"
+    },
+    "answer": {
+      "zh": "论文和文章都显示消费决策会被情绪、身份、社群、媒体人物和渠道体验共同塑造。用户可能既有真实喜欢，也有社交影响；chatbox 应该帮助用户观察变化过程，而不是替用户贴标签。",
+      "en": "The papers and articles show that consumption decisions are shaped by emotion, identity, community, media figures, and channel experience together. A user may genuinely like Labubu and be socially influenced at the same time. The chatbox should help them observe the process rather than label them."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 182,
+    "question": {
+      "zh": "为什么“越看越顺眼”是 Labubu 种草过程里的重要信号？",
+      "en": "Why is “it looks better the more I see it” an important signal in Labubu seeding?"
+    },
+    "answer": {
+      "zh": "“越看越顺眼”说明态度正在从陌生转向熟悉。它通常不是一次内容造成的，而是多次曝光、别人使用场景、情绪投射和社群讨论共同让形象变得可接受。",
+      "en": "That phrase shows attitude shifting from unfamiliarity to familiarity. It usually does not come from one piece of content; repeated exposure, other people's usage scenes, emotional projection, and community discussion together make the image feel more acceptable."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 183,
+    "question": {
+      "zh": "为什么 Labubu 的挂包场景会比单独产品图更容易种草？",
+      "en": "Why can bag-charm scenes seed Labubu more effectively than standalone product photos?"
+    },
+    "answer": {
+      "zh": "挂包场景把 Labubu 放进具体生活里。用户看到它和穿搭、通勤、拍照、朋友聚会一起出现，就更容易想象自己怎么使用它，而不是只评价一个静态玩偶。",
+      "en": "Bag-charm scenes put Labubu into a concrete life context. When users see it with outfits, commutes, photos, and friend gatherings, they can imagine how they would use it, rather than only judging a static doll."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 184,
+    "question": {
+      "zh": "为什么收藏者的交换行为会让 Labubu 更像社交货币？",
+      "en": "Why does collector trading make Labubu feel more like social currency?"
+    },
+    "answer": {
+      "zh": "交换让 Labubu 从个人物品变成可以谈判、展示和连接人的东西。用户可以通过求换、补差价、晒隐藏款进入社群互动，这些互动会增加它的社交价值。",
+      "en": "Trading turns Labubu from a private object into something people can negotiate, display, and connect through. Users can ask for trades, pay differences, or show hidden editions, and those interactions increase its social value."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 185,
+    "question": {
+      "zh": "为什么 Labubu 的“贵”会和“想要”同时出现？",
+      "en": "Why can “expensive” and “wanting it” appear at the same time with Labubu?"
+    },
+    "answer": {
+      "zh": "高价可能让用户退一步，但也会让用户意识到它有稀缺性和社群认可。chatbox 需要承认这种矛盾：价格带来阻力，同时市场热度也会让用户觉得它更值得被认真考虑。",
+      "en": "A high price can make users step back, but it can also signal scarcity and community recognition. The chatbox should acknowledge that tension: price creates resistance, while market buzz can make Labubu feel more worth considering."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 186,
+    "question": {
+      "zh": "为什么 Labubu 的国际传播不能只解释成“大家都在买”？",
+      "en": "Why should Labubu's international spread not be explained only as “everyone is buying it”?"
+    },
+    "answer": {
+      "zh": "材料把 Labubu 的增长放在 IP 策略、全渠道体验和国际市场扩张里。国际传播不只是数量变多，也包括角色意义、收藏文化和社交媒体语境在不同地区被重新理解。",
+      "en": "The source places Labubu's growth within IP strategy, omni-channel experience, and international market expansion. International spread is not only about higher purchase volume; it also involves character meaning, collecting culture, and social media context being reinterpreted across regions."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 187,
+    "question": {
+      "zh": "为什么 cultural cue 会影响用户是否接受明星晒 Labubu？",
+      "en": "Why can cultural cues affect whether users accept a celebrity posting Labubu?"
+    },
+    "answer": {
+      "zh": "名人影响研究提到文化背景会影响用户对代言匹配度的判断。某个明星晒 Labubu 是否自然，取决于用户是否觉得这个人的风格、价值观和社交语境跟自己或产品连得上。",
+      "en": "Celebrity influence research notes that cultural background affects how users judge endorsement fit. Whether a celebrity posting Labubu feels natural depends on whether users see that person's style, values, and social context as connected to themselves or the product."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 188,
+    "question": {
+      "zh": "为什么用户对 Labubu 的反应会受到个人属性影响？",
+      "en": "Why are users' reactions to Labubu shaped by personal attributes?"
+    },
+    "answer": {
+      "zh": "材料指出消费者的个人属性、愿望和社会文化价值会影响他们如何理解名人和品牌意义。有人看见的是潮流，有人看见的是陪伴，有人看见的是收藏价值；同一个 Labubu 会被不同人读成不同东西。",
+      "en": "The source says consumers' personal attributes, aspirations, and socio-cultural values shape how they interpret celebrity and brand meanings. Some see trendiness, some see companionship, and some see collectible value. The same Labubu can mean different things to different people."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 189,
+    "question": {
+      "zh": "为什么 Labubu chatbox 的问题要带具体上下文？",
+      "en": "Why should the Labubu chatbox ask questions with concrete context?"
+    },
+    "answer": {
+      "zh": "用户更容易回应具体情境。比如不要只问“为什么喜欢”，而是问“是刷到挂包图以后开始顺眼，还是看到别人开盒以后开始好奇”。这样更像自然聊天，也更符合种草路径。",
+      "en": "Users can respond more easily to specific situations. Instead of asking only why they like it, the chatbox can ask whether bag-charm photos made it look better or unboxing videos made them curious. That feels more natural and matches the seeding path."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 190,
+    "question": {
+      "zh": "为什么 chatbox 回答要少用“我认为”这种表达？",
+      "en": "Why should the chatbox use fewer phrases like “I believe”?"
+    },
+    "answer": {
+      "zh": "“我认为”会让回复像分析报告。Labubu chatbox 更适合直接接住用户的话，比如“这听起来不是单纯跟风，更像它在不同场景里反复出现以后变熟了”。这种表达更像对话。",
+      "en": "“I believe” can make a reply sound like an analysis report. The Labubu chatbox works better when it directly responds to the user, such as: “That sounds less like simple trend-following and more like it became familiar after appearing in different scenes.” That feels more conversational."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 191,
+    "question": {
+      "zh": "为什么 chatbox 不能只输出知识点，还要模拟“逐步被种草”？",
+      "en": "Why should the chatbox simulate gradual seeding instead of only outputting facts?"
+    },
+    "answer": {
+      "zh": "用户想要的是一个过程：从刷到、停留、觉得奇怪、看到别人使用、开始顺眼、再考虑购买。知识点只能解释原因，逐步对话才能让用户感觉自己正在被媒体内容慢慢带进去。",
+      "en": "The user wants a process: seeing it, pausing, finding it strange, watching others use it, warming up to it, and then considering purchase. Facts explain the reasons, but gradual dialogue lets the user feel how media content slowly pulls them in."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 192,
+    "question": {
+      "zh": "为什么“晒图”会让 Labubu 从私人审美变成可见身份？",
+      "en": "Why does posting Labubu turn private taste into visible identity?"
+    },
+    "answer": {
+      "zh": "晒图把喜欢公开化。用户不仅在表达“我有这个”，也在表达自己的审美、圈层和参与感；别人点赞、评论或询问，又会继续强化这个身份信号。",
+      "en": "Posting makes liking public. Users are not only saying “I have this”; they are showing taste, group belonging, and participation. Likes, comments, and questions from others keep reinforcing that identity signal."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 193,
+    "question": {
+      "zh": "为什么 Labubu 的粉丝二创会增强 IP 生命力？",
+      "en": "Why do Labubu fan creations strengthen the IP's life?"
+    },
+    "answer": {
+      "zh": "二创让角色世界不只由品牌更新。粉丝画图、改造、拍短视频和做梗，会持续给 Labubu 加入新语境，让还没购买的人也能通过内容先参与。",
+      "en": "Fan creations mean the character world is not updated only by the brand. Drawings, customizations, short videos, and memes keep adding new contexts to Labubu, letting even non-buyers participate through content first."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 194,
+    "question": {
+      "zh": "为什么“真实开盒失败”也可能种草？",
+      "en": "Why can a real failed unboxing still seed interest?"
+    },
+    "answer": {
+      "zh": "开盒失败会让内容更真实，也会放大盲盒的不确定性。用户看到别人没抽中却继续讨论、交换或再试，会感到这个玩法本身有参与感，而不只是中奖结果有吸引力。",
+      "en": "A failed unboxing can feel more authentic and make blind-box uncertainty more visible. When users see someone miss the desired figure but keep discussing, trading, or trying again, the process itself starts to feel participatory, not only the winning result."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 195,
+    "question": {
+      "zh": "为什么 Labubu chatbox 要承认用户的矛盾心理？",
+      "en": "Why should the Labubu chatbox acknowledge users' mixed feelings?"
+    },
+    "answer": {
+      "zh": "用户可能同时觉得它贵、奇怪、可爱、流行、又有点想要。承认矛盾会比直接说服更自然，也更符合论文里消费决策受情绪、社交和身份共同影响的观点。",
+      "en": "Users may find Labubu expensive, strange, cute, popular, and tempting at the same time. Acknowledging that tension feels more natural than trying to persuade them, and it matches the research view that consumption decisions are shaped by emotion, social context, and identity together."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 196,
+    "question": {
+      "zh": "为什么“别人都有”不一定等于盲目从众？",
+      "en": "Why does “everyone else has one” not always mean blind conformity?"
+    },
+    "answer": {
+      "zh": "“别人都有”也可能是一种社交线索：用户在判断这个东西是否已经进入共同话题。它可能带来压力，也可能带来好奇；chatbox 应该区分社交压力、社交参与和真实审美变化。",
+      "en": "“Everyone else has one” can be a social cue: the user is judging whether the object has entered shared conversation. It may create pressure, but it may also create curiosity. The chatbox should distinguish social pressure, social participation, and real taste change."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 197,
+    "question": {
+      "zh": "为什么用户会先被内容种草，再被商品种草？",
+      "en": "Why can users be seeded by content before being seeded by the product itself?"
+    },
+    "answer": {
+      "zh": "很多时候用户先喜欢的是内容形式：开盒、挂包、明星同款、社群讨论、隐藏款故事。商品兴趣是在这些内容反复出现后才慢慢形成的，所以 chatbox 应该把媒体路径放在前面。",
+      "en": "Often users first enjoy the content format: unboxings, bag charms, celebrity same-items, community discussion, and hidden-edition stories. Product interest forms gradually after these content formats repeat, so the chatbox should foreground the media path."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 198,
+    "question": {
+      "zh": "为什么 Labubu 的角色形象适合讨论“情绪投射”？",
+      "en": "Why is Labubu's character design useful for discussing emotional projection?"
+    },
+    "answer": {
+      "zh": "Labubu 不是标准甜美形象，它有一点怪、一点坏笑、一点不完美。这样的角色更容易让用户把自己的小情绪放进去，比如疲惫、叛逆、想可爱但不想太乖。",
+      "en": "Labubu is not a standard sweet character; it is a little strange, mischievous, and imperfect. That makes it easier for users to place small feelings onto it, such as tiredness, rebellion, or wanting to be cute without being too polished."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 199,
+    "question": {
+      "zh": "为什么全渠道体验会让用户感觉 Labubu “到处都是”？",
+      "en": "Why can omni-channel experience make users feel Labubu is “everywhere”?"
+    },
+    "answer": {
+      "zh": "当社媒推荐、朋友聊天、门店陈列、线下展览和转卖信息同时出现，用户会感觉 Labubu 不只是某个平台的流行，而是进入了生活的多个角落。这种包围感会加速熟悉。",
+      "en": "When social recommendations, friend conversations, store displays, offline exhibitions, and resale posts appear together, users feel Labubu is not only a trend on one platform but present across many parts of life. That surrounding effect speeds up familiarity."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  },
+  {
+    "id": 200,
+    "question": {
+      "zh": "根据新增 text base，Labubu chatbox 最核心的对话任务是什么？",
+      "en": "Based on the expanded text base, what is the core dialogue task of the Labubu chatbox?"
+    },
+    "answer": {
+      "zh": "核心任务不是让用户立刻购买，也不是替用户判断真喜欢或跟风，而是模拟媒体内容怎样一步步影响注意力、情绪、身份和社交判断。好的回答要具体、双语、自然，并不断把用户带回“我是什么时候开始被它影响的”。",
+      "en": "The core task is not to make the user buy immediately or decide whether their liking is genuine or trend-following. It is to simulate how media content gradually shapes attention, emotion, identity, and social judgment. Good replies should be specific, bilingual, natural, and keep bringing the user back to when Labubu started affecting them."
+    },
+    "source_basis": "Expanded text base from Labubu omni-channel PDF and celebrity influence PDF deeper extracts"
+  }
+]

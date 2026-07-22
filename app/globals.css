@@ -228,6 +228,30 @@ img {
   line-height: 1;
 }
 
+.score-card em,
+.score-card small {
+  display: block;
+  font-style: normal;
+}
+
+.score-card em {
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.score-card small {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.48;
+}
+
+.text-base-card {
+  background: linear-gradient(135deg, var(--blue), #ffffff 72%);
+}
+
 .score-card i {
   display: block;
   height: 10px;
