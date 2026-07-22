@@ -13,7 +13,7 @@ type Message = {
 const copy = {
   zh: {
     title: "LABUBU 种草 Chatbox",
-    subtitle: "像和朋友聊天一样，说说你为什么被 Labubu 吸引。",
+    subtitle: "随便说，说得像发消息给朋友就行。",
     status: "在线模拟",
     lang: "中文",
     switchLang: "EN",
@@ -23,18 +23,18 @@ const copy = {
     send: "发送",
     panelTitle: "对话主题",
     profile: "当前画像",
-    profileValue: "正在被内容种草的浏览者",
-    hint: "你可以随便聊：想买、犹豫、跟风、喜欢可爱东西，或者只是好奇。我会帮你把这种感觉拆开看。",
-    thinking: "正在想怎么回你",
-    starters: ["我是不是被种草了？", "盲盒开箱为什么上头？", "Lisa 和网红为什么有影响？", "我想买但又有点犹豫"],
+    profileValue: "有点心动，但还想弄清楚为什么",
+    hint: "不用输入标准问题。你可以说“我朋友都有”“我觉得它丑萌”“有点贵但想买”“我怕抢不到”。我会顺着你的话聊。",
+    thinking: "让我想想",
+    starters: ["我是不是被种草了？", "它有点丑但又可爱", "我朋友都有一个", "我想买但觉得有点贵"],
     welcome: [
-      "嗨，先说清楚：这里不是商店，也不是让 Labubu 本人跟你聊天。",
-      "你可以直接讲你的真实想法，比如“我好像被种草了”“我只是觉得它可爱”“我怕买不到”。我会像朋友一样陪你拆一下：这份想要是从哪里来的。",
+      "嗨，来，先别急着判断自己是不是跟风。",
+      "你就按真实想法说：觉得它可爱也行，嫌贵也行，怕抢不到也行。我会像朋友一样接着聊，帮你看清楚这份心动到底是哪来的。",
     ],
   },
   en: {
     title: "LABUBU Seeding Chatbox",
-    subtitle: "Talk through why Labubu is starting to feel tempting.",
+    subtitle: "Type like you are texting a friend.",
     status: "Live simulation",
     lang: "English",
     switchLang: "中文",
@@ -44,22 +44,22 @@ const copy = {
     send: "Send",
     panelTitle: "Conversation themes",
     profile: "Current profile",
-    profileValue: "Viewer being influenced by media content",
-    hint: "You can be honest here: curious, tempted, unsure, influenced by friends, or just into cute things. I will help unpack the feeling.",
-    thinking: "Thinking about that",
-    starters: ["Am I getting influenced?", "Why are unboxings so satisfying?", "Why do Lisa and influencers matter?", "I want one but feel unsure"],
+    profileValue: "Tempted, but trying to understand why",
+    hint: "No need to ask a perfect question. Try: “my friends all have one,” “it is ugly-cute,” “it is expensive but I want it,” or “I’m scared it’ll sell out.”",
+    thinking: "Let me think",
+    starters: ["Am I being influenced?", "It is ugly but cute", "My friends all have one", "I want one but it feels expensive"],
     welcome: [
-      "Hey, quick note: this is not a shop, and you are not chatting with Labubu as a character.",
-      "Just say what you actually feel, like “I think I’m being influenced,” “it’s just cute,” or “I’m scared it’ll sell out.” I’ll help unpack where that feeling is coming from.",
+      "Hey, do not worry about sounding rational yet.",
+      "Just say the real feeling: cute, overpriced, confusing, tempting, or fear of missing out. I’ll chat with you like a friend and help figure out where the pull is coming from.",
     ],
   },
 };
 
 const themes = [
-  { name: "Emotion", zh: "情绪安慰", en: "Cute content can feel like stress relief, so desire starts as comfort instead of shopping." },
-  { name: "Identity", zh: "身份认同", en: "Personal style makes the toy feel like a way to describe yourself." },
-  { name: "Community", zh: "社群影响", en: "Seeing others post, save, and discuss it makes the trend feel normal and shared." },
-  { name: "FOMO", zh: "错失焦虑", en: "Scarcity cues make waiting feel risky, even before you decide whether you truly like it." },
+  { name: "Feeling", zh: "先承认：它确实会让人心动。", en: "First: yes, the pull can feel real." },
+  { name: "Scene", zh: "再看场景：是谁、在哪、怎么让你看到它。", en: "Then: who showed it to you, where, and how." },
+  { name: "Pressure", zh: "最后分清：喜欢本身，还是怕错过。", en: "Finally: is it liking, or pressure?" },
+  { name: "Choice", zh: "不用立刻买，也不用立刻否定自己。", en: "You do not need an instant yes or no." },
 ];
 
 function makeInitialMessages(lang: Lang): Message[] {
@@ -80,6 +80,43 @@ function pickLine(lines: string[], input: string, turnCount: number) {
 function createReply(input: string, lang: Lang, turnCount: number): string {
   const value = input.toLowerCase();
   const isZh = lang === "zh";
+  const has = (words: string[]) => words.some((word) => value.includes(word));
+
+  if (has(["贵", "价格", "钱", "买不起", "expensive", "price", "cost", "money", "overpriced"])) {
+    return pickLine(isZh ? [
+      "懂，贵但又想要是最纠结的状态。这个时候先别骂自己“怎么又被种草”，因为它确实被包装得很会让人心动。\n\n我会先问一个很现实的问题：如果不发朋友圈、不被别人看到，你还愿意为它花这笔钱吗？",
+      "这个犹豫很正常。你喜欢的可能不只是玩偶，还有那种“拥有一个当下很热的可爱东西”的感觉。价格一高，就更需要分清：我是在买快乐，还是在买一种不想落后的安全感？",
+      "我会建议你先别立刻下单。把它放进愿望清单，过两天再看。如果到时候你还清楚记得喜欢哪一款、为什么喜欢，那就比现在冲动买更稳。"
+    ] : [
+      "Totally get it. “It’s expensive but I still want it” is the most annoying kind of temptation. Before judging yourself, ask one practical question: if nobody saw you own it, would you still want to spend that money?",
+      "That hesitation makes sense. You may want the toy, but you may also want the feeling of owning something that is having a moment. When the price feels high, it helps to separate joy from pressure.",
+      "I would not rush it. Put it on a wishlist and check again in two days. If you still remember the exact style and why you like it, that is a stronger signal than today’s hype."
+    ], input, turnCount);
+  }
+
+  if (has(["犹豫", "纠结", "要不要", "不知道", "unsure", "confused", "hesitant", "not sure"])) {
+    return pickLine(isZh ? [
+      "纠结其实是好事，说明你没有完全被热度推着走。我们可以先不做“买不买”的决定，只看你心动的来源：是觉得它可爱，还是看到别人都有，还是怕后面抢不到？",
+      "我反而觉得你现在这个状态很真实：有点想要，但又知道自己可能被影响了。那就先别急着给答案，先把这份想要拆小一点看。",
+      "先不用逼自己理性到像写报告。你可以只回答我一个很小的问题：你第一次真正心动，是看到图片、开箱视频，还是别人挂在包上？"
+    ] : [
+      "Being unsure is actually a good sign. It means the hype has not completely taken over. We do not need a yes-or-no yet; we can just ask where the pull started: cuteness, friends, or fear of missing out?",
+      "That sounds very human: tempted, but aware that you might be influenced. Let’s not force a decision yet. Let’s make the feeling smaller and easier to inspect.",
+      "You do not have to be perfectly rational. Just answer this tiny question: did the first real pull come from a picture, an unboxing video, or seeing it on someone’s bag?"
+    ], input, turnCount);
+  }
+
+  if (has(["抢不到", "排队", "售罄", "sold out", "drop", "queue", "line", "restock"])) {
+    return pickLine(isZh ? [
+      "啊，这种“抢不到”真的很会把人推急。它会让你从“我喜不喜欢”直接跳到“我会不会错过”。这一步一跳过去，冲动就很容易上来。\n\n你可以先慢半拍：我是在喜欢它，还是在和库存赛跑？",
+      "排队和补货提醒会让一件小玩具变得像考试名额一样紧张。这个紧张感很真实，但它不一定等于真实喜欢。",
+      "售罄会给东西自动加滤镜。越难买，越像值得买。先把这个滤镜拿掉：如果它随时都能买，你还会想要同一只吗？"
+    ] : [
+      "The “can’t get it” part really speeds people up. It moves the question from “Do I like this?” to “Am I going to miss it?” That jump is where impulse usually enters.",
+      "Drops, queues, and restock alerts can make a tiny toy feel like a high-stakes event. The stress is real, but it is not always the same as real preference.",
+      "Sold-out status adds a filter. The harder it is to get, the more valuable it feels. Remove that filter for a second: if it were always available, would you still want this exact one?"
+    ], input, turnCount);
+  }
 
   if (value.includes("fomo") || value.includes("错失") || value.includes("稀缺") || value.includes("限量")) {
     return pickLine(isZh ? [
@@ -109,11 +146,11 @@ function createReply(input: string, lang: Lang, turnCount: number): string {
     return pickLine(isZh ? [
       "Lisa 或博主的影响不是“她买了所以你必须买”，更像是她们先帮 Labubu 赋予了一种氛围：酷、可爱、有品味、懂潮流。\n\n你看到的其实不是一个挂件，是一种被示范出来的生活方式。",
       "网红种草最自然的地方是，它看起来不像广告。Labubu 挂在包上、出现在 vlog 里、被轻轻带过，反而更像真实生活里的审美选择。",
-      "我懂你说的这种影响。朋友或明星一戴，它就从“奇怪小玩具”变成“原来这样搭还挺好看”。这就是品味转移。"
+      "我懂你说的这种影响。朋友或明星一戴，它就从“奇怪小玩具”变成“原来这样搭还挺好看”。你不一定是在复制她们，你可能是在被她们的搭配方式说服。"
     ] : [
       "Lisa or creators do not influence people by saying “buy this.” They give Labubu a mood first: stylish, cute, playful, in-the-know.\n\nYou are not only seeing a charm; you are seeing a lifestyle being modeled.",
       "Influencer seeding works best when it does not feel like an ad. A Labubu clipped to a bag in a vlog can feel like a real taste choice, which is more persuasive.",
-      "I get what you mean. Once a friend or celebrity wears it well, it stops looking like a random toy and starts looking like a style signal."
+      "I get what you mean. Once a friend or celebrity wears it well, it stops looking like a random toy and starts looking like a style signal. You may not be copying them; you may be convinced by how they styled it."
     ], input, turnCount);
   }
 
@@ -121,6 +158,18 @@ function createReply(input: string, lang: Lang, turnCount: number): string {
     return isZh
       ? "真假这个话题也挺有意思。表面上大家是在防踩雷，实际上也在建立“圈内知识”：数牙齿、看脚底 logo、分辨 Lafufu。\n\n当一个东西需要学习怎么辨认，它就更像一个小圈子了。你是在买玩具，也是在学习暗号。"
       : "The real-vs-fake topic is interesting. On the surface, people are avoiding scams; underneath, they are building insider knowledge: counting teeth, checking logos, spotting Lafufu.\n\nWhen a product needs a decoding guide, it starts feeling like a community with secret rules.";
+  }
+
+  if (has(["丑", "怪", "丑萌", "ugly", "weird", "strange"])) {
+    return pickLine(isZh ? [
+      "对，它就是那种“我也说不清为什么但越看越顺眼”的丑萌。这个很关键，因为太完美的可爱容易无聊，Labubu 有点怪、有点坏笑，反而更像有性格。",
+      "哈哈我懂，第一眼可能觉得怪，第二眼开始觉得有点意思，第三眼就开始看哪个颜色适合自己了。丑萌的东西最会这样慢慢渗进去。",
+      "它不是传统那种甜甜的可爱，所以才容易让人记住。你喜欢的可能不是“漂亮”，而是那种有点叛逆、有点小表情的感觉。"
+    ] : [
+      "Exactly. It has that “I don’t know why, but it grows on me” ugly-cute thing. Perfect cuteness can be boring; Labubu feels weird enough to have a personality.",
+      "I get it. First look: strange. Second look: kind of interesting. Third look: wait, which color would I get? Ugly-cute objects sneak up on people like that.",
+      "It is not traditionally sweet, which is why it is memorable. You may not be drawn to prettiness; you may be drawn to the little mischievous attitude."
+    ], input, turnCount);
   }
 
   if (value.includes("成人") || value.includes("可爱") || value.includes("童年") || value.includes("kidult") || value.includes("kidulthood") || value.includes("cute")) {
@@ -144,6 +193,18 @@ function createReply(input: string, lang: Lang, turnCount: number): string {
       "Yes. The persuasive part is often not “this object is amazing,” but “everyone seems to understand it.” When friends, creators, and comments all talk about it, it becomes a social topic, not just a toy.",
       "You are not only seeing one Labubu. You are seeing a whole atmosphere: unboxings, outfits, bag charms, rare pulls, excited comments. It makes you want to join the scene.",
       "That is the social currency part. Owning it is not only owning a plush; it can signal: I know the reference, I’m part of this moment."
+    ], input, turnCount);
+  }
+
+  if (has(["被种草", "种草", "influenced", "influence"])) {
+    return pickLine(isZh ? [
+      "我觉得你大概率是被种草了，但这不是坏事。被种草只是说明内容真的影响到了你。关键是下一步：你要不要把这个影响接住，变成自己的选择。",
+      "像是被种草了，而且是那种很典型的慢慢来：先刷到，后来记住，再看到别人也有，最后开始想“要不我也”。这不是突然发生的，是内容一点点铺出来的。",
+      "是，有种草的成分。但我不会直接说你在跟风，因为你可能也是真的喜欢。我们要分清楚：它本身打动你多少，热闹氛围推了你多少。"
+    ] : [
+      "I’d say yes, probably a bit. But being influenced is not automatically bad; it just means the content reached you. The next step is deciding whether you want to turn that influence into your own choice.",
+      "It does sound like gradual seeding: you saw it, remembered it, saw other people with it, and then started thinking, maybe me too. That is not random; that is content doing its work.",
+      "Yes, there is influence here. But I would not reduce it to mindless trend-following, because you may genuinely like it too. The useful question is: how much is the object, and how much is the surrounding buzz?"
     ], input, turnCount);
   }
 
