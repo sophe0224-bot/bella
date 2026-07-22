@@ -192,15 +192,15 @@ function createReply(input: string, lang: Lang, turnCount: number): string {
     ], input, turnCount);
   }
 
-  if (value.includes("社交") || value.includes("朋友") || value.includes("大家") || value.includes("trend") || value.includes("everyone") || value.includes("social")) {
+  if (value.includes("社交") || value.includes("朋友") || value.includes("大家") || value.includes("都有") || value.includes("身边") || value.includes("trend") || value.includes("everyone") || value.includes("all have") || value.includes("social")) {
     return pickLine(isZh ? [
-      "对，最容易让人动心的有时候不是“它多好”，而是“大家好像都懂”。朋友、博主、评论区都在聊，它就不只是玩偶了。",
-      "你看到的不是一只 Labubu，是一整套氛围：开箱、包挂、隐藏款、评论区尖叫。看久了真的会想进去凑个热闹。",
-      "这有点像社交暗号。拥有它不只是拥有一个玩偶，也像是在说：我知道这个梗，我在这个场子里。"
+      `如果你说的是“${said}”这种感觉，那它已经不只是玩偶了，更像一个大家都在用的小暗号。你不一定是想跟风，可能是不想被留在话题外面。`,
+      "身边人都有的时候，东西会突然变得很难忽略。它不是变好看了三倍，是你开始反复看到它，反复被提醒。",
+      "这种心动有一部分来自热闹。别人挂在包上、聊天时提到、评论区一直刷，Labubu 就从商品变成了一个可以加入的话题。"
     ] : [
-      "Yes. Sometimes the pull is not “this object is amazing.” It is more like, everyone seems to get it, and now I want to get it too.",
-      "You are not seeing one Labubu. You are seeing unboxings, bag charms, rare pulls, excited comments, the whole little scene. After a while, joining it starts to feel fun.",
-      "It can become a social signal. Not in a serious way, but enough to say: I know the reference, I am in on the moment."
+      `If "${said}" is the feeling, then it is not just about the toy. It is more like everyone has a tiny shared reference, and you do not want to be outside it.`,
+      "When people around you all have one, it gets hard to ignore. The object did not magically become three times cuter; you are just seeing it everywhere.",
+      "Part of the pull is the scene around it: bags, unboxings, comments, friends mentioning it. After a while, having one feels like joining the conversation."
     ], input, turnCount);
   }
 
@@ -252,9 +252,15 @@ function createReply(input: string, lang: Lang, turnCount: number): string {
       : "Yes, Labubu can become part of a style. It is not only a toy on a shelf. It hangs on a bag, shows up in photos, and gets seen with the outfit.\n\nSo you may want more than the toy. You may want the feeling of having that style too.";
   }
 
-  return isZh
-    ? `你说“${said}”这个点挺具体的，我先不把它硬塞进“跟风”或者“真喜欢”里。\n\n更像是某个画面已经留在你脑子里了。是人带动你的，还是那个东西本身越看越顺眼？`
-    : `"${said}" is specific enough that I would not force it into either "trend-following" or "real taste" yet.\n\nIt sounds like some image already stuck. Was it the person showing it, or did the thing itself start growing on you?`;
+  return pickLine(isZh ? [
+    `“${said}”这句话里最有用的不是 Labubu 本身，是你被哪种场景戳到了。是刷到太多次，还是某个人带着它的时候特别好看？`,
+    `我先顺着你这句“${said}”聊。你现在更像是被氛围推了一下，还是已经开始想象它挂在自己包上了？`,
+    `这个我能接住。你不用先解释得很完整，直接想一下：它是突然可爱起来了，还是你看见别人拥有它以后开始在意了？`
+  ] : [
+    `"${said}" gives me something to work with. Did it start from seeing it too many times, or from one person making it look good?`,
+    `Going off "${said}", are you more pulled by the whole mood around Labubu, or are you already imagining it on your own bag?`,
+    `I can work with that. You do not have to explain it perfectly. Did it suddenly look cute, or did seeing other people have it make you care?`
+  ], input, turnCount);
 }
 
 export default function Home() {
