@@ -77,43 +77,51 @@ function pickLine(lines: string[], input: string, turnCount: number) {
   return lines[total % lines.length];
 }
 
+function getUserSnippet(input: string, lang: Lang) {
+  const cleaned = input.replace(/\s+/g, " ").trim();
+  const limit = lang === "zh" ? 18 : 58;
+  if (cleaned.length <= limit) return cleaned;
+  return `${cleaned.slice(0, limit)}...`;
+}
+
 function createReply(input: string, lang: Lang, turnCount: number): string {
   const value = input.toLowerCase();
   const isZh = lang === "zh";
+  const said = getUserSnippet(input, lang);
   const has = (words: string[]) => words.some((word) => value.includes(word));
 
   if (has(["贵", "价格", "钱", "买不起", "expensive", "price", "cost", "money", "overpriced"])) {
     return pickLine(isZh ? [
-      "贵但又想要，真的最折磨。先别急着骂自己被种草了，我会先问一个有点扎心的问题：如果买了以后没人知道，你还愿意花这笔钱吗？",
-      "我懂。它贵，所以你才会开始怀疑自己到底是真喜欢，还是只是被那股热闹推了一把。\n\n可以先想一个很小的问题：你是喜欢那只本身，还是喜欢“我也终于有一个”的感觉？",
-      "先别马上付款。真的。把它放进愿望清单，过两天再看一次。如果到时候你还能说出具体喜欢哪一款、哪一点，那就比现在被视频推着买靠谱多了。"
+      `你说“${said}”，听起来不是不喜欢，是价格把你拽回现实了。\n\n这种时候别问“我是不是很冲动”，先问：如果买完没人夸、没人问链接，你还会觉得这笔钱花得开心吗？`,
+      `“${said}”这句很像已经心动了，只是钱包在旁边咳了一声。\n\n我会先把它放进愿望清单，不马上付款。过两天你还记得具体想要哪只，再考虑。`,
+      `如果你的纠结点是“${said}”，那重点可能不是贵不贵，而是你怕自己买的是热闹。\n\n试一下这个问题：你想要的是那只 Labubu，还是想要“我也终于有一个”的感觉？`
     ] : [
-      "Pricey but still tempting is the worst little mental loop. Before you judge yourself, try this: if nobody ever saw you with it, would you still want to pay for it?",
-      "I get it. The price makes the feeling louder. You are probably trying to figure out whether you want the toy, or whether you want that tiny “I have one too” feeling.",
-      "Do not buy it in the same mood that made you open the checkout page. Wishlist it, wait two days, then see if you still remember the exact one you wanted."
+      `When you say "${said}", it sounds like you do want it, and the price is the thing making you pause.\n\nTry this: if nobody complimented it or asked where you got it, would buying it still feel worth it?`,
+      `"${said}" has that already-tempted-but-checking-the-wallet feeling.\n\nI would wishlist it, not buy it tonight. If you still remember the exact one in two days, that tells you more.`,
+      `If the sticking point is "${said}", the question may not be price alone. It might be whether you want the Labubu, or the little "I finally have one too" feeling.`
     ], input, turnCount);
   }
 
   if (has(["犹豫", "纠结", "要不要", "不知道", "unsure", "confused", "hesitant", "not sure"])) {
     return pickLine(isZh ? [
-      "纠结挺真实的。你不是完全没感觉，也不是已经失去理智，就是卡在中间。\n\n先不说买不买。你第一次心动，是看到图片、开箱，还是别人挂在包上？",
-      "这状态我懂：想要是真的，怀疑自己被影响也是真的。先别急着给答案，先抓住那个最早让你停下来的画面。",
-      "不用把自己逼得像在写消费决策报告。你就回忆一下，哪一刻你突然觉得：等一下，这东西好像有点意思？"
+      `你说“${said}”，这个状态其实挺清楚的：不是完全没感觉，也不是已经上头到没法想，就是卡在中间。\n\n先别决定买不买。你第一次停下来多看两眼，是因为哪张图、哪个视频、还是谁的包？`,
+      `“${said}”不像没兴趣，比较像心动和警惕同时出现了。\n\n先抓那个最早的画面就行：哪一刻你突然觉得，等一下，这东西好像有点意思？`,
+      `别把这件事搞成消费决策报告。就从“${said}”这句话往回倒：它是哪里开始黏住你的？`
     ] : [
-      "That in-between feeling is pretty real. You want it, but you also know the internet may have nudged you there.\n\nForget buying for a second. Where did the first pull come from: a picture, an unboxing, or seeing it on a bag?",
-      "I get this mood. Part of you wants it, part of you is side-eyeing yourself. Start with the first image that stuck in your head.",
-      "You do not need a spreadsheet brain for this. Just remember the moment you thought, wait, why am I still looking at this?"
+      `When you say "${said}", it sounds like you are not cold on it. You are just suspicious of your own interest.\n\nForget buying for a second. What first made you pause: a photo, an unboxing, or seeing it on someone's bag?`,
+      `"${said}" feels like wanting it and side-eyeing yourself at the same time.\n\nStart with the first image that stuck in your head.`,
+      `Do not turn "${said}" into a whole decision spreadsheet. Just trace it back: when did it start sticking?`
     ], input, turnCount);
   }
 
   if (has(["抢不到", "排队", "售罄", "sold out", "drop", "queue", "line", "restock"])) {
     return pickLine(isZh ? [
-      "“抢不到”这三个字真的很会把人推急。你本来在想喜不喜欢，下一秒就变成我会不会错过。\n\n先慢一下：你是在喜欢它，还是在和库存赛跑？",
-      "排队、补货提醒、售罄截图，会把一个小玩具搞得像考试名额一样紧张。紧张是真的，但不一定等于喜欢也是真的。",
+      `你提到“${said}”，这就不是单纯审美了，已经有一点和库存赛跑的感觉。\n\n先慢一拍：如果它一直有货，你还会这么急吗？`,
+      `“${said}”这种话很容易把人推快。你本来在想喜不喜欢，下一秒就变成我会不会错过。冲动通常就是从这一步开始的。`,
       "售罄会自动给东西加滤镜。越难买，越像值得买。把这个滤镜拿掉试试：如果它一直有货，你还会想要同一只吗？"
     ] : [
-      "“What if I can’t get it?” is exactly the thought that speeds everything up. Suddenly it is not do I like this, it is am I too late?",
-      "Drops and restock alerts can make a tiny toy feel weirdly urgent. The stress is real. It just may not be the same thing as taste.",
+      `When you say "${said}", it sounds less like pure taste and more like racing the stock.\n\nIf it were always available, would you still feel this rushed?`,
+      `"${said}" is the kind of thought that speeds everything up. Suddenly it is not do I like this, it is am I too late?`,
       "Sold out adds a filter. The harder it is to get, the more it starts looking worth getting. If it were always available, would you still want this exact one?"
     ], input, turnCount);
   }
@@ -132,13 +140,13 @@ function createReply(input: string, lang: Lang, turnCount: number): string {
 
   if (value.includes("盲盒") || value.includes("开箱") || value.includes("隐藏") || value.includes("抽") || value.includes("blind") || value.includes("unbox") || value.includes("rare") || value.includes("secret")) {
     return pickLine(isZh ? [
-      "开箱很容易上头，因为它不像普通购物，更像拆一个小悬念。你买的不是一只确定的 Labubu，是“万一呢”。\n\n视频好看也在这儿，大家都等那一下揭晓。",
+      `你说“${said}”，这就很像被开箱内容带进去了。它不是普通购物，是一个小悬念：盒子还没开，大脑已经开始想“万一呢”。`,
       "盲盒厉害就厉害在答案来得很晚。盒子还没开，大脑已经开始替你幻想隐藏款了。",
-      "我觉得开箱最会种草的地方是，看多了以后你会想亲自体验一次那个揭晓瞬间。哪怕你一开始根本没打算买。"
+      `如果是“${said}”戳到你，那你想要的可能不只是玩偶，是那个揭晓瞬间。看多了真的会想亲自拆一次。`
     ] : [
-      "Unboxing works because it is a tiny suspense story. You are not only buying a Labubu. You are buying the maybe.\n\nThat reveal moment is doing a lot of work.",
+      `When you say "${said}", it sounds like the unboxing format got to you. It is a tiny suspense story. You are not only buying a Labubu; you are buying the maybe.`,
       "Blind boxes delay the answer. Before the box is even open, your brain is already whispering, what if it is the rare one?",
-      "The sneaky part is that after enough unboxings, you may want the reveal more than the object. You want to feel that little pop of surprise yourself."
+      `If "${said}" is the part that hooked you, you may want the reveal moment as much as the toy itself.`
     ], input, turnCount);
   }
 
@@ -210,13 +218,13 @@ function createReply(input: string, lang: Lang, turnCount: number): string {
 
   if (value.includes("为什么") || value.includes("喜欢") || value.includes("want") || value.includes("like") || value.includes("buy")) {
     return pickLine(isZh ? [
-      "我猜你不是突然“必须买”。更像是先觉得怪可爱，再看到别人搭得好看，最后开始想：是不是我也可以有一个？\n\n你更想要那只本身，还是想要它带来的氛围？",
-      "这很像慢慢被种草。第一眼只是好奇，第二次看到开箱，第三次看到朋友挂包上，它就开始跟你有关系了。",
-      "这个想买大概有三层：它可爱，它有风格，它现在很热闹。你可以不急着决定，先看哪一层最戳你。"
+      `你说“${said}”，我感觉不是突然“必须买”，更像是它出现太多次以后，开始从“别人喜欢的东西”变成“好像也跟我有关”。\n\n你更想要那只本身，还是想要它带来的氛围？`,
+      `“${said}”很像慢慢被种草。第一眼只是好奇，第二次看到开箱，第三次看到朋友挂包上，它就开始跟你有关系了。`,
+      `如果从“${said}”往下看，这个想买大概有三层：可爱、风格、还有现在大家都在聊的热闹。哪一层最戳你？`
     ] : [
-      "My guess is you did not suddenly need one. It probably built slowly: weird-cute at first, then styled well on someone else, then somehow it started feeling like it could fit you too.\n\nDo you want the object, or the mood around it?",
-      "That sounds like slow seeding. First curiosity, then unboxings, then seeing it on someone’s bag, and eventually it starts feeling personal.",
-      "The wanting has a few layers: cute, style, and the fact that everyone is talking about it. Which one is actually doing the most work on you?"
+      `When you say "${said}", it does not sound sudden. It sounds like Labubu showed up enough times that it moved from "other people's thing" to "wait, maybe this fits me too."\n\nDo you want the object, or the mood around it?`,
+      `"${said}" sounds like slow seeding. First curiosity, then unboxings, then seeing it on someone's bag, and eventually it starts feeling personal.`,
+      `Under "${said}", there are probably a few layers: cute, style, and the fact that everyone is talking about it. Which one is doing the most work on you?`
     ], input, turnCount);
   }
 
@@ -245,8 +253,8 @@ function createReply(input: string, lang: Lang, turnCount: number): string {
   }
 
   return isZh
-    ? "我懂。你再说具体一点：是别人挂包上让你心动，还是开箱视频看多了，还是单纯觉得它丑萌到有点可爱？\n\n不用说得很理性，说真实一点就好。"
-    : "I get it. Tell me the more specific version: was it someone styling it on a bag, too many unboxing videos, or just the weird-cute face getting to you?\n\nIt does not have to sound rational. It just has to sound honest.";
+    ? `你说“${said}”这个点挺具体的，我先不把它硬塞进“跟风”或者“真喜欢”里。\n\n更像是某个画面已经留在你脑子里了。是人带动你的，还是那个东西本身越看越顺眼？`
+    : `"${said}" is specific enough that I would not force it into either "trend-following" or "real taste" yet.\n\nIt sounds like some image already stuck. Was it the person showing it, or did the thing itself start growing on you?`;
 }
 
 export default function Home() {
