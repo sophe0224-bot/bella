@@ -1,6 +1,12 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import {
+  classifyUserIntent,
+  makeIntentGuardReply,
+  shouldSuppressProductImage,
+  type UserIntent,
+} from "./chatbot-guards";
 import textBase from "./labubu-text-base.json";
 
 type Lang = "zh" | "en";
@@ -11,6 +17,7 @@ type Message = {
   image?: string;
   retrieved?: RetrievedContext[];
   route?: string;
+  intent?: UserIntent;
 };
 type TextBaseItem = {
   id: number;
@@ -29,6 +36,7 @@ type ReplyResult = {
   text: string;
   retrieved: RetrievedContext[];
   route: string;
+  intent: UserIntent;
 };
 
 const labubuTextBase = textBase as TextBaseItem[];
@@ -48,7 +56,7 @@ const copy = {
     send: "发送",
     panelTitle: "对话主题",
     profile: "当前画像",
-    profileValue: "已经心动了，但还在嘴硬",
+    profileValue: "还在观察自己的感觉",
     baseLabel: "研究底库",
     baseValue: "300 条双语 Q&A",
     baseHint: "已接入全渠道、盲盒、社群、名人影响和情绪投射等内容。",
@@ -72,7 +80,7 @@ const copy = {
     send: "Send",
     panelTitle: "Conversation themes",
     profile: "Current profile",
-    profileValue: "Tempted, pretending not to be",
+    profileValue: "Reading the current signal",
     baseLabel: "Text base",
     baseValue: "300 bilingual Q&As",
     baseHint: "Uses omni-channel, blind boxes, communities, celebrity influence, and emotional projection.",
@@ -263,12 +271,12 @@ function makeTextBaseReply(contexts: RetrievedContext[], input: string, lang: La
   const secondary = contexts[1];
   const bridge = pickLine(isZh ? [
     `你这句“${said}”可以接到一个更具体的点。`,
-    `这不是一句空泛的“想买”，里面有个挺清楚的触点。`,
-    `我先不急着把它归成跟风，这里更像是一个被内容慢慢推近的过程。`,
+    `我先把它当成一个具体触点来看，不急着判断你是不是想买。`,
+    `这里能看到一个内容线索，但它不等于你一定心动或要购买。`,
   ] : [
     `"${said}" connects to a more specific pattern.`,
-    `This is not just a vague want. There is a clear touchpoint inside it.`,
-    `I would not flatten this into trend-following. It sounds more like content gradually pulling you closer.`,
+    `I am treating this as a content cue first, not as proof that you want to buy.`,
+    `There is a media pattern here, but it does not have to mean hidden attraction or purchase intent.`,
   ], input, turnCount, recentReplies);
   const followUp = pickLine(isZh ? [
     "你可以先抓一个最早的画面：是刷到、看到别人用，还是某个开盒瞬间让它开始留在脑子里？",
@@ -289,12 +297,24 @@ function makeTextBaseReply(contexts: RetrievedContext[], input: string, lang: La
 }
 
 function createReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): ReplyResult {
+  const intent = classifyUserIntent(input);
+  const guardedReply = makeIntentGuardReply(intent, lang, input);
+  if (guardedReply) {
+    return {
+      text: guardedReply,
+      retrieved: [],
+      route: `intent:${intent}`,
+      intent,
+    };
+  }
+
   const retrieved = retrieveTextBaseContexts(input, lang);
   if (retrieved.length > 0) {
     return {
       text: makeTextBaseReply(retrieved, input, lang, turnCount, recentReplies),
       retrieved,
       route: "text-base",
+      intent,
     };
   }
 
@@ -302,6 +322,7 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
     text: createFallbackReply(input, lang, turnCount, recentReplies),
     retrieved,
     route: "hard-coded fallback",
+    intent,
   };
 }
 
@@ -314,25 +335,25 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
 
   if (has(["贵", "价格", "钱", "买不起", "expensive", "price", "cost", "money", "overpriced"])) {
     return choose(isZh ? [
-      `你说“${said}”，听起来不是不喜欢，是价格把你拽回现实了。\n\n这种时候别问“我是不是很冲动”，先问：如果买完没人夸、没人问链接，你还会觉得这笔钱花得开心吗？`,
-      `“${said}”这句很像已经心动了，只是钱包在旁边咳了一声。\n\n我会先把它放进愿望清单，不马上付款。过两天你还记得具体想要哪只，再考虑。`,
-      `如果你的纠结点是“${said}”，那重点可能不是贵不贵，而是你怕自己买的是热闹。\n\n试一下这个问题：你想要的是那只 Labubu，还是想要“我也终于有一个”的感觉？`
+      `你说“${said}”，那价格确实是一个很现实的阻力。\n\n先不用把它解释成喜欢或不喜欢。可以先问：这个价格让你在意的是预算，还是觉得热度把它抬得太高？`,
+      `“${said}”这句更像是在做边界判断。\n\n可以先不付款，也不需要证明自己真的心动。过两天如果还想继续了解，再看是哪一只、哪种场景让你在意。`,
+      `如果你的纠结点是“${said}”，那可以先把两件事分开：东西本身值不值得看，和现在的价格气氛是不是让人有压力。`
     ] : [
-      `When you say "${said}", it sounds like you do want it, and the price is the thing making you pause.\n\nTry this: if nobody complimented it or asked where you got it, would buying it still feel worth it?`,
-      `"${said}" has that already-tempted-but-checking-the-wallet feeling.\n\nI would wishlist it, not buy it tonight. If you still remember the exact one in two days, that tells you more.`,
-      `If the sticking point is "${said}", the question may not be price alone. It might be whether you want the Labubu, or the little "I finally have one too" feeling.`
+      `When you say "${said}", price sounds like a real boundary.\n\nNo need to translate that into desire. Is the issue your budget, or the feeling that the hype has pushed the price too high?`,
+      `"${said}" sounds like you are checking the limit, not automatically wanting it.\n\nYou can wait without proving anything. If you still care in two days, then look at which exact version or scene stayed with you.`,
+      `If the sticking point is "${said}", separate the object from the pricing atmosphere. One can be interesting while the other still feels unreasonable.`
     ]);
   }
 
   if (has(["犹豫", "纠结", "要不要", "不知道", "unsure", "confused", "hesitant", "not sure"])) {
     return choose(isZh ? [
-      `你说“${said}”，这个状态其实挺清楚的：不是完全没感觉，也不是已经上头到没法想，就是卡在中间。\n\n先别决定买不买。你第一次停下来多看两眼，是因为哪张图、哪个视频、还是谁的包？`,
-      `“${said}”不像没兴趣，比较像心动和警惕同时出现了。\n\n先抓那个最早的画面就行：哪一刻你突然觉得，等一下，这东西好像有点意思？`,
-      `别把这件事搞成消费决策报告。就从“${said}”这句话往回倒：它是哪里开始黏住你的？`
+      `你说“${said}”，那就先把它放在“不确定”里，不急着推成心动。\n\n如果你愿意拆一下，可以看是哪个场景让你开始注意它。`,
+      `“${said}”更像是在观察自己的反应。\n\n先抓一个最早的画面就行：哪一刻你停下来多看了一眼？`,
+      `别把这件事搞成消费决策报告。就从“${said}”这句话往回看：它是从哪里进入你视线的？`
     ] : [
-      `When you say "${said}", it sounds like you are not cold on it. You are just suspicious of your own interest.\n\nForget buying for a second. What first made you pause: a photo, an unboxing, or seeing it on someone's bag?`,
-      `"${said}" feels like wanting it and side-eyeing yourself at the same time.\n\nStart with the first image that stuck in your head.`,
-      `Do not turn "${said}" into a whole decision spreadsheet. Just trace it back: when did it start sticking?`
+      `When you say "${said}", I would keep it in the unsure zone instead of pushing it into interest.\n\nIf you want to unpack it, what scene made you notice it first?`,
+      `"${said}" sounds like you are watching your own reaction.\n\nStart with the first image or post that made you pause.`,
+      `Do not turn "${said}" into a whole decision spreadsheet. Just trace it back: where did Labubu first enter your feed or conversation?`
     ]);
   }
 
@@ -354,7 +375,7 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "我懂那一下。刷到别人开箱，心里突然紧一下，好像大家都已经进场了，就你还在门口。",
       "这不代表你不理性。稀缺本来就会制造紧张感。先把“怕买不到”和“真的喜欢这个款”分开放，脑子会清楚一点。"
     ] : [
-      "Yeah, that sounds like the “what if I miss it?” button got pressed. Maybe you do like it. The scarcity just makes the liking feel louder.\n\nIf it were still available tomorrow, would you feel this urgent?",
+      "Yeah, that sounds like the \"what if I miss it?\" button got pressed. Scarcity can make any reaction feel more urgent before you have even decided how you feel.\n\nIf it were still available tomorrow, would you feel this rushed?",
       "I know that little stomach drop from watching someone else unbox it. It can feel like everyone already got into the moment and you are still outside.",
       "This does not mean you are being irrational. Scarcity is supposed to make waiting feel risky. Split the thought in two: I like this one, and I am scared it will disappear."
     ]);
@@ -368,7 +389,7 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
     ] : [
       `When you say "${said}", that sounds like the platform doing some of the work. You paused once, clicked once, and then it kept coming back.\n\nIt may not have become your taste overnight. It borrowed your attention a few times.`,
       "Repeated exposure changes the feeling. First time, you scroll past. Third time, it looks familiar. Fifth time, it feels like it has been in your world for a while.",
-      "Algorithms are good at turning “I looked once” into “maybe I have always been interested.” Labubu fits that loop because it has visuals, unboxings, scarcity, and loud comment sections."
+      "Algorithms are good at turning \"I looked once\" into \"this keeps showing up around me.\" Labubu fits that loop because it has visuals, unboxings, scarcity, and loud comment sections."
     ]);
   }
 
@@ -378,9 +399,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "盲盒厉害就厉害在答案来得很晚。盒子还没开，大脑已经开始替你幻想隐藏款了。",
       `如果是“${said}”戳到你，那你想要的可能不只是玩偶，是那个揭晓瞬间。看多了真的会想亲自拆一次。`
     ] : [
-      `When you say "${said}", it sounds like the unboxing format got to you. It is a tiny suspense story. You are not only buying a Labubu; you are buying the maybe.`,
+      `When you say "${said}", the unboxing format sounds relevant. It turns the object into a tiny suspense story before anyone decides whether they care about the toy itself.`,
       "Blind boxes delay the answer. Before the box is even open, your brain is already whispering, what if it is the rare one?",
-      `If "${said}" is the part that hooked you, you may want the reveal moment as much as the toy itself.`
+      `If "${said}" is the part that caught your attention, the reveal moment may be doing as much work as the toy itself.`
     ]);
   }
 
@@ -420,9 +441,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "哈哈我懂。它不是甜甜乖乖的可爱，所以反而有记忆点。那个小坏笑很容易让人越看越顺眼。",
       "你可能不是被“漂亮”打动，是被它那个有点怪、有点欠欠的性格感打动。太完美的可爱有时候真的会无聊。"
     ] : [
-      "Exactly. First look: what is that. Second look: wait, kind of interesting. Third look: which color would I get?",
-      "I get it. It is not sweet in a perfect way, which is why it sticks. That mischievous little face does more than it should.",
-      "You may not be drawn to prettiness. You may be drawn to the weird personality of it, which is honestly the whole trick."
+      "That reaction makes sense. Labubu is deliberately strange, so some people read it as charming and some read it as off-putting.",
+      "I get the tension. It is not sweet in a perfect way, which is exactly why people either warm up to it or bounce off it.",
+      "The weird personality is doing a lot of the work. That can be appealing, but it can also be the reason someone dislikes it."
     ]);
   }
 
@@ -464,24 +485,24 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
 
   if (value.includes("为什么") || value.includes("喜欢") || value.includes("want") || value.includes("like") || value.includes("buy")) {
     return choose(isZh ? [
-      `你说“${said}”，我感觉不是突然“必须买”，更像是它出现太多次以后，开始从“别人喜欢的东西”变成“好像也跟我有关”。\n\n你更想要那只本身，还是想要它带来的氛围？`,
-      `“${said}”很像慢慢被种草。第一眼只是好奇，第二次看到开箱，第三次看到朋友挂包上，它就开始跟你有关系了。`,
-      `如果从“${said}”往下看，这个想买大概有三层：可爱、风格、还有现在大家都在聊的热闹。哪一层最戳你？`
+      `你说“${said}”，我会先看它是怎么从内容里出现的，而不是直接推到“必须买”。\n\n你是在问它为什么会有存在感，还是在说自己已经有点喜欢？`,
+      `“${said}”可以拆成几个阶段：第一次注意到、反复看到、看到别人怎么用，然后才可能变成个人判断。你现在更像在哪一步？`,
+      `如果从“${said}”往下看，可以先分清：你是在研究这个现象，还是确实被某个造型、视频或社交场景打动了？`
     ] : [
-      `When you say "${said}", it does not sound sudden. It sounds like Labubu showed up enough times that it moved from "other people's thing" to "wait, maybe this fits me too."\n\nDo you want the object, or the mood around it?`,
-      `"${said}" sounds like slow seeding. First curiosity, then unboxings, then seeing it on someone's bag, and eventually it starts feeling personal.`,
-      `Under "${said}", there are probably a few layers: cute, style, and the fact that everyone is talking about it. Which one is doing the most work on you?`
+      `When you say "${said}", I would look at how it entered through media first, not jump straight to "you must want it."\n\nAre you asking why it has so much presence, or saying it has started to appeal to you?`,
+      `"${said}" can be split into stages: noticing it, seeing it repeatedly, seeing how other people use it, and then forming your own reaction. Which stage are you in?`,
+      `Under "${said}", separate two things: studying the phenomenon, and personally being moved by a design, video, or social scene. Which one fits better?`
     ]);
   }
 
   if (value.includes("理性") || value.includes("判断") || value.includes("decision") || value.includes("rational") || value.includes("should")) {
     return choose(isZh ? [
-      "可以理性，但不用装作自己完全不喜欢。先等 48 小时。两天后你还记得具体想要哪只、为什么想要，那就比较像真的喜欢。",
-      "别先问该不该买，先问你想要的是哪一部分：可爱、稀缺、朋友也有，还是开箱那一下？如果主要是后面几个，就先缓缓。",
+      "可以理性，也可以不喜欢。先等 48 小时。两天后如果你还想继续了解，再看是哪个具体点留下来了。",
+      "别先问该不该买，先问你在评估哪一部分：造型、稀缺、朋友也有，还是开箱那一下？如果主要是后面几个，就先缓缓。",
       "理性不等于不能喜欢。可以喜欢，也可以先不买。给自己一个小规则：只买具体喜欢的款，不为了隐藏款一直加购。"
     ] : [
-      "You can be rational without pretending you do not like it. Wait 48 hours. If you still remember the exact one and why you want it, that is a much cleaner signal.",
-      "Do not start with should I buy it. Ask what part you want: the cuteness, the scarcity, your friends having it, or the unboxing hit. If it is mostly the last few, slow down.",
+      "You can be rational, and you can also simply dislike it. Wait 48 hours. If you still want to understand it, notice which specific part stayed with you.",
+      "Do not start with should I buy it. Ask what part you are evaluating: the design, the scarcity, friends having it, or the unboxing hit. If it is mostly the last few, slow down.",
       "Being rational does not mean killing the fun. You can like it and still wait. A decent rule: buy a specific one you actually want, not endless boxes chasing a rare pull."
     ]);
   }
@@ -495,17 +516,17 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
   if (value.includes("身份") || value.includes("风格") || value.includes("identity") || value.includes("style")) {
     return isZh
       ? "对，Labubu 很容易变成风格的一部分。它不是安静放在柜子里的玩偶，是会挂在包上、出现在照片里、和穿搭一起被看到的东西。\n\n所以你想要的可能不只是玩具，也可能是“我也可以有这种风格”的感觉。"
-      : "Yes, Labubu can become part of a style. It is not only a toy on a shelf. It hangs on a bag, shows up in photos, and gets seen with the outfit.\n\nSo you may want more than the toy. You may want the feeling of having that style too.";
+      : "Yes, Labubu can become part of a style. It is not only a toy on a shelf. It hangs on a bag, shows up in photos, and gets seen with the outfit.\n\nThat means the style signal can matter as much as the object itself.";
   }
 
   return choose(isZh ? [
     `“${said}”这句话里最有用的不是 Labubu 本身，是你被哪种场景戳到了。是刷到太多次，还是某个人带着它的时候特别好看？`,
-    `我先顺着你这句“${said}”聊。你现在更像是被氛围推了一下，还是已经开始想象它挂在自己包上了？`,
-    `这个我能接住。你不用先解释得很完整，直接想一下：它是突然可爱起来了，还是你看见别人拥有它以后开始在意了？`
+    `我先顺着你这句“${said}”聊。你现在更像是在观察这个现象，还是在讲自己的反应？`,
+    `这个我能接住。你不用先解释得很完整，直接想一下：它是从哪个内容场景进入你视线的？`
   ] : [
     `"${said}" gives me something to work with. Did it start from seeing it too many times, or from one person making it look good?`,
-    `Going off "${said}", are you more pulled by the whole mood around Labubu, or are you already imagining it on your own bag?`,
-    `I can work with that. You do not have to explain it perfectly. Did it suddenly look cute, or did seeing other people have it make you care?`
+    `Going off "${said}", are you observing the media phenomenon, or describing your own reaction to it?`,
+    `I can work with that. You do not have to explain it perfectly. Which content scene first put it in front of you?`
   ]);
 }
 
@@ -517,6 +538,14 @@ export default function Home() {
   const pendingReply = useRef<number | null>(null);
   const t = copy[lang];
 
+  const latestIntent = useMemo<UserIntent>(() => {
+    for (let index = messages.length - 1; index >= 0; index -= 1) {
+      const intent = messages[index].intent;
+      if (intent) return intent;
+    }
+    return "other";
+  }, [messages]);
+
   useEffect(() => {
     return () => {
       if (pendingReply.current !== null) window.clearTimeout(pendingReply.current);
@@ -524,9 +553,21 @@ export default function Home() {
   }, []);
 
   const latestScore = useMemo(() => {
+    if (latestIntent === "explicit-dislike" || latestIntent === "refusal" || latestIntent === "frustration-correction") {
+      return 8;
+    }
     const userMessages = messages.filter((message) => message.role === "user").length;
     return Math.min(92, 28 + userMessages * 13);
-  }, [messages]);
+  }, [latestIntent, messages]);
+
+  const profileValue = useMemo(() => {
+    if (latestIntent === "frustration-correction") return lang === "zh" ? "已修正：用户不是心动" : "Corrected: not hidden interest";
+    if (latestIntent === "explicit-dislike") return lang === "zh" ? "明确不喜欢" : "Clearly not into it";
+    if (latestIntent === "refusal") return lang === "zh" ? "明确不想购买" : "Clearly not buying";
+    if (latestIntent === "uncertainty") return lang === "zh" ? "不确定，正在观察" : "Unsure, still sorting it out";
+    if (latestIntent === "positive-interest") return lang === "zh" ? "有兴趣，但不等于必须买" : "Interested, not automatically buying";
+    return t.profileValue;
+  }, [lang, latestIntent, t.profileValue]);
 
   function toggleLang() {
     if (pendingReply.current !== null) window.clearTimeout(pendingReply.current);
@@ -567,6 +608,7 @@ export default function Home() {
         );
         console.info("[Labubu retrieval]", {
           input: trimmed,
+          intent: reply.intent,
           route: reply.route,
           retrieved: reply.retrieved.map((item) => ({
             id: item.id,
@@ -583,7 +625,8 @@ export default function Home() {
             text: reply.text,
             retrieved: reply.retrieved,
             route: reply.route,
-            image: turnCount % 3 === 1 ? "/labubu/product-8.jpg" : undefined,
+            intent: reply.intent,
+            image: shouldSuppressProductImage(reply.intent) ? undefined : turnCount % 3 === 1 ? "/labubu/product-8.jpg" : undefined,
           },
         ];
       });
@@ -617,7 +660,7 @@ export default function Home() {
             <img src="/labubu/product-11.jpg" alt="" />
             <div>
               <span>{t.profile}</span>
-              <strong>{t.profileValue}</strong>
+              <strong>{profileValue}</strong>
             </div>
           </div>
           <div className="score-card">
@@ -672,6 +715,8 @@ export default function Home() {
                             </li>
                           ))}
                         </ul>
+                      ) : message.route.startsWith("intent:") ? (
+                        <small>Intent guard used before text-base retrieval.</small>
                       ) : (
                         <small>No text-base match; fallback reply used.</small>
                       )}
