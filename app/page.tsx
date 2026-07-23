@@ -249,10 +249,12 @@ function retrieveTextBaseContexts(input: string, lang: Lang) {
     usedContextKeys.add(key);
     if (selected.length === RETRIEVAL_TOP_K) break;
   }
-  for (const result of scored) {
-    if (selected.includes(result)) continue;
-    selected.push(result);
-    if (selected.length === RETRIEVAL_TOP_K) break;
+  if (selected.length < RETRIEVAL_TOP_K) {
+    for (const result of scored) {
+      if (selected.includes(result)) continue;
+      selected.push(result);
+      if (selected.length === RETRIEVAL_TOP_K) break;
+    }
   }
 
   return selected.map(({ item, score, matchedSignals }) => ({
