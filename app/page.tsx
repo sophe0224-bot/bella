@@ -9,6 +9,8 @@ type Message = {
   role: "assistant" | "user";
   text: string;
   image?: string;
+  retrieved?: RetrievedContext[];
+  route?: string;
 };
 type TextBaseItem = {
   id: number;
@@ -16,8 +18,22 @@ type TextBaseItem = {
   answer: Record<Lang, string>;
   source_basis?: string;
 };
+type RetrievedContext = {
+  id: number;
+  score: number;
+  question: string;
+  answer: string;
+  matchedSignals: string[];
+};
+type ReplyResult = {
+  text: string;
+  retrieved: RetrievedContext[];
+  route: string;
+};
 
 const labubuTextBase = textBase as TextBaseItem[];
+const RETRIEVAL_TOP_K = 3;
+const RETRIEVAL_THRESHOLD = 4;
 
 const copy = {
   zh: {
@@ -79,21 +95,61 @@ const themes = [
 
 const signalTerms = [
   "全渠道", "触点", "线下", "门店", "展会", "社群", "小红书", "微信", "晒图", "换款", "二级市场",
-  "盲盒", "开箱", "隐藏款", "抽", "限量", "售罄", "稀缺", "fomo",
+  "盲盒", "开箱", "开盒", "隐藏款", "抽", "限量", "售罄", "稀缺", "fomo", "截图", "保存", "配色",
   "明星", "网红", "博主", "同款", "lisa", "名人", "可信", "匹配", "人设",
   "情绪", "陪伴", "治愈", "投射", "身份", "风格", "挂包", "丑萌", "怪可爱", "顺眼",
   "算法", "推荐", "反复", "刷到", "种草", "跟风", "朋友", "都有",
   "omni", "channel", "touchpoint", "offline", "community", "posting", "trading", "resale",
-  "blind", "unbox", "hidden", "rare", "scarcity", "sold", "limited",
-  "celebrity", "influencer", "creator", "same", "credibility", "trust", "match", "parasocial",
-  "emotion", "comfort", "projection", "identity", "style", "bag", "ugly", "cute", "weird",
-  "algorithm", "feed", "repeated", "seeding", "trend", "friend", "everyone",
+  "blind", "unbox", "unboxing", "hidden", "rare", "scarcity", "sold", "limited", "expensive", "price",
+  "celebrity", "influencer", "creator", "same", "same-item", "same item", "credibility", "trust", "match", "parasocial",
+  "emotion", "comfort", "projection", "identity", "style", "bag", "bag charm", "bag-charm", "clip", "clips", "ugly", "cute", "weird",
+  "algorithm", "feed", "repeated", "seeding", "trend", "friend", "friends", "everyone",
+  "screenshot", "screenshots", "saving", "saved", "colorway", "colorways", "color", "colors",
 ];
 
 const stopWords = new Set([
   "labubu", "the", "and", "you", "your", "that", "this", "with", "want", "like", "buy", "why",
   "what", "how", "does", "did", "can", "one", "all", "have", "feel", "feels", "thing",
+  "still", "just", "keep", "keeps", "seeing", "videos", "video", "started", "start", "different",
+  "after", "before", "there", "their", "they", "them", "more", "less", "really", "because",
 ]);
+
+const signalSynonyms: Record<string, string[]> = {
+  "开箱": ["开盒", "unboxing", "unbox"],
+  "开盒": ["开箱", "unboxing", "unbox"],
+  "盲盒": ["blind box", "blind-box"],
+  "刷到": ["feed", "repeated exposure", "重复曝光"],
+  "反复": ["repeated", "repeated exposure"],
+  "朋友": ["friend", "friends", "peer"],
+  "都有": ["friends", "everyone", "social identity"],
+  "贵": ["expensive", "price"],
+  "价格": ["price", "expensive", "resale"],
+  "抢不到": ["sold out", "scarcity", "fomo"],
+  "售罄": ["sold out", "scarcity"],
+  "明星": ["celebrity", "same-item", "meaning transfer"],
+  "博主": ["creator", "influencer", "credibility"],
+  "网红": ["creator", "influencer", "credibility"],
+  "挂包": ["bag", "bag charm", "bag-charm"],
+  "情绪": ["emotion", "emotional projection"],
+  "投射": ["projection", "emotional projection"],
+  "截图": ["screenshot", "screenshots", "saving"],
+  "保存": ["saved", "saving", "screenshots"],
+  "配色": ["colorway", "colorways", "color"],
+  "unbox": ["unboxing", "blind box"],
+  "unboxing": ["unbox", "blind box", "开箱", "开盒"],
+  "feed": ["repeated exposure", "刷到"],
+  "friend": ["friends", "peer", "social identity"],
+  "friends": ["friend", "peer", "social identity"],
+  "expensive": ["price", "resale", "贵"],
+  "price": ["expensive", "resale", "价格"],
+  "celebrity": ["same-item", "meaning transfer", "明星"],
+  "influencer": ["creator", "credibility", "博主"],
+  "creator": ["influencer", "credibility", "博主"],
+  "bag": ["bag charm", "bag-charm", "挂包"],
+  "screenshot": ["screenshots", "saving", "截图"],
+  "screenshots": ["screenshot", "saving", "截图"],
+  "colorways": ["colorway", "color", "配色"],
+};
 
 function makeInitialMessages(lang: Lang): Message[] {
   return copy[lang].welcome.map((text, index) => ({
@@ -135,36 +191,76 @@ function getInputSignals(input: string) {
     .match(/[a-z][a-z'-]{2,}/g)
     ?.filter((word) => !stopWords.has(word) && word.length > 3)
     .slice(0, 8) ?? [];
-  return Array.from(new Set([...termSignals, ...wordSignals]));
+  const rawSignals = Array.from(new Set([...termSignals, ...wordSignals]));
+  const expandedSignals = rawSignals.flatMap((signal) => [signal, ...(signalSynonyms[signal.toLowerCase()] ?? signalSynonyms[signal] ?? [])]);
+  return Array.from(new Set(expandedSignals));
 }
 
-function findTextBaseMatch(input: string, lang: Lang, turnCount: number) {
+function getContextKey(question: string) {
+  const englishScene = question.match(/^When (.*?), how can/i)?.[1];
+  if (englishScene) return englishScene.toLowerCase();
+  const chineseScene = question.match(/^当(.+?)时，/)?.[1];
+  if (chineseScene) return chineseScene;
+  return question.toLowerCase().replace(/[“”"'?.，。]/g, "").slice(0, 54);
+}
+
+function retrieveTextBaseContexts(input: string, lang: Lang) {
   const signals = getInputSignals(input);
-  if (signals.length === 0) return null;
+  if (signals.length === 0) return [];
 
   const scored = labubuTextBase
     .map((item) => {
-      const localText = `${item.question[lang]} ${item.answer[lang]}`.toLowerCase();
+      const localQuestion = item.question[lang].toLowerCase();
+      const localAnswer = item.answer[lang].toLowerCase();
+      const localText = `${localQuestion} ${localAnswer}`;
+      const allQuestion = `${item.question.zh} ${item.question.en}`.toLowerCase();
       const allText = `${localText} ${item.question.zh} ${item.answer.zh} ${item.question.en} ${item.answer.en}`.toLowerCase();
       let score = 0;
+      const matchedSignals: string[] = [];
       for (const signal of signals) {
         const normalized = signal.toLowerCase();
-        if (localText.includes(normalized)) score += normalized.length > 4 ? 5 : 3;
+        if (localQuestion.includes(normalized)) score += normalized.length > 4 ? 7 : 5;
+        else if (localAnswer.includes(normalized)) score += normalized.length > 4 ? 5 : 3;
+        else if (allQuestion.includes(normalized)) score += normalized.length > 4 ? 4 : 2;
         else if (allText.includes(normalized)) score += normalized.length > 4 ? 3 : 1;
+        if (allText.includes(normalized)) matchedSignals.push(signal);
       }
-      if (item.id >= 151) score += 1;
-      return { item, score };
+      if (item.id >= 201) score += 2;
+      else if (item.id >= 151) score += 1;
+      return { item, score, matchedSignals: Array.from(new Set(matchedSignals)) };
     })
-    .filter(({ score }) => score >= 4)
+    .filter(({ score }) => score >= RETRIEVAL_THRESHOLD)
     .sort((a, b) => b.score - a.score || a.item.id - b.item.id);
 
-  if (scored.length === 0) return null;
-  return scored[(turnCount + signals.join("").length) % Math.min(3, scored.length)].item;
+  const selected: typeof scored = [];
+  const usedContextKeys = new Set<string>();
+  for (const result of scored) {
+    const key = getContextKey(result.item.question[lang]);
+    if (usedContextKeys.has(key)) continue;
+    selected.push(result);
+    usedContextKeys.add(key);
+    if (selected.length === RETRIEVAL_TOP_K) break;
+  }
+  for (const result of scored) {
+    if (selected.includes(result)) continue;
+    selected.push(result);
+    if (selected.length === RETRIEVAL_TOP_K) break;
+  }
+
+  return selected.map(({ item, score, matchedSignals }) => ({
+    id: item.id,
+    score,
+    question: item.question[lang],
+    answer: item.answer[lang],
+    matchedSignals,
+  }));
 }
 
-function makeTextBaseReply(item: TextBaseItem, input: string, lang: Lang, turnCount: number, recentReplies: string[]) {
+function makeTextBaseReply(contexts: RetrievedContext[], input: string, lang: Lang, turnCount: number, recentReplies: string[]) {
   const isZh = lang === "zh";
   const said = getUserSnippet(input, lang);
+  const primary = contexts[0];
+  const secondary = contexts[1];
   const bridge = pickLine(isZh ? [
     `你这句“${said}”可以接到一个更具体的点。`,
     `这不是一句空泛的“想买”，里面有个挺清楚的触点。`,
@@ -182,12 +278,34 @@ function makeTextBaseReply(item: TextBaseItem, input: string, lang: Lang, turnCo
     "Start with the earliest scene: did it come from repeated posts, seeing someone use it, or one unboxing moment?",
     "If price and drops are set aside for a second, what actually made you pause?",
     "No need to decide whether to buy yet. First notice which scene brought it in.",
-  ], `${input}-${item.id}`, turnCount, recentReplies);
+  ], `${input}-${primary.id}`, turnCount, recentReplies);
+  const extraContext = secondary
+    ? isZh
+      ? `\n\n另一个相关线索是：${secondary.answer}`
+      : `\n\nA second related cue: ${secondary.answer}`
+    : "";
 
-  return `${bridge}\n\n${item.answer[lang]}\n\n${followUp}`;
+  return `${bridge}\n\n${primary.answer}${extraContext}\n\n${followUp}`;
 }
 
-function createReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): string {
+function createReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): ReplyResult {
+  const retrieved = retrieveTextBaseContexts(input, lang);
+  if (retrieved.length > 0) {
+    return {
+      text: makeTextBaseReply(retrieved, input, lang, turnCount, recentReplies),
+      retrieved,
+      route: "text-base",
+    };
+  }
+
+  return {
+    text: createFallbackReply(input, lang, turnCount, recentReplies),
+    retrieved,
+    route: "hard-coded fallback",
+  };
+}
+
+function createFallbackReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): string {
   const value = input.toLowerCase();
   const isZh = lang === "zh";
   const said = getUserSnippet(input, lang);
@@ -264,11 +382,6 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
       "Blind boxes delay the answer. Before the box is even open, your brain is already whispering, what if it is the rare one?",
       `If "${said}" is the part that hooked you, you may want the reveal moment as much as the toy itself.`
     ]);
-  }
-
-  const textBaseMatch = findTextBaseMatch(input, lang, turnCount);
-  if (textBaseMatch) {
-    return makeTextBaseReply(textBaseMatch, input, lang, turnCount, recentReplies);
   }
 
   if (has(["情绪价值", "陪伴", "安慰", "治愈", "ip", "角色", "挂包", "包上", "风格", "身份", "comfort", "emotional", "character", "identity", "style", "bag charm"])) {
@@ -445,20 +558,35 @@ export default function Home() {
     setDraft("");
     setIsTyping(true);
     pendingReply.current = window.setTimeout(() => {
-      setMessages((current) => [
-        ...current,
-        {
-          id: `assistant-${now}`,
-          role: "assistant",
-          text: createReply(
+      setMessages((current) => {
+        const reply = createReply(
             trimmed,
             lang,
             turnCount,
             current.filter((message) => message.role === "assistant").slice(-4).map((message) => message.text),
-          ),
-          image: turnCount % 3 === 1 ? "/labubu/product-8.jpg" : undefined,
-        },
-      ]);
+        );
+        console.info("[Labubu retrieval]", {
+          input: trimmed,
+          route: reply.route,
+          retrieved: reply.retrieved.map((item) => ({
+            id: item.id,
+            score: item.score,
+            matchedSignals: item.matchedSignals,
+            question: item.question,
+          })),
+        });
+        return [
+          ...current,
+          {
+            id: `assistant-${now}`,
+            role: "assistant",
+            text: reply.text,
+            retrieved: reply.retrieved,
+            route: reply.route,
+            image: turnCount % 3 === 1 ? "/labubu/product-8.jpg" : undefined,
+          },
+        ];
+      });
       setIsTyping(false);
       pendingReply.current = null;
     }, 520);
@@ -531,6 +659,24 @@ export default function Home() {
                 <div className="bubble">
                   {message.image ? <img src={message.image} alt="" /> : null}
                   <p>{message.text}</p>
+                  {message.role === "assistant" && message.route ? (
+                    <div className="retrieval-panel" aria-label="retrieved context">
+                      <span>{message.route}</span>
+                      {message.retrieved?.length ? (
+                        <ul>
+                          {message.retrieved.map((item) => (
+                            <li key={`${message.id}-${item.id}`}>
+                              <b>#{item.id}</b>
+                              <em>{item.score}</em>
+                              <small>{item.question}</small>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <small>No text-base match; fallback reply used.</small>
+                      )}
+                    </div>
+                  ) : null}
                 </div>
               </article>
             ))}

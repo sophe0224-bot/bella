@@ -411,6 +411,55 @@ img {
   white-space: pre-line;
 }
 
+.retrieval-panel {
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.retrieval-panel span {
+  display: inline-flex;
+  margin-bottom: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--mint);
+  padding: 3px 7px;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.retrieval-panel ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.retrieval-panel li {
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr);
+  gap: 6px;
+  align-items: start;
+}
+
+.retrieval-panel b,
+.retrieval-panel em {
+  font-style: normal;
+  font-weight: 900;
+}
+
+.retrieval-panel em {
+  color: var(--rose);
+}
+
+.retrieval-panel small {
+  min-width: 0;
+}
+
 .typing-bubble {
   display: inline-flex;
   align-items: center;
