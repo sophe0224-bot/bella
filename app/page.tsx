@@ -397,8 +397,8 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
 }
 
 export default function Home() {
-  const [lang, setLang] = useState<Lang>("zh");
-  const [messages, setMessages] = useState<Message[]>(() => makeInitialMessages("zh"));
+  const [lang, setLang] = useState<Lang>("en");
+  const [messages, setMessages] = useState<Message[]>(() => makeInitialMessages("en"));
   const [draft, setDraft] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const pendingReply = useRef<number | null>(null);
