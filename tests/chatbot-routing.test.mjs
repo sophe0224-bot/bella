@@ -65,7 +65,7 @@ test("createReply routes current intent before retrieval and reports retrieved c
       input: "What is labubu? I don't know anything about it",
       expectedRoute: "labubu-intro",
       expectRetrieved: false,
-      expectedReply: "Labubu is a character from The Monsters",
+      expectedReply: "Labubu is the central character in The Monsters",
       noRetrievalReason: "none, intro route wins",
     },
     {
