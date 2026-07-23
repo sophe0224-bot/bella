@@ -135,20 +135,20 @@ export function makeIntentGuardReply(intent: UserIntent, lang: Lang, input: stri
 
   if (intent === "frustration-correction") {
     return isZh
-      ? "你说得对，是我刚才读错了。你表达的是不喜欢 Labubu，我不应该把它改说成潜在兴趣。\n\n我们可以换个方向：聊你不喜欢它的地方，或者直接跳到别的话题。"
-      : "You are right - I misread what you said. You do not like Labubu, and I should not have reframed that as interest.\n\nWe can talk about what puts you off, or move to another topic.";
+      ? "你说得对，是我刚才读错了。你说的是不喜欢 Labubu，不是嘴硬心动。\n\n那我们就不往“想买”那边聊了。你想吐槽它也行，换个话题也行。"
+      : "You are right - I read that wrong. You said you do not like Labubu. That is not secretly interest.\n\nI will stop pushing it that way. We can talk about what annoys you, or just move on.";
   }
 
   if (intent === "refusal") {
     return isZh
-      ? "明白。你不是在纠结要不要买，而是在说不想买。\n\n我不会继续劝你，也不会把这句话理解成隐藏的购买欲。我们可以聊它为什么会被炒起来，或者换个话题。"
-      : "Got it. You are not debating whether to buy one - you are saying you do not want one.\n\nI will not try to persuade you or treat that as hidden purchase intent. We can talk about why the hype exists, or move on.";
+      ? "明白，你不是在纠结，你就是不想买。\n\n那我不劝你。我们可以聊它为什么这么火，也可以直接换话题。"
+      : "Got it. You are not debating it. You just do not want one.\n\nI will not try to convince you. We can talk about why it got so popular, or we can move on.";
   }
 
   if (intent === "explicit-dislike") {
     return isZh
-      ? "收到，Labubu 不是你的菜。\n\n我不会把“不喜欢”解释成潜意识心动。你具体反感的是造型、热度，还是大家讨论它的方式？"
-      : "Got it - Labubu is not your thing.\n\nI will not treat that as hidden interest. What specifically puts you off: the design, the hype, or the way people talk about it?";
+      ? "收到，Labubu 不是你的菜。\n\n那就不硬聊喜欢了。你是不喜欢它的长相，还是烦它到处都在刷屏？"
+      : "Got it - Labubu is not your thing.\n\nI will not twist that into hidden interest. Is it the look that puts you off, or are you just tired of seeing it everywhere?";
   }
 
   return null;

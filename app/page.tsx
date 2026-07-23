@@ -59,7 +59,7 @@ const copy = {
     profileValue: "还在观察自己的感觉",
     baseLabel: "背景知识",
     baseValue: "300 条双语笔记",
-    baseHint: "用于理解全渠道、盲盒、社群、名人影响和情绪投射等内容。",
+    baseHint: "用来理解为什么一个小玩偶会突然刷得到、聊得到、想得起来。",
     hint: "不用问得很标准。直接说“我朋友都有”“它有点丑萌”“贵是贵但我想买”“我怕抢不到”都行。",
     thinking: "我回一下",
     starters: ["我是不是被种草了？", "它好丑但我老想看", "我朋友都有一个", "我想买但真的贵"],
@@ -83,7 +83,7 @@ const copy = {
     profileValue: "Reading the current signal",
     baseLabel: "Background notes",
     baseValue: "300 bilingual notes",
-    baseHint: "Uses omni-channel, blind boxes, communities, celebrity influence, and emotional projection.",
+    baseHint: "Helps explain why a little toy can suddenly be everywhere: feeds, friends, videos, and bags.",
     hint: "No perfect prompt needed. Try: “my friends all have one,” “it’s ugly-cute,” “it’s expensive but I still want it,” or “I’m scared it’ll sell out.”",
     thinking: "typing",
     starters: ["Am I being influenced?", "It’s ugly but I keep looking", "My friends all have one", "I want one but it’s pricey"],
@@ -272,30 +272,82 @@ function makeTextBaseReply(contexts: RetrievedContext[], input: string, lang: La
   const primary = contexts[0];
   const secondary = contexts[1];
   const bridge = pickLine(isZh ? [
-    `你这句“${said}”可以接到一个更具体的点。`,
-    `我先把它当成一个具体触点来看，不急着判断你是不是想买。`,
-    `这里能看到一个内容线索，但它不等于你一定心动或要购买。`,
+    `懂，你说的“${said}”不是一句空话。`,
+    `我先不急着说你是不是想买。你这句“${said}”更像是在说一个具体画面。`,
+    `这句我能接住。先不用给自己下结论。`,
   ] : [
-    `"${said}" connects to a more specific pattern.`,
-    `I am treating this as a content cue first, not as proof that you want to buy.`,
-    `There is a media pattern here, but it does not have to mean hidden attraction or purchase intent.`,
+    `I get what you mean by "${said}".`,
+    `I would not jump straight to "you want one." "${said}" sounds more specific than that.`,
+    `That makes sense. No need to decide what it means yet.`,
   ], input, turnCount, recentReplies);
   const followUp = pickLine(isZh ? [
-    "你可以先抓一个最早的画面：是刷到、看到别人用，还是某个开盒瞬间让它开始留在脑子里？",
-    "如果把价格和抢购先放旁边，最让你停下来的那一下是什么？",
-    "这一步先不需要决定买不买，先看清楚它是从哪个场景进来的。",
+    "你先想一个最早的画面就行：是刷到视频、看到朋友挂包上，还是某次开盒让你记住了？",
+    "先别想买不买。哪一个画面让你停了一下？",
+    "它是从哪里开始进你脑子的？一条视频，一个朋友，还是某张图？",
   ] : [
-    "Start with the earliest scene: did it come from repeated posts, seeing someone use it, or one unboxing moment?",
-    "If price and drops are set aside for a second, what actually made you pause?",
-    "No need to decide whether to buy yet. First notice which scene brought it in.",
+    "Start with the first scene you remember: a video, someone’s bag, or one unboxing that stuck?",
+    "Forget buying for a second. What made you pause?",
+    "Where did it first get into your head: a post, a friend, or one photo?",
   ], `${input}-${primary.id}`, turnCount, recentReplies);
-  const extraContext = secondary
-    ? isZh
-      ? `\n\n另一个相关线索是：${secondary.answer}`
-      : `\n\nA second related cue: ${secondary.answer}`
-    : "";
+  const mainPoint = makePlainContextPoint(primary, lang);
+  const extraContext = secondary ? `\n\n${makePlainContextPoint(secondary, lang)}` : "";
 
-  return `${bridge}\n\n${primary.answer}${extraContext}\n\n${followUp}`;
+  return `${bridge}\n\n${mainPoint}${extraContext}\n\n${followUp}`;
+}
+
+function contextIncludes(context: RetrievedContext, terms: string[]) {
+  const haystack = `${context.question} ${context.answer} ${context.matchedSignals.join(" ")}`.toLowerCase();
+  return terms.some((term) => haystack.includes(term.toLowerCase()));
+}
+
+function makePlainContextPoint(context: RetrievedContext, lang: Lang) {
+  const isZh = lang === "zh";
+
+  if (contextIncludes(context, ["friend", "friends", "peer", "social", "朋友", "都有", "同学", "同事"])) {
+    return isZh
+      ? "如果身边人都在晒，它就不只是一个玩偶了。它会变成一个大家都懂的小话题。你可能不是非要买，只是开始好奇：为什么他们都在聊这个？"
+      : "If people around you keep showing it, it stops feeling like a random toy. It becomes a little shared topic. You may not want to buy one. You may just be wondering why everyone keeps talking about it.";
+  }
+
+  if (contextIncludes(context, ["unbox", "blind", "hidden", "rare", "开箱", "开盒", "盲盒", "隐藏款"])) {
+    return isZh
+      ? "开盒视频很容易让人看下去，因为它有一点点悬念。你可能本来只是想看看，结果看着看着就想知道下一盒会开出什么。"
+      : "Unboxing videos are easy to keep watching because there is a tiny surprise built in. You may start out just looking, then end up wanting to see what comes out next.";
+  }
+
+  if (contextIncludes(context, ["sold", "limited", "scarcity", "fomo", "price", "expensive", "售罄", "限量", "抢不到", "贵", "价格"])) {
+    return isZh
+      ? "难买、涨价、售罄这些东西会把人弄急。原本只是“我喜不喜欢”，很容易变成“等一下，我是不是要错过了”。"
+      : "When something looks hard to get, it can make the whole thing feel more urgent. The question can shift from “do I even like this?” to “wait, am I going to miss it?”";
+  }
+
+  if (contextIncludes(context, ["celebrity", "influencer", "creator", "lisa", "明星", "博主", "网红"])) {
+    return isZh
+      ? "明星或博主带它的时候，效果通常不是“快去买”。更像是：哦，原来这个小东西挂在包上还挺会搭。"
+      : "When a celebrity or creator carries it, the effect is usually quieter than “go buy this.” It is more like: oh, that odd little thing actually works with an outfit.";
+  }
+
+  if (contextIncludes(context, ["algorithm", "feed", "repeated", "刷到", "推荐", "反复", "算法"])) {
+    return isZh
+      ? "一直刷到真的会改变感觉。第一次可能只是路过，后面越看越眼熟，就会开始觉得它好像已经在你的世界里了。"
+      : "Seeing it again and again really can change the feeling. At first it is just there. After a while it starts to feel familiar, almost like it has already been in your world.";
+  }
+
+  if (contextIncludes(context, ["bag", "style", "identity", "挂包", "包上", "风格", "穿搭", "身份"])) {
+    return isZh
+      ? "它挂在包上以后，就不像一个放在柜子里的玩具了。它会变成穿搭的一部分，别人也会看见。"
+      : "Once it is clipped to a bag, it is not just a toy on a shelf. It becomes part of someone’s look, and other people can see it.";
+  }
+
+  if (contextIncludes(context, ["ugly", "cute", "weird", "丑", "怪", "丑萌", "可爱"])) {
+    return isZh
+      ? "它就是怪得很明显。有人会觉得丑，有人会觉得越看越可爱。这个分裂感本身就让人记得住。"
+      : "It is weird in a very obvious way. Some people think it is ugly. Some people start finding it cute. That split reaction is part of why it sticks.";
+  }
+
+  return isZh
+    ? "简单说，它不是突然让人上头的。通常是先看见几次、记住一个画面、再看到别人怎么用，感觉才慢慢变了。"
+    : "Put simply: it usually does not hit all at once. You see it a few times, remember one image, then notice how other people use it. The feeling changes slowly.";
 }
 
 function isLabubuIntroQuestion(input: string) {
@@ -320,8 +372,8 @@ function isLabubuIntroQuestion(input: string) {
 
 function makeLabubuIntroReply(lang: Lang) {
   return lang === "zh"
-    ? "Labubu（拉布布）是香港艺术家龙家升创作的 The Monsters 系列里的核心角色。它最早在 2015 年左右以玩具/公仔形式出现，后来由 POP MART 推出盲盒、公仔和挂件系列，才在社交媒体上越来越出圈。\n\n它最有记忆点的是大耳朵、尖牙、毛茸茸的身体和有点乱糟糟的“丑萌”表情。很多人第一眼会觉得怪，但刷到开箱、包挂照片、明星同款或朋友晒图之后，才慢慢理解为什么它会流行。\n\n所以这个 chatbox 不是商店，也不是劝你买。它更像在模拟：一个人本来不了解 Labubu，后来怎么被短视频、社交媒体、朋友和稀缺感一步步带进这个话题里。"
-    : "Labubu is the central character in The Monsters, a collectible toy series created by Hong Kong artist Kasing Lung. It first appeared as figures around 2015, then became much more widely known after POP MART began releasing Labubu blind boxes, figures, and bag charms.\n\nIts signature look is big ears, sharp teeth, a furry body, and a scruffy ugly-cute expression. A lot of people do not instantly get it. Then they see unboxings, bag-charm photos, celebrity styling, or friends posting it, and the object starts to make more sense as a media trend.\n\nSo this chatbox is not a store and it is not here to push you to buy one. It is here to simulate how someone can go from knowing nothing about Labubu to slowly noticing how social media, friends, hype, and scarcity shape their reaction.";
+    ? "Labubu（拉布布）是香港艺术家龙家升创作的小怪兽角色，属于 The Monsters 系列。后来 POP MART 把它做成盲盒、公仔和包挂，所以这两年在网上特别常见。\n\n它长得很有记忆点：大耳朵、尖牙、毛茸茸的身体，还有一点乱糟糟的表情。很多人第一眼会觉得：这是什么？但看多了开箱、包挂照片、明星同款或者朋友晒图，又会开始懂它为什么火。\n\n这个 chatbox 不是商店，也不是来劝你买。它只是陪你看一件事：一个人怎么从“完全不了解”，慢慢变成“怎么到处都是它”。"
+    : "Labubu is a little monster character created by Hong Kong artist Kasing Lung. It is part of The Monsters series, and POP MART later turned it into blind boxes, figures, and bag charms. That is why it has been showing up everywhere online.\n\nThe look is hard to forget: big ears, sharp teeth, a furry body, and a messy little expression. A lot of people first react with, wait, what is that? But after seeing unboxings, bag photos, celebrity posts, or friends showing it off, it starts to make more sense.\n\nThis chatbox is not a store, and it is not trying to talk you into buying one. It is just here to follow the feeling of going from “I know nothing about this” to “why am I seeing it everywhere?”";
 }
 
 function createReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): ReplyResult {
@@ -376,9 +428,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       `“${said}”这句更像是在做边界判断。\n\n可以先不付款，也不需要证明自己真的心动。过两天如果还想继续了解，再看是哪一只、哪种场景让你在意。`,
       `如果你的纠结点是“${said}”，那可以先把两件事分开：东西本身值不值得看，和现在的价格气氛是不是让人有压力。`
     ] : [
-      `When you say "${said}", price sounds like a real boundary.\n\nNo need to translate that into desire. Is the issue your budget, or the feeling that the hype has pushed the price too high?`,
-      `"${said}" sounds like you are checking the limit, not automatically wanting it.\n\nYou can wait without proving anything. If you still care in two days, then look at which exact version or scene stayed with you.`,
-      `If the sticking point is "${said}", separate the object from the pricing atmosphere. One can be interesting while the other still feels unreasonable.`
+      `When you say "${said}", it sounds like the price is the annoying part.\n\nYou do not have to turn that into a deep meaning. Is it too expensive, or does it just feel overpriced because everyone is hyping it up?`,
+      `"${said}" sounds like you are checking your limit.\n\nThat is fair. You can leave it alone for a couple days and see if you still care.`,
+      `If "${said}" is the sticking point, keep it simple: maybe the toy is interesting, but the price still feels ridiculous. Both can be true.`
     ]);
   }
 
@@ -388,9 +440,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       `“${said}”更像是在观察自己的反应。\n\n先抓一个最早的画面就行：哪一刻你停下来多看了一眼？`,
       `别把这件事搞成消费决策报告。就从“${said}”这句话往回看：它是从哪里进入你视线的？`
     ] : [
-      `When you say "${said}", I would keep it in the unsure zone instead of pushing it into interest.\n\nIf you want to unpack it, what scene made you notice it first?`,
+      `When you say "${said}", I would just call that unsure.\n\nWhat made you notice it first?`,
       `"${said}" sounds like you are watching your own reaction.\n\nStart with the first image or post that made you pause.`,
-      `Do not turn "${said}" into a whole decision spreadsheet. Just trace it back: where did Labubu first enter your feed or conversation?`
+      `Do not turn "${said}" into a whole decision spreadsheet. Just trace it back: where did Labubu first show up for you?`
     ]);
   }
 
@@ -412,9 +464,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "我懂那一下。刷到别人开箱，心里突然紧一下，好像大家都已经进场了，就你还在门口。",
       "这不代表你不理性。稀缺本来就会制造紧张感。先把“怕买不到”和“真的喜欢这个款”分开放，脑子会清楚一点。"
     ] : [
-      "Yeah, that sounds like the \"what if I miss it?\" button got pressed. Scarcity can make any reaction feel more urgent before you have even decided how you feel.\n\nIf it were still available tomorrow, would you feel this rushed?",
+      "Yeah, that sounds like the \"what if I miss it?\" button got pressed. When something feels hard to get, your brain can rush before you even know if you like it.\n\nIf it were still easy to buy tomorrow, would you feel this rushed?",
       "I know that little stomach drop from watching someone else unbox it. It can feel like everyone already got into the moment and you are still outside.",
-      "This does not mean you are being irrational. Scarcity is supposed to make waiting feel risky. Split the thought in two: I like this one, and I am scared it will disappear."
+      "This does not mean you are being irrational. Hard-to-get stuff is designed to make waiting feel risky. Try splitting it in two: I like this one, and I am scared it will disappear."
     ]);
   }
 
@@ -424,9 +476,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "反复刷到真的会改变感觉。第一次只是路过，第三次开始眼熟，第五次就像它已经在你的世界里待了一阵子了。",
       "算法最会做的一件事，就是把“我只是看了一眼”慢慢变成“我好像一直都挺感兴趣”。Labubu 很适合这种循环，因为它有图、有开箱、有稀缺，还有一堆人在评论区尖叫。"
     ] : [
-      `When you say "${said}", that sounds like the platform doing some of the work. You paused once, clicked once, and then it kept coming back.\n\nIt may not have become your taste overnight. It borrowed your attention a few times.`,
+      `When you say "${said}", it sounds like the app kept serving it to you. You pause once, maybe click once, and then it comes back again.\n\nThat does not mean it became your taste overnight. It just got more chances to sit in your head.`,
       "Repeated exposure changes the feeling. First time, you scroll past. Third time, it looks familiar. Fifth time, it feels like it has been in your world for a while.",
-      "Algorithms are good at turning \"I looked once\" into \"this keeps showing up around me.\" Labubu fits that loop because it has visuals, unboxings, scarcity, and loud comment sections."
+      "The app is good at turning \"I looked once\" into \"why is this everywhere now?\" Labubu works well for that because it has pictures, unboxings, and very loud comment sections."
     ]);
   }
 
@@ -436,9 +488,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "盲盒厉害就厉害在答案来得很晚。盒子还没开，大脑已经开始替你幻想隐藏款了。",
       `如果是“${said}”戳到你，那你想要的可能不只是玩偶，是那个揭晓瞬间。看多了真的会想亲自拆一次。`
     ] : [
-      `When you say "${said}", the unboxing format sounds relevant. It turns the object into a tiny suspense story before anyone decides whether they care about the toy itself.`,
+      `When you say "${said}", the opening-the-box part matters. It is a tiny surprise, even before you care about the toy itself.`,
       "Blind boxes delay the answer. Before the box is even open, your brain is already whispering, what if it is the rare one?",
-      `If "${said}" is the part that caught your attention, the reveal moment may be doing as much work as the toy itself.`
+      `If "${said}" is what caught you, maybe the fun is the reveal as much as the toy.`
     ]);
   }
 
@@ -448,9 +500,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "Labubu 这种 IP 最会把“我喜欢一个东西”变成“这有点像我”。它不是安静放在柜子里，而是跟穿搭、包、照片一起出现。",
       "情绪价值这块很真实。很多人不是需要一个玩具，而是需要一个小小的、能被看见的可爱东西，证明自己还有一点玩心。"
     ] : [
-      `When you say "${said}", it sounds bigger than buying a toy. It is more like carrying a tiny mood outside, clipped to a bag where people can see it.`,
-      "Labubu as an IP turns “I like this thing” into “this feels a bit like me.” It is not just sitting on a shelf; it appears with outfits, bags, and photos.",
-      "The emotional value is real. Sometimes people do not need a toy exactly. They want a small visible piece of playfulness in the middle of a very adult day."
+      `When you say "${said}", it sounds less like “I need a toy” and more like “this little thing matches my mood.”`,
+      "Labubu is not just sitting on a shelf for a lot of people. It shows up on bags, in outfits, and in photos, so it starts to feel personal.",
+      "Sometimes people do not want a toy exactly. They want a small silly thing that makes a very normal day feel less boring."
     ]);
   }
 
@@ -461,7 +513,7 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "朋友或明星一戴，它就从“奇怪小玩具”变成“好像还挺有风格”。你不一定是在复制她们，可能只是被那个搭配方式说服了。"
     ] : [
       "The celebrity effect is not always “she has it, so I need it.” Sometimes it is quieter. She clips it on a bag, it looks good, and suddenly the object makes sense.",
-      "Creator seeding works best when it barely looks like selling. A Labubu swinging from a bag in a vlog can feel more convincing than a full ad.",
+      "It works best when it does not look like an ad. A Labubu swinging from a bag in a vlog can do more than a whole sales post.",
       "Once someone stylish wears it well, it stops looking like a random toy and starts looking like a style move. You may not want her exact life. You may just like the styling."
     ]);
   }
@@ -469,7 +521,7 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
   if (value.includes("真假") || value.includes("假") || value.includes("lafufu") || value.includes("fake") || value.includes("real")) {
     return isZh
       ? "真假这个话题也很会把人带进去。你本来只是想看看，结果开始学怎么数牙齿、看脚底 logo、分 Lafufu。\n\n一旦你开始懂这些暗号，就很容易觉得自己已经半只脚进圈了。"
-      : "The fake-versus-real rabbit hole pulls people in fast. You start out casually looking, then suddenly you know about teeth counts, foot logos, and Lafufu tells.\n\nOnce you learn the little codes, it starts feeling like you are halfway inside the community.";
+      : "The fake-versus-real rabbit hole pulls people in fast. You start out casually looking, then suddenly you know about teeth counts, foot logos, and Lafufu clues.\n\nOnce you know those little details, it starts feeling like you are halfway inside the world of it.";
   }
 
   if (has(["丑", "怪", "丑萌", "顺眼", "越看", "ugly", "weird", "strange", "growing on", "grew on"])) {
@@ -478,9 +530,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "哈哈我懂。它不是甜甜乖乖的可爱，所以反而有记忆点。那个小坏笑很容易让人越看越顺眼。",
       "你可能不是被“漂亮”打动，是被它那个有点怪、有点欠欠的性格感打动。太完美的可爱有时候真的会无聊。"
     ] : [
-      "That reaction makes sense. Labubu is deliberately strange, so some people read it as charming and some read it as off-putting.",
+      "That reaction makes sense. Labubu is supposed to look a little strange. Some people find that cute, and some people just find it weird.",
       "I get the tension. It is not sweet in a perfect way, which is exactly why people either warm up to it or bounce off it.",
-      "The weird personality is doing a lot of the work. That can be appealing, but it can also be the reason someone dislikes it."
+      "The weird face is doing a lot of the work. It can make people love it, but it can also be the exact reason someone hates it."
     ]);
   }
 
@@ -490,9 +542,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "你被可爱吸引很正常。很多人不是想装小孩，只是想在紧绷的生活里留个软一点的出口。",
       "它有点像能带出门的小安慰物。不是藏在房间里的玩偶，而是挂在包上跟你一起走。这个差别蛮大的。"
     ] : [
-      "That feels real. It is not perfectly sweet, so liking it as an adult does not feel too precious. It is more like, I am tired, but I still want one playful corner.",
+      "That feels real. It is not perfectly sweet, so liking it as an adult does not feel too precious. It is more like: I am tired, but I still want one playful little thing.",
       "Being drawn to cute stuff does not mean you are trying to be childish. Sometimes you just want a soft little outlet in an otherwise tense day.",
-      "It is almost a comfort object you can take outside. Not a plush hidden at home, but something clipped to your bag. That public part matters."
+      "It is almost a comfort object you can take outside. Not a plush hidden at home, but something clipped to your bag."
     ]);
   }
 
@@ -504,7 +556,7 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
     ] : [
       `If "${said}" is the feeling, then it is not just about the toy. It is more like everyone has a tiny shared reference, and you do not want to be outside it.`,
       "When people around you all have one, it gets hard to ignore. The object did not magically become three times cuter; you are just seeing it everywhere.",
-      "Part of the pull is the scene around it: bags, unboxings, comments, friends mentioning it. After a while, having one feels like joining the conversation."
+      "Part of the pull is the stuff around it: bags, unboxings, comments, friends mentioning it. After a while, having one can feel like joining the conversation."
     ]);
   }
 
@@ -514,9 +566,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "像是慢慢被推过去的。不是某一秒突然想买，是刷到几次、记住了、又看到别人有，然后它开始变得跟你有关。",
       "有种草的成分。但我不会直接说你只是跟风，因为你可能也是真的喜欢。更准确的问题是：你喜欢它多少，喜欢那个热闹又是多少？"
     ] : [
-      "Yes, a little. But being influenced is not some personal failure. Content works by making you see something, remember it, then quietly think, maybe me too.",
+      "Yes, maybe a little. But that is not some personal failure. You saw it, remembered it, saw it again, and at some point your brain went, wait, maybe me too.",
       "It sounds gradual. You saw it, remembered it, saw other people with it, and then it started feeling weirdly relevant to you.",
-      "There is influence here. I would not call it mindless trend-following, though, because you may genuinely like it. The useful question is how much is the toy, and how much is the buzz around it?"
+      "There is influence here. I would not call it mindless following, though. You might like the toy, and you might also like the buzz around it. Both can be happening."
     ]);
   }
 
@@ -526,9 +578,9 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       `“${said}”可以拆成几个阶段：第一次注意到、反复看到、看到别人怎么用，然后才可能变成个人判断。你现在更像在哪一步？`,
       `如果从“${said}”往下看，可以先分清：你是在研究这个现象，还是确实被某个造型、视频或社交场景打动了？`
     ] : [
-      `When you say "${said}", I would look at how it entered through media first, not jump straight to "you must want it."\n\nAre you asking why it has so much presence, or saying it has started to appeal to you?`,
-      `"${said}" can be split into stages: noticing it, seeing it repeatedly, seeing how other people use it, and then forming your own reaction. Which stage are you in?`,
-      `Under "${said}", separate two things: studying the phenomenon, and personally being moved by a design, video, or social scene. Which one fits better?`
+      `When you say "${said}", I would not jump straight to "you must want it."\n\nAre you asking why it is everywhere, or are you saying it has started to grow on you?`,
+      `"${said}" might just mean you are noticing it more. Did it start with a video, a photo, or seeing someone actually use it?`,
+      `With "${said}", there are two different things: being curious about the hype, and personally liking it. Which one feels closer?`
     ]);
   }
 
@@ -539,7 +591,7 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
       "理性不等于不能喜欢。可以喜欢，也可以先不买。给自己一个小规则：只买具体喜欢的款，不为了隐藏款一直加购。"
     ] : [
       "You can be rational, and you can also simply dislike it. Wait 48 hours. If you still want to understand it, notice which specific part stayed with you.",
-      "Do not start with should I buy it. Ask what part you are evaluating: the design, the scarcity, friends having it, or the unboxing hit. If it is mostly the last few, slow down.",
+      "Do not start with should I buy it. Ask what part you are reacting to: the look, the hard-to-get feeling, your friends having it, or the unboxing videos.",
       "Being rational does not mean killing the fun. You can like it and still wait. A decent rule: buy a specific one you actually want, not endless boxes chasing a rare pull."
     ]);
   }
@@ -547,13 +599,13 @@ function createFallbackReply(input: string, lang: Lang, turnCount: number, recen
   if (value.includes("消费") || value.includes("环保") || value.includes("浪费") || value.includes("plastic") || value.includes("waste") || value.includes("sustainable")) {
     return isZh
       ? "这个角度挺重要，但也别一下变成自责。喜欢可爱的东西没问题，只是如果买完很快闲置，那就可以先停一下。\n\n问自己一句：半年后它还会让我开心吗？还是它只是帮我追上这周的流行？"
-      : "That is worth thinking about, but do not turn it into self-blame. Liking cute things is fine. If it is likely to sit unused after the hype fades, pause.\n\nAsk yourself: will this still make me happy in six months, or is it just helping me catch this week’s trend?";
+      : "That is worth thinking about, but do not turn it into self-blame. Liking cute things is fine. If it might just sit there after the hype fades, pause.\n\nAsk yourself: will this still make me happy in six months, or is it just helping me catch this week’s trend?";
   }
 
   if (value.includes("身份") || value.includes("风格") || value.includes("identity") || value.includes("style")) {
     return isZh
       ? "对，Labubu 很容易变成风格的一部分。它不是安静放在柜子里的玩偶，是会挂在包上、出现在照片里、和穿搭一起被看到的东西。\n\n所以你想要的可能不只是玩具，也可能是“我也可以有这种风格”的感觉。"
-      : "Yes, Labubu can become part of a style. It is not only a toy on a shelf. It hangs on a bag, shows up in photos, and gets seen with the outfit.\n\nThat means the style signal can matter as much as the object itself.";
+      : "Yes, Labubu can become part of a look. It is not only a toy on a shelf. It hangs on a bag, shows up in photos, and gets seen with the outfit.\n\nSo sometimes people are reacting to the styling, not just the toy.";
   }
 
   return choose(isZh ? [
@@ -598,7 +650,7 @@ export default function Home() {
   }, [latestIntent, messages]);
 
   const profileValue = useMemo(() => {
-    if (latestIntent === "frustration-correction") return lang === "zh" ? "已修正：用户不是心动" : "Corrected: not hidden interest";
+    if (latestIntent === "frustration-correction") return lang === "zh" ? "收到：你不是心动" : "Got it: not into it";
     if (latestIntent === "explicit-dislike") return lang === "zh" ? "明确不喜欢" : "Clearly not into it";
     if (latestIntent === "refusal") return lang === "zh" ? "明确不想购买" : "Clearly not buying";
     if (latestIntent === "uncertainty") return lang === "zh" ? "不确定，正在观察" : "Unsure, still sorting it out";
@@ -701,7 +753,7 @@ export default function Home() {
             </div>
           </div>
           <div className="score-card">
-            <span>Interest signal</span>
+            <span>{lang === "zh" ? "当前感觉" : "Current pull"}</span>
             <strong>{latestScore}%</strong>
             <i><b style={{ width: `${latestScore}%` }} /></i>
           </div>

@@ -56,19 +56,19 @@ test("intent guard separates liking, uncertainty, rejection, refusal, and correc
       input: "I don't want to buy one.",
       expectedIntent: "refusal",
       expectedRoute: "intent:refusal",
-      expectedText: "you are saying you do not want one",
+      expectedText: "You just do not want one",
     },
     {
       input: "Stop trying to convince me.",
       expectedIntent: "frustration-correction",
       expectedRoute: "intent:frustration-correction",
-      expectedText: "I should not have reframed that as interest",
+      expectedText: "I read that wrong",
     },
     {
       input: "I said I DON'T like it.",
       expectedIntent: "frustration-correction",
       expectedRoute: "intent:frustration-correction",
-      expectedText: "I should not have reframed that as interest",
+      expectedText: "I read that wrong",
     },
   ];
 
