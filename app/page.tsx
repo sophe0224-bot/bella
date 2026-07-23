@@ -204,6 +204,39 @@ function getInputSignals(input: string) {
   return Array.from(new Set(expandedSignals));
 }
 
+function expressesInterest(input: string) {
+  const value = input.toLowerCase();
+  return [
+    /\b(i )?(like|love|want)\b/,
+    /\binterested\b/,
+    /\bwant to (buy|get|purchase)\b/,
+    /\bi need one\b/,
+    /\bkeep looking\b/,
+    /\bgrowing on me\b/,
+    /喜欢/,
+    /想买/,
+    /想要/,
+    /心动/,
+    /种草/,
+    /老想看/,
+    /越看/,
+  ].some((pattern) => pattern.test(value));
+}
+
+function confirmsPreviousInterest(input: string) {
+  const value = input.toLowerCase().trim();
+  return [
+    /^(yes|yeah|yep|true|exactly|right|same|kind of|a little|maybe)$/i,
+    /^(对|是|是的|嗯|有点|确实|差不多|没错|就是)$/u,
+  ].some((pattern) => pattern.test(value));
+}
+
+function shouldAcceptInterest(input: string, intent: UserIntent, previousIntent: UserIntent = "other") {
+  if (intent === "positive-interest") return true;
+  if (expressesInterest(input) && intent !== "explicit-dislike" && intent !== "refusal" && intent !== "frustration-correction") return true;
+  return previousIntent === "positive-interest" && confirmsPreviousInterest(input);
+}
+
 function getContextKey(question: string) {
   const englishScene = question.match(/^When (.*?), how can/i)?.[1];
   if (englishScene) return englishScene.toLowerCase();
@@ -266,11 +299,24 @@ function retrieveTextBaseContexts(input: string, lang: Lang) {
   }));
 }
 
-function makeTextBaseReply(contexts: RetrievedContext[], input: string, lang: Lang, turnCount: number, recentReplies: string[]) {
+function makeTextBaseReply(
+  contexts: RetrievedContext[],
+  input: string,
+  lang: Lang,
+  turnCount: number,
+  recentReplies: string[],
+  intent: UserIntent,
+  previousIntent: UserIntent = "other",
+) {
   const isZh = lang === "zh";
   const said = getUserSnippet(input, lang);
   const primary = contexts[0];
   const secondary = contexts[1];
+
+  if (shouldAcceptInterest(input, intent, previousIntent)) {
+    return makeInterestAcceptanceReply(contexts, input, lang, turnCount, recentReplies);
+  }
+
   const bridge = pickLine(isZh ? [
     `懂，你说的“${said}”不是一句空话。`,
     `我先不急着说你是不是想买。你这句“${said}”更像是在说一个具体画面。`,
@@ -293,6 +339,44 @@ function makeTextBaseReply(contexts: RetrievedContext[], input: string, lang: La
   const extraContext = secondary ? `\n\n${makePlainContextPoint(secondary, lang)}` : "";
 
   return `${bridge}\n\n${mainPoint}${extraContext}\n\n${followUp}`;
+}
+
+function makeInterestAcceptanceReply(
+  contexts: RetrievedContext[],
+  input: string,
+  lang: Lang,
+  turnCount: number,
+  recentReplies: string[],
+) {
+  const isZh = lang === "zh";
+  const said = getUserSnippet(input, lang);
+  const primary = contexts[0];
+  const secondary = contexts[1];
+  const removeQuestions = (text: string) => text.replace(/\?/g, ".").replace(/？/g, "。");
+  const opener = pickLine(isZh ? [
+    `懂，你已经有点被它抓住了。你说“${said}”，这就不用再硬问自己是不是感兴趣。`,
+    `那就先承认：你确实被它吸引到了。不是非要立刻买，只是这个感觉已经出现了。`,
+    `这一步我不继续追问你原因了。你已经表现出兴趣，重点变成怎么慢一点看清楚。`,
+  ] : [
+    `Got it. You are interested now. When you say "${said}", I do not need to keep asking if the pull is real.`,
+    `Then let us call it what it is: Labubu has started to get your attention. That still does not mean you need to buy one today.`,
+    `I will stop digging for the reason. You have shown interest, so the useful part is slowing the moment down a little.`,
+  ], input, turnCount, recentReplies);
+  const mainPoint = primary ? removeQuestions(makePlainContextPoint(primary, lang)) : isZh
+    ? "很多时候，兴趣不是一下子来的，是刷到、记住、看到别人怎么用以后慢慢变强。"
+    : "A lot of the time, interest does not arrive all at once. It builds after seeing it, remembering it, and watching how other people use it.";
+  const extraContext = secondary ? `\n\n${removeQuestions(makePlainContextPoint(secondary, lang))}` : "";
+  const nextStep = pickLine(isZh ? [
+    "现在比较好的做法是先别加速。可以先存下你真的喜欢的款，过一天再看它还顺不顺眼。",
+    "你可以喜欢它，同时不急着买。先把“我喜欢哪一只”和“我怕错过热度”分开。",
+    "这时候不用再分析自己了。先看具体款式：只有真正喜欢的那只、那个颜色、那个挂包场景，才值得继续考虑。",
+  ] : [
+    "A better next move is not rushing. Save the exact one you like, then look again tomorrow and see if it still works for you.",
+    "You can like it and still wait. Keep two things separate: the one you actually like, and the fear of missing the trend.",
+    "No need to keep analyzing yourself. Stay with the specific version: the color, the face, and the bag-charm moment that actually made it feel worth considering.",
+  ], `${input}-accept-interest`, turnCount, recentReplies);
+
+  return `${opener}\n\n${mainPoint}${extraContext}\n\n${nextStep}`;
 }
 
 function contextIncludes(context: RetrievedContext, terms: string[]) {
@@ -376,7 +460,13 @@ function makeLabubuIntroReply(lang: Lang) {
     : "Labubu is a little monster character created by Hong Kong artist Kasing Lung. It is part of The Monsters series, and POP MART later turned it into blind boxes, figures, and bag charms. That is why it has been showing up everywhere online.\n\nThe look is hard to forget: big ears, sharp teeth, a furry body, and a messy little expression. A lot of people first react with, wait, what is that? But after seeing unboxings, bag photos, celebrity posts, or friends showing it off, it starts to make more sense.\n\nThis chatbox is not a store, and it is not trying to talk you into buying one. It is just here to follow the feeling of going from “I know nothing about this” to “why am I seeing it everywhere?”";
 }
 
-function createReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): ReplyResult {
+function createReply(
+  input: string,
+  lang: Lang,
+  turnCount: number,
+  recentReplies: string[] = [],
+  previousIntent: UserIntent = "other",
+): ReplyResult {
   const intent = classifyUserIntent(input);
   const guardedReply = makeIntentGuardReply(intent, lang, input);
   if (guardedReply) {
@@ -397,30 +487,42 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
     };
   }
 
+  const responseIntent: UserIntent = shouldAcceptInterest(input, intent, previousIntent) ? "positive-interest" : intent;
   const retrieved = retrieveTextBaseContexts(input, lang);
   if (retrieved.length > 0) {
     return {
-      text: makeTextBaseReply(retrieved, input, lang, turnCount, recentReplies),
+      text: makeTextBaseReply(retrieved, input, lang, turnCount, recentReplies, responseIntent, previousIntent),
       retrieved,
       route: "text-base",
-      intent,
+      intent: responseIntent,
     };
   }
 
   return {
-    text: createFallbackReply(input, lang, turnCount, recentReplies),
+    text: createFallbackReply(input, lang, turnCount, recentReplies, responseIntent, previousIntent),
     retrieved,
     route: "hard-coded fallback",
-    intent,
+    intent: responseIntent,
   };
 }
 
-function createFallbackReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): string {
+function createFallbackReply(
+  input: string,
+  lang: Lang,
+  turnCount: number,
+  recentReplies: string[] = [],
+  intent: UserIntent = classifyUserIntent(input),
+  previousIntent: UserIntent = "other",
+): string {
   const value = input.toLowerCase();
   const isZh = lang === "zh";
   const said = getUserSnippet(input, lang);
   const has = (words: string[]) => words.some((word) => value.includes(word));
   const choose = (lines: string[]) => pickLine(lines, input, turnCount, recentReplies);
+
+  if (shouldAcceptInterest(input, intent, previousIntent)) {
+    return makeInterestAcceptanceReply([], input, lang, turnCount, recentReplies);
+  }
 
   if (has(["贵", "价格", "钱", "买不起", "expensive", "price", "cost", "money", "overpriced"])) {
     return choose(isZh ? [
@@ -694,6 +796,7 @@ export default function Home() {
             lang,
             turnCount,
             current.filter((message) => message.role === "assistant").slice(-4).map((message) => message.text),
+            latestIntent,
         );
         console.info("[Labubu retrieval]", {
           input: trimmed,

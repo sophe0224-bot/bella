@@ -109,3 +109,57 @@ test("createReply routes current intent before retrieval and reports retrieved c
 
   console.log(JSON.stringify(rows, null, 2));
 });
+
+test("createReply accepts expressed interest without looping into repeated questions", async () => {
+  const createReply = await loadPageReplyFunction();
+  const cases = [
+    {
+      input: "I want to buy one",
+      lang: "en",
+      expectedIntent: "positive-interest",
+      expectedText: /(interested now|started to get your attention|shown interest)/,
+      previousIntent: "other",
+    },
+    {
+      input: "我有点心动了",
+      lang: "zh",
+      expectedIntent: "positive-interest",
+      expectedText: /(不用再硬问自己是不是感兴趣|确实被它吸引到了|已经表现出兴趣)/,
+      previousIntent: "other",
+    },
+    {
+      input: "yes",
+      lang: "en",
+      expectedIntent: "positive-interest",
+      expectedText: /(interested now|started to get your attention|shown interest)/,
+      previousIntent: "positive-interest",
+    },
+    {
+      input: "I want one but it is pricey",
+      lang: "en",
+      expectedIntent: "positive-interest",
+      expectedText: /(interested now|started to get your attention|shown interest)/,
+      previousIntent: "other",
+    },
+  ];
+
+  const rows = cases.map((item, index) => {
+    const actual = createReply(item.input, item.lang, index, [], item.previousIntent);
+    assert.equal(actual.intent, item.expectedIntent);
+    assert.match(actual.text, item.expectedText);
+    assert.doesNotMatch(actual.text, /[?？]/);
+    assert.doesNotMatch(actual.text, /why do you think|which one feels closer|what made you pause/i);
+    return {
+      input: item.input,
+      lang: item.lang,
+      previousIntent: item.previousIntent,
+      actual: {
+        route: actual.route,
+        intent: actual.intent,
+        replyPreview: actual.text.slice(0, 220),
+      },
+    };
+  });
+
+  console.log(JSON.stringify(rows, null, 2));
+});
