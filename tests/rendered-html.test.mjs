@@ -19,8 +19,9 @@ test("server-renders the Labubu welcome", async () => {
   assert.match(html, /<html lang="en"/);
   assert.match(html, /<title>LABUBU Seeding Chatbox/);
   assert.match(html, /LABUBU Seeding Chatbox/);
-  assert.match(html, /300 bilingual Q&amp;As|300 bilingual Q&As/);
+  assert.match(html, /300 bilingual notes/);
   assert.match(html, /Do not worry about sounding rational yet/);
+  assert.doesNotMatch(html, /text-base|Text base|retrieved context|Intent guard used before/i);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
 

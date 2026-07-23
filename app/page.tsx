@@ -57,9 +57,9 @@ const copy = {
     panelTitle: "对话主题",
     profile: "当前画像",
     profileValue: "还在观察自己的感觉",
-    baseLabel: "研究底库",
-    baseValue: "300 条双语 Q&A",
-    baseHint: "已接入全渠道、盲盒、社群、名人影响和情绪投射等内容。",
+    baseLabel: "背景知识",
+    baseValue: "300 条双语笔记",
+    baseHint: "用于理解全渠道、盲盒、社群、名人影响和情绪投射等内容。",
     hint: "不用问得很标准。直接说“我朋友都有”“它有点丑萌”“贵是贵但我想买”“我怕抢不到”都行。",
     thinking: "我回一下",
     starters: ["我是不是被种草了？", "它好丑但我老想看", "我朋友都有一个", "我想买但真的贵"],
@@ -81,8 +81,8 @@ const copy = {
     panelTitle: "Conversation themes",
     profile: "Current profile",
     profileValue: "Reading the current signal",
-    baseLabel: "Text base",
-    baseValue: "300 bilingual Q&As",
+    baseLabel: "Background notes",
+    baseValue: "300 bilingual notes",
     baseHint: "Uses omni-channel, blind boxes, communities, celebrity influence, and emotional projection.",
     hint: "No perfect prompt needed. Try: “my friends all have one,” “it’s ugly-cute,” “it’s expensive but I still want it,” or “I’m scared it’ll sell out.”",
     thinking: "typing",
@@ -298,6 +298,32 @@ function makeTextBaseReply(contexts: RetrievedContext[], input: string, lang: La
   return `${bridge}\n\n${primary.answer}${extraContext}\n\n${followUp}`;
 }
 
+function isLabubuIntroQuestion(input: string) {
+  const value = input.toLowerCase();
+  const mentionsLabubu = value.includes("labubu") || value.includes("拉布布");
+  if (!mentionsLabubu) return false;
+
+  return [
+    /\bwhat\s+is\s+(a\s+)?labubu\b/,
+    /\bwho\s+is\s+labubu\b/,
+    /\btell me about labubu\b/,
+    /\bexplain labubu\b/,
+    /\bi (do not|don't|dont) know\b.*\blabubu\b/,
+    /\bknow anything about (it|labubu)\b/,
+    /labubu.*是什么/,
+    /什么是.*labubu/,
+    /介绍.*labubu/,
+    /不了解.*labubu/,
+    /不知道.*labubu/,
+  ].some((pattern) => pattern.test(value));
+}
+
+function makeLabubuIntroReply(lang: Lang) {
+  return lang === "zh"
+    ? "Labubu 是艺术家龙家升创作的 The Monsters 系列里的一个精灵角色，后来通过 POP MART 的盲盒、公仔和挂件变得特别火。\n\n它最有记忆点的是尖尖耳朵、露齿笑和有点怪怪的“丑萌”表情。很多人第一次看会觉得奇怪，但刷到开箱、包挂照片、明星同款或朋友晒图之后，才慢慢开始理解为什么它会流行。\n\n所以这个 chatbox 不是商店，也不是劝你买。它更像在模拟：一个人本来不了解 Labubu，后来怎么被短视频、社交媒体、朋友和稀缺感一步步带进这个话题里。"
+    : "Labubu is a character from The Monsters, a series created by artist Kasing Lung, and it became widely known through POP MART blind boxes, figures, and bag charms.\n\nIts signature look is the pointed ears, toothy grin, and slightly strange ugly-cute expression. A lot of people do not instantly get it. Then they see unboxings, bag-charm photos, celebrity styling, or friends posting it, and the object starts to make more sense as a media trend.\n\nSo this chatbox is not a store and it is not here to push you to buy one. It is here to simulate how someone can go from knowing nothing about Labubu to slowly noticing how social media, friends, hype, and scarcity shape their reaction.";
+}
+
 function createReply(input: string, lang: Lang, turnCount: number, recentReplies: string[] = []): ReplyResult {
   const intent = classifyUserIntent(input);
   const guardedReply = makeIntentGuardReply(intent, lang, input);
@@ -306,6 +332,15 @@ function createReply(input: string, lang: Lang, turnCount: number, recentReplies
       text: guardedReply,
       retrieved: [],
       route: `intent:${intent}`,
+      intent,
+    };
+  }
+
+  if (isLabubuIntroQuestion(input)) {
+    return {
+      text: makeLabubuIntroReply(lang),
+      retrieved: [],
+      route: "labubu-intro",
       intent,
     };
   }
@@ -670,7 +705,7 @@ export default function Home() {
             <strong>{latestScore}%</strong>
             <i><b style={{ width: `${latestScore}%` }} /></i>
           </div>
-          <div className="score-card text-base-card">
+          <div className="score-card knowledge-card">
             <span>{t.baseLabel}</span>
             <strong>{labubuTextBase.length}</strong>
             <em>{t.baseValue}</em>
@@ -704,26 +739,6 @@ export default function Home() {
                 <div className="bubble">
                   {message.image ? <img src={message.image} alt="" /> : null}
                   <p>{message.text}</p>
-                  {message.role === "assistant" && message.route ? (
-                    <div className="retrieval-panel" aria-label="retrieved context">
-                      <span>{message.route}</span>
-                      {message.retrieved?.length ? (
-                        <ul>
-                          {message.retrieved.map((item) => (
-                            <li key={`${message.id}-${item.id}`}>
-                              <b>#{item.id}</b>
-                              <em>{item.score}</em>
-                              <small>{item.question}</small>
-                            </li>
-                          ))}
-                        </ul>
-                      ) : message.route.startsWith("intent:") ? (
-                        <small>Intent guard used before text-base retrieval.</small>
-                      ) : (
-                        <small>No text-base match; fallback reply used.</small>
-                      )}
-                    </div>
-                  ) : null}
                 </div>
               </article>
             ))}

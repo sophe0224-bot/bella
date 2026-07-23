@@ -62,6 +62,13 @@ test("createReply routes current intent before retrieval and reports retrieved c
       expectRetrieved: true,
     },
     {
+      input: "What is labubu? I don't know anything about it",
+      expectedRoute: "labubu-intro",
+      expectRetrieved: false,
+      expectedReply: "Labubu is a character from The Monsters",
+      noRetrievalReason: "none, intro route wins",
+    },
+    {
       input: "I don't like Labubu.",
       expectedRoute: "intent:explicit-dislike",
       expectRetrieved: false,
@@ -79,11 +86,12 @@ test("createReply routes current intent before retrieval and reports retrieved c
     assert.ok(actual.retrieved.length <= 3);
     if (item.expectRetrieved) assert.ok(actual.retrieved.length > 0);
     else assert.equal(actual.retrieved.length, 0);
+    if (item.expectedReply) assert.match(actual.text, new RegExp(item.expectedReply.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
     return {
       input: item.input,
       expected: {
         route: item.expectedRoute,
-        retrieved: item.expectRetrieved ? "one or more text-base matches" : "none, intent guard wins",
+        retrieved: item.expectRetrieved ? "one or more text-base matches" : item.noRetrievalReason ?? "none, intent guard wins",
       },
       actual: {
         route: actual.route,
